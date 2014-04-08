@@ -28,9 +28,8 @@ You restart the execution flow with :
 ##Simple Delayed Execution for Blocks
 
 We introduce new protocols for block delayed execution:
-
-*valueWithInterval: aDelay. Executes the block every x milliseconds specified in arguments. Answers the process, so you can terminate it.
-*valueAfterWaiting: aDelay. Waits for a delay, then executes the block. Answers the process so you can terminate it
+* valueWithInterval: aDelay. Executes the block every x milliseconds specified in arguments. Answers the process, so you can terminate it.
+* valueAfterWaiting: aDelay. Waits for a delay, then executes the block. Answers the process so you can terminate it
 These messages may slightly be adapted in future version to fit with the overall API.
 
 ##Announcements
