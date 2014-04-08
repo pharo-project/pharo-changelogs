@@ -105,13 +105,13 @@ Athens a vector graphics canvas is now integrated to Pharo. In the future it wil
 
 ##Cleaning / Improving Morphic
 
-*PasteUpMorph has been cleaned. Now WorldMorph is not hidden inside PasteUpMorph but a nice subclass.
-*FontChooser has been cleaned. 
-*Color has been simplified and cleaned. In the past Color did not support alpha blending and TranslucentColor was there to play this role. Now there is only one class for Color supporting by default translucency.
-*Widget improvements. MorphTreeMorph, Lists and other got improved. 
-*New Widgets such as Tabs have been added.
-*A new list implementation has been introduced.
-*A massive cleanup of layout frame usage has been performed to avoid creating unnecessary rectangles and in particular bogus (negative extent rectangles) creation is avoided. In Pharo 4.0 the class Rectangle should respect by construction the constraint that the height and width of a rectangle should be positive. 
+* PasteUpMorph has been cleaned. Now WorldMorph is not hidden inside PasteUpMorph but a nice subclass.
+* FontChooser has been cleaned. 
+* Color has been simplified and cleaned. In the past Color did not support alpha blending and TranslucentColor was there to play this role. Now there is only one class for Color supporting by default translucency.
+* Widget improvements. MorphTreeMorph, Lists and other got improved. 
+* New Widgets such as Tabs have been added.
+* A new list implementation has been introduced.
+* A massive cleanup of layout frame usage has been performed to avoid creating unnecessary rectangles and in particular bogus (negative extent rectangles) creation is avoided. In Pharo 4.0 the class Rectangle should respect by construction the constraint that the height and width of a rectangle should be positive. 
 
 #Spec
 
@@ -120,15 +120,15 @@ Spec a new interface building frameworks has been improved. It is not dependent 
 #Tools
 
 New tools have been developed. One of the idea is to deprecate the old tools and to write the new ones in Spec so that we can reuse the logic.
-*New ChangeSorter. A new changeSorter has been developed by B. Van Ryseghem in Spec.
-*New Inspector. Implementation based on Spec and the fast NewList. It has been developed by C. Bera and C. Bruni.
-*Suggestions. Pharo 30 support AST-based navigation and menu selection. In the Code editor, try option-t on with the cursor in the code, it will open a list of the operation you can perform on the selected code.  Now it is possible to get the only applicable refactorings or senders/implementors based on the AST node on which the cursor is. Thanks Gisela Decuzzi for this great work. 
-*Kommiter. By default all the changes you did in your image get published, Komitter allows one to cherry pick the changes that should be published.  Kommitter has been developed by B. Van Ryseghem in Spec.
-*Versionner. Versionner helps to generate and manage Metacello configurations. It has been developed by C. Demarey.
-*Enhanced Refactorings. Some refactorings had some glitches that are now fixed. 
-*Nautilus has been improved to take advantage of the new package representation. Better Code Browser.
+* New ChangeSorter. A new changeSorter has been developed by B. Van Ryseghem in Spec.
+* New Inspector. Implementation based on Spec and the fast NewList. It has been developed by C. Bera and C. Bruni.
+* Suggestions. Pharo 30 support AST-based navigation and menu selection. In the Code editor, try option-t on with the cursor in the code, it will open a list of the operation you can perform on the selected code.  Now it is possible to get the only applicable refactorings or senders/implementors based on the AST node on which the cursor is. Thanks Gisela Decuzzi for this great work. 
+* Kommiter. By default all the changes you did in your image get published, Komitter allows one to cherry pick the changes that should be published.  Kommitter has been developed by B. Van Ryseghem in Spec.
+* Versionner. Versionner helps to generate and manage Metacello configurations. It has been developed by C. Demarey.
+* Enhanced Refactorings. Some refactorings had some glitches that are now fixed. 
+* Nautilus has been improved to take advantage of the new package representation. Better Code Browser.
 Nautilus has been enhanced to simplify some switching and to take advantage of the package tags. Packages can be filtered to improve visibility.
-*Enhanced Finder. The finder is a great tool to help finding information. When using the example based find, it has been improved to show the actual classes that effectively matched the examples.
+* Enhanced Finder. The finder is a great tool to help finding information. When using the example based find, it has been improved to show the actual classes that effectively matched the examples.
 * Enhanced Critics Browser. The critics browser has been cleaned and enhanced.
 
 
@@ -161,8 +161,7 @@ A first cleaning of the trait implementation has been done. Now classes and trai
 #Enhancements of NativeBoost
 
 Many improvements have been made in NativeBoost. The most important are
-
-*Stack alignment bugs have been fixed. 
+* Stack alignment bugs have been fixed. 
 * A new tutorial has been developed and is available at https://ci.inria.fr/pharo-contribution/job/PharoForTheEnterprise/lastSuccessfulBuild/artifact/
 
 #Infrastructure
