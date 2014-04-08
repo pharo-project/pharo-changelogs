@@ -2,7 +2,7 @@ Dear Pharo users,
 
 We are pleased to announce the release of Pharo 1.0. This has been a huge effort since starting the project in May 2008. Pharo 1.0 is just a milestone on our journey, and development of the next version is well underway. We take the opportunity to review the major features of this release.
 
-Community, Infrastructure and Processes
+#Community, Infrastructure and Processes
 
 Pharo 1.0 is a product of our community. We thank all of you that have spent time making Pharo better, either directly contributing to the system or helping us making the right decisions.
 
@@ -10,20 +10,20 @@ Pharo 1.0 is a product of our community. We thank all of you that have spent tim
 
 We have established clear processes to track bugs, integrate changes, and manage a release. We have put the following infrastructure in place:
 
-A clean and up-to-date website (www.pharo-project.org),
-Google code project for tracking issues and the wiki for developers,
-SqueakSource? for MC source code management,
-Inria file server for web downloads
-A test suite with over 9000 tests (100% pass)
+* A clean and up-to-date website (www.pharo-project.org),
+* Google code project for tracking issues and the wiki for developers,
+* SqueakSource for MC source code management,
+* Inria file server for web downloads
+* A test suite with over 9000 tests (100% pass)
  
 
-MIT license
+# MIT license
 
 We have put significant effort into making Pharo license clean. Pharo is now MIT licensed with parts under the Apache License. This is great news! Code that was not MIT licensed was removed from the system and where necessary rewritten from scratch. From the beginning of Pharo we have maintained a strict rule that every contributor has to sign our license agreement.
 
  
 
-Improved Look and Feel
+# Improved Look and Feel
 
 The overall look and feel as well as new widgets (e.g., toolbar, merge tool) have been introduced from the Polymorph project. UIBuilder is improved and there is a new theme system. Menus are reorganized and cleaned, making them much more usable.
 
@@ -33,95 +33,91 @@ We have a new set of subpixel anti-aliased Deja Vu bitmap fonts (from the Cuis p
 
 In addition, we have Freetype font support, which allows you to use any font installed on your machine.
 
-Bug fixes
+# Bug fixes
 
 We have closed over 1000 issues in our bug tracker. You can find the details here: http://code.google.com/p/pharo/issues/list
 
  
 
-Major System Cleanup
+# Major System Cleanup
 
 An incredible amount of dead and duplicated code is removed or cleaned up:
 
-Underscores and hidden character usage in source code
-Fileout code - no HTML H1 logic in class source code fileout
-Utilities class
-MappedCollection?
-ReadOnly? binding experiments
-PackageOrganizer?
+* Underscores and hidden character usage in source code
+* Fileout code - no HTML H1 logic in class source code fileout
+* Utilities class
+* MappedCollection
+* ReadOnly binding experiments
+* PackageOrganizer
  
 
-Morphic and MVC
+# Morphic and MVC
 
-Various optimizations and speedup of Morphic applied
-Most historic MVC code is removed. There are no more isMorphic conditional tests everywhere
-Cleaner package structure
+* Various optimizations and speedup of Morphic applied
+* Most historic MVC code is removed. There are no more isMorphic conditional tests everywhere
+* Cleaner package structure
 
 Lots of package dependency cycles are removed. Class extensions were added in the right places.
 Package naming conventions in place - we can now unload all the tests
  
+# Removed Packages
 
-Removed Packages
-
-MorphicExamples? is extracted into an external package
-The sound system is modularized and put into an external package
-SqueakMap? is unloaded
-Preferences
+* MorphicExamples? is extracted into an external package
+* The sound system is modularized and put into an external package
+* SqueakMap is unloaded
+* Preferences
 
 Many broken, unused, and obsolete preferences are removed
 In addition, many references to preferences caused tangled dependencies. Packages are now ready for Preference removal so that in 1.1 the application logic does not call the preference during execution.
  
-
 Nebraska and Etoy code has been removed. This task is complex and a work in progress.
 
 The Tiling system, colored streams and related stack-oriented experiments are also removed.
 The UniClasses? logic is removed. PasteUpMorph? and Morph have also received a lot of cleaning.
  
 
-Traits
+# Traits
 
-Improved and simplified Traits implementation.
-Compiled methods are not shared anymore.
+* Improved and simplified Traits implementation.
+* Compiled methods are not shared anymore.
  
 
-Tests
+#Tests
 
-All tests pass.
-Collection library is cleaned up and a large test suite systematically applied.
-Significant test coverage included for collections and streams
+* All tests pass.
+* Collection library is cleaned up and a large test suite systematically applied.
+* Significant test coverage included for collections and streams
  
 
 By cleaning unused objects and code, the memory footprint is significantly reduced: the size of a PharoCore? 1.0 image file on disk is about 8MB (compared to 16MB of a Squeak 3.9 image).
 
-Core Class Improvements
+# Core Class Improvements
 
- 
+## Speed improvements
 
-Speed improvements
-
-Collection and Number improvements (faster printing, more robust reader)
-Faster collections (uses selectorDo: and friends instead of creating intermediate collection
+* Collection and Number improvements (faster printing, more robust reader)
+* Faster collections (uses selectorDo: and friends instead of creating intermediate collection
 UTF-8 speedup. We have generalized the trick from ByteString?>>#squeakToUtf8 to every converter, which dramatically improves performance of file operations.
  
 
-New or improved
+## New or improved
 
-Process-specific variables are now supported
-SplitJoin? methods are integrated
-CanvasCharacterScanner? and MultiCanvasCharacterScanner? are fixed.
-Better doesNotUnderstand: logic
-Stream fixes (back, ensures, for example) and use of MultiByteStream?
-Better handling of crlf
-CompiledMethod? are now more polymorphic with respect to MethodReference?
-Implementations introduced for Float #predecessor, #successor etc. Updates to the compact class indexes of LargePositiveInteger? and LargeNegativeInteger?.
-Float changes are made to convey their approximate nature.
+* Process-specific variables are now supported
+* SplitJoin methods are integrated
+* CanvasCharacterScanner? and MultiCanvasCharacterScanner? are fixed.
+* Better doesNotUnderstand: logic
+* Stream fixes (back, ensures, for example) and use of MultiByteStream?
+* Better handling of crlf
+* CompiledMethod are now more polymorphic with respect to MethodReference?
+* Implementations introduced for Float #predecessor, #successor etc. Updates to the compact class indexes of LargePositiveInteger and LargeNegativeInteger.
+* Float changes are made to convey their approximate nature.
  
 
-New infrastructural packages added to the core system
+## New infrastructural packages added to the core system
 
-Regular Expressions
-MD5 and SHA1 secure hash algorithms
-Annoucements
+* Regular Expressions
+* MD5 and SHA1 secure hash algorithms
+* Annoucements
  
 
 Compiler
