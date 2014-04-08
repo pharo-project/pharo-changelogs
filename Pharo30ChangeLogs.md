@@ -119,7 +119,6 @@ Spec a new interface building frameworks has been improved. It is not dependent 
 #Tools
 
 New tools have been developed. One of the idea is to deprecate the old tools and to write the new ones in Spec so that we can reuse the logic.
-
 *New ChangeSorter. A new changeSorter has been developed by B. Van Ryseghem in Spec.
 *New Inspector. Implementation based on Spec and the fast NewList. It has been developed by C. Bera and C. Bruni.
 *Suggestions. Pharo 30 support AST-based navigation and menu selection. In the Code editor, try option-t on with the cursor in the code, it will open a list of the operation you can perform on the selected code.  Now it is possible to get the only applicable refactorings or senders/implementors based on the AST node on which the cursor is. Thanks Gisela Decuzzi for this great work. 
