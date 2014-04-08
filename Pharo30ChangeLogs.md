@@ -104,7 +104,6 @@ Athens a vector graphics canvas is now integrated to Pharo. In the future it wil
 A new class Margin has been introduced to represent 1,2, or 4 number margins. It plays nicely with the widgets specification.
 
 ##Cleaning / Improving Morphic
-
 *PasteUpMorph has been cleaned. Now WorldMorph is not hidden inside PasteUpMorph but a nice subclass.
 
 * FontChooser has been cleaned. 
