@@ -138,23 +138,25 @@ The old polling event logic is replaced with a new event framework. The polling 
 
  
 
-Improved Developer Tools
+# Improved Developer Tools
 
 A lot of work has been performed on the developer tools
 
-Faster and thread safe Transcript
-Better Message Tally
-Gofer, which is a new tool to script Monticello package loading. This is the foundation for Metacello, the new package management system.
-A new inspector tool
-Refactoring engine cleaned with a new test suite
-OmniBrowser? now has all its tests passing and has a lot of fixes
-OmniPackageBrowser? has been separated from OmniBrowser? and supports package browsing and traits definition.
-SUnit GUI is improved, e.g., with test coverage computation
+* Faster and thread safe Transcript
+* Better Message Tally
+* Gofer, which is a new tool to script Monticello package loading. This is the foundation for Metacello, the new package management system.
+* A new inspector tool
+* Refactoring engine cleaned with a new test suite
+* OmniBrowser now has all its tests passing and has a lot of fixes
+* OmniPackageBrowser has been separated from OmniBrowser? and supports package browsing and traits definition.
+* SUnit GUI is improved, e.g., with test coverage computation
  
 
-Source Code Management ---------------------- Monticello is improved. Various load-order issues are fixed, making loading of packages more robust. Monticello and PackageInfo? are now faster in several areas making browsing of large repositories significantly faster. A new diff tool is also provided by Polymorph.
+# Source Code Management
 
-Attribution
+Monticello is improved. Various load-order issues are fixed, making loading of packages more robust. Monticello and PackageInfo? are now faster in several areas making browsing of large repositories significantly faster. A new diff tool is also provided by Polymorph.
+
+# Attribution
 
 We thank all the contributors: Adrian Lienhard, Alain Plantec, Alexandre Bergel, Andrew Black, Bart, Gauquie, Cesar Rabak, Cyrille Delaunay, Dale Henrichs, Damien Cassou, Damien Pollet, Dan Corneanu, David Roethlisberger, Douglas Brebner, Esteban Lorenzano, Fabrizio Perin, Fernando Olivero, Gabriel Calero, George Herolyants, Giovanni Corriga, Gwenael Casaccio, Henrik Sperre Johansen, Hernan Wilkinson, James Foster, Jean-Baptiste Arnaud, John McIntosh?, Johan Brichau, Jorge Ressia, Laurent Laffont, Luc Fabresse, Lukas Renggli, Marcus Denker, Mariano Martinez Peck, Martin McClure?, Matthew Fulmer, Michael Rueger, Miguel Coba, Mike Roberts, Nicolas Cellier, Niko Schwarz, Norbert Hartl, Noury Bouraqadi, Oscar Nierstrasz, Peter Hugosson Miller, Philipp Marshall, Rob Rothwell, Serge Stinckwich, Sergio Del Franco, Sheridan Mahoney, Simon Denier, Stephane Ducasse, Stephan Eggermont, Torsten Bergmann
 
