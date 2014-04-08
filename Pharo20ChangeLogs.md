@@ -17,7 +17,8 @@ Several important widgets were greatly enhanced. This effort was led by Benjamin
 
 We improved the protocol used for creating LayoutFrame. We cleaned its implementation and simplify clients code. Now instance of layoutFrame are systematically well initialized. Clients do not need to check against nil values and a new protocol avoids to be forced to specify rectangle when only one number is required.
 
-## Keybindings. Keybindings is a new library developed by Guillermo Polito to manage key bindings. We started to use it to define widgets keybinding as well as menu shortcut. In Pharo 3.0 we will systematically rewrite all the hard-coded bindings with it and write a documentation. It supports:
+## Keybindings. 
+Keybindings is a new library developed by Guillermo Polito to manage key bindings. We started to use it to define widgets keybinding as well as menu shortcut. In Pharo 3.0 we will systematically rewrite all the hard-coded bindings with it and write a documentation. It supports:
 * source code navigation
 * running tests
 * basic refactoring
