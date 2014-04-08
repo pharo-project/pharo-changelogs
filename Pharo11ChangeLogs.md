@@ -1,4 +1,4 @@
-Pharo version 1.1
+# Pharo version 1.1
 
 Pharo 1.1.1 was released on October 1, 2010. This is maintenance release is based on Pharo 1.1 and it adds support for the new JIT VM named Cog. In addition it fixes some important bugs in Pharo 1.1. The versions of the external packages was not modified. For CogVM we recommend to use the latest version from www.mirandabanda.org/files/Cog/VM/
 
