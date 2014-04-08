@@ -77,15 +77,19 @@ Opal is based on the RB AST.
 
 There is a new Debugger: it has a real UI-independent model. The new debugger as a first Spec based UI and we can expect in the future to see more advanced features. 
 
-The old debugger was mixing the view and the model. It was complex and hard to understand and extend.Andrei Chis from the SCG (Bern) implemented a complete clean and nice new debugger model that be independently scripted. On top of this model, a new UI similar to the old has been rewritten. Special thanks to Andrei Chis
+The old debugger was mixing the view and the model. It was complex and hard to understand and extend. Andrei Chis from the SCG (Bern) implemented a complete clean and nice new debugger model that be independently scripted. On top of this model, a new UI similar to the old has been rewritten. Special thanks to Andrei Chis
 
 # CommandLine
 
 The new commandline handling has been enhanced. 
 
+```
 ./pharo Pharo.image URL --install 
-One does not need to give the configuration if the configuration name is canonical, e.g. has the same name as the repository. There is a full chapter in the deep into Pharo book http://www.deepintopharo.com
-Special thanks to Camillo Bruni for pushing this. 
+```
+
+One does not need to give the configuration if the configuration name is canonical, e.g. has the same name as the repository. Special thanks to Camillo Bruni for pushing this. 
+There is a full chapter in the deep into Pharo book http://www.deepintopharo.com
+
 
 #Better OS Interaction
 
