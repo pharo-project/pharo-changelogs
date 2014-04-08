@@ -214,7 +214,7 @@ Sound plugins on linux are now recompiled and part of the building process.
 #A glimpse at Pharo 40
 
 For Pharo 40 we really want to put in place a building process that takes a small image and build by loading the system everybody uses. It will be based on the expertise built by Pavel Krivanek with his minimal images and the work of Guillermo Polito on bootstrapping the system. There will be a repackaging effort in addition to change to manage the project using Git as a back-end.
-
+From the Vm perspective we will use the new bytecode sets developed by C. Bera and E. Miranda as well as Spur and many other improvements.
 
 
 #External projects and packages
@@ -240,30 +240,30 @@ To name just a few examples:
 
 ##Web:
 
-*Seaside - the well know Smalltalk web framework
-*Bootstrap - Seaside add-on to to easily use the Twitter Bootstrap library
-*Iliad - for modern web applications
+* Seaside - the well know Smalltalk web framework
+* Bootstrap - Seaside add-on to to easily use the Twitter Bootstrap library
+* Iliad - for modern web applications
 
 ##Testing:
 
-*Autotest - a live testing tool
-*BabyMock2 - a visual mock object library
+* Autotest - a live testing tool
+* BabyMock2 - a visual mock object library
 
 ##Tools:
 
-*ScriptManager - to manage scripts 
-*Pomodoro - a pomodoro timer
-*TilingWindowManager - to organize your screen
+* ScriptManager - to manage scripts 
+* Pomodoro - a pomodoro timer
+* TilingWindowManager - to organize your screen
 
 ##Applications:
 
-*Phratch - a port of Scratch for Pharo
+* Phratch - a port of Scratch for Pharo
 
 ##Databases:
 
-*OpenDBXDriver - for accessing relational databases
-*PunQLite - provides access to the embeddable UnQlite NoSQL database engine
-*SQLite3 - provides access the embeddable SQLite3 relational database engine
+* OpenDBXDriver - for accessing relational databases
+* PunQLite - provides access to the embeddable UnQlite NoSQL database engine
+* SQLite3 - provides access the embeddable SQLite3 relational database engine
 
 ##For compatibility:
 
