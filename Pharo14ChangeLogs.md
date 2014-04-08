@@ -2,7 +2,7 @@
 
  
 
-All in all, there were over 860 issues treated in the issue tracker: http://code.google.com/p/pharo/issues/list?can=1&q=milestone%3D1.4 Not all the changes are reported here, but this is to give you an impression. Thanks a lot for your participation. We all accomplished a huge task.
+All in all, there were over 860 issues treated in the issue tracker: http://code.google.com/p/pharo/issues/list can=1&q=milestone%3D1.4 Not all the changes are reported here, but this is to give you an impression. Thanks a lot for your participation. We all accomplished a huge task.
 
 ##Changes
 
@@ -13,7 +13,7 @@ All in all, there were over 860 issues treated in the issue tracker: http://code
 * Better primitive simulation
 * Better headless support
 * Better support for error at startup
-* Introduction of FileSystem?
+* Introduction of FileSystem 
 * Less dependencies: Color, Scrollbar do not depend on Compiler anymore
 * Cleaning tests
 * Unload hostSystemsMenus
@@ -41,7 +41,7 @@ and a lot a lot and a lot more.
 * Cmd-Click for senders and implementors
 * Senders and implementors deals with class
 * Better tool registry
-* Improvements for the FlatBrowser?
+* Improvements for the FlatBrowser 
 * Better Transcripter
 * Faster diffBuilder
 * New version of OCompletion and Ecompletion that can play together and without code duplication.
@@ -50,23 +50,23 @@ and a lot a lot and a lot more.
 ##UI
 
 * Better search
-* MultiSelection? improvements
+* MultiSelection  improvements
 * Drag and drop in multi selection list
-* PluggableListMorph? improvements
-* PluggableListMorph? selection on drag
+* PluggableListMorph  improvements
+* PluggableListMorph  selection on drag
 * Iconic Button improvements
-* PharoTheme?
-* Better CheckBox?
-* Enhanced PluggableButtonMorph?
+* PharoTheme 
+* Better CheckBox 
+* Enhanced PluggableButtonMorph 
 * Polymorph enhancements
-* Deprecate PluggableListMorphOfMany?
-* Merged NewParagraph? and MultiNewParagraph?
+* Deprecate PluggableListMorphOfMany 
+* Merged NewParagraph  and MultiNewParagraph 
 * New Widget: Ticking list and widget
-* LazyListMorph? cleaning
-* NewTextMorph? and TextComposer? improvements
-* Improve behavior of MorphTreeMorph?
-* Removing NewTextMorph? and related
-* StringMorph?
+* LazyListMorph  cleaning
+* NewTextMorph  and TextComposer  improvements
+* Improve behavior of MorphTreeMorph 
+* Removing NewTextMorph  and related
+* StringMorph 
 
 ## Cleaning
 
@@ -76,17 +76,17 @@ and a lot a lot and a lot more.
 * Removed toolbuilder
 * Restructure packages
 * Canvas hierarchy
-* MorphicModel?
+* MorphicModel 
 * Deprecate recentMessageSet
-* Deprecate ImageSegment?
-* Deprecate MessageNames?
-* Deprecate TimeProfileBrowser?
+* Deprecate ImageSegment 
+* Deprecate MessageNames 
+* Deprecate TimeProfileBrowser 
 * Really cleaning messageSet and subclasses
-* SystemChangeNotifier?
+* SystemChangeNotifier 
 * Removed Project
-* Removed BlockContext?, blue book old closure encodings
+* Removed BlockContext , blue book old closure encodings
 * Font downloading
-* HandMorph?
+* HandMorph 
 
 ##Some Fixes
 
@@ -100,10 +100,10 @@ and a lot a lot and a lot more.
 * Trait support
 * Fixed syntax hilighting
 * Better pointersTo:
-* Speedup MethodDictionary? #rehash
+* Speedup MethodDictionary  #rehash
 * Compiler enhancements.
 * Stream should not print its contents
 * Progress bar
-* InputSensor?
-* CombinedChar?
-* BytexTextConverter? fixes
+* InputSensor 
+* CombinedChar 
+* BytexTextConverter  fixes
