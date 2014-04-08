@@ -1,8 +1,10 @@
-Pharo 3.0 saw a large set of changes and infrastructural improvements. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, compiler optimisations, ...) can be built.
+#Pharo 3.0 
+
+A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 30 a great release.  Pharo 3.0 saw a large set of changes and infrastructural improvements more: more than 2331 tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, compiler optimisations, ...) can be built.
+Remember that Pharo is your open-source system! And this is clear that you can get an impact on Pharo. 
 
 In addition, many changes have been made to support the generation of a more modular system. 
-
-This release integrates a quite large (really!) number of fixes and enhancements you can find @@Here list of bug in pdf@@
+This release integrates a quite large (really!) number of fixes and enhancements you can find @@Here list of bug in pdf@@. Exactly we close 2331 tickets! Thank you all for your contribution. Thank you again.
 
 # Infrastructure
 
