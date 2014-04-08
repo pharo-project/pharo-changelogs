@@ -4,52 +4,62 @@ In addition, many changes have been made to support the generation of a more mod
 
 This release integrates a quite large (really!) number of fixes and enhancements you can find @@Here list of bug in pdf@@
 
-Infrastructure
+# Infrastructure
 
-Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
-As google is shutting down the API support of the Issue tracker, we moved to FogBugz. (Thank you, Fog Creek!)
-Downloads have been moved from gforge to a dedicated server at http://files.pharo.org.
-Better staged integration process on Jenkins and github.
-Kernel
+* Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
+* As google is shutting down the API support of the Issue tracker, we moved to FogBugz. (Thank you, Fog Creek!)
+* Downloads have been moved from gforge to a dedicated server at http://files.pharo.org.
+* Better staged integration process on Jenkins and github.
 
-Continuations
+
+#Kernel
+
+##Continuations
 
 Continuations are now part of Pharo by default. They let the developer save the execution flow and restart it later.  Continuations were originally developped for Seaside. Example : You have an object with the instance variable executionFlow.
 
 You save the current execution flow with :
+```
 Continuation currentDo: [ :cc | executionFlow := cc]
 You restart the execution flow with :
   executionFlow value: true
-Simple Delayed Execution for Blocks
+```
 
-New protocols for block delayed execution got introduced: 
+##Simple Delayed Execution for Blocks
 
-valueWithInterval: aDelay. Executes the block every x milliseconds specified in arguments. Answers the process, so you can terminate it.
-valueAfterWaiting: aDelay. Waits for a delay, then executes the block. Answers the process so you can terminate it
+We introduce new protocols for block delayed execution:
+
+*valueWithInterval: aDelay. Executes the block every x milliseconds specified in arguments. Answers the process, so you can terminate it.
+*valueAfterWaiting: aDelay. Waits for a delay, then executes the block. Answers the process so you can terminate it
 These messages may slightly be adapted in future version to fit with the overall API.
 
-Announcements
+##Announcements
 
 Announcements are now more flexible. Instead of special classes they can now be any Object implementing #handlesAnnouncement: . In particular it means that now we can use symbols as Announcements. Here is an example:
 
+```
 Announcer new 
    on: #FOO send: #bar to: nil;
    announce: #FOO "should raise DNU bar"
-AST + Compiler
+```
 
-AST code cleanup
+#AST + Compiler
+
+##AST code cleanup
 
 We deprecated the wrong protocol for AST visitors. Visitors do not accept they visit!  Now the code is clean and really nice. 
 
 To migrate to the new API the following script should do most of the work, one still needs to check the senders of the old selectors before:
 
+```
 m := (RBProgramNodeVisitor allSubclasses gather: #methods) 
     select: [ :e | e selector beginsWith: 'accept' ].
 
 m do: [ :e | 
   e methodClass compile: (e sourceCode copyReplaceAll: 'accept' with: 'visit').
   e methodClass removeSelector: e selector ].
-Full AST interpreter
+```
+## Full AST interpreter
 
 Pharo now contains an interpreter for the RB AST that is complete and he able to run all Kernel tests. It means that it covers the full exception and non-local return semantics of Pharo. This interpreter has been used to develop  test coverage tools. Special thanks to Camillo Bruni and Clément Béra.
 
