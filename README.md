@@ -1,0 +1,1 @@
+This project contains the logs of the Pharo versions.
