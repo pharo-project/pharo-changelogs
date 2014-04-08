@@ -12,24 +12,24 @@ Currently known bugs:
 * Full: http://code.google.com/p/pharo/issues/list?can=2&q=Milestone%3D1.3-DevImage
  
 
-# Cleaning architectural dependencies
+## Cleaning architectural dependencies
 
 We clean a lot of unwanted dependencies between several packages. We applied Moose tools and we will continue to improve the architecture of the system. In particular we will identify better layers in the system. This is important to be able to change large components and to be agile and make certain hypotheses exposed.
 
-# Applying code critics to the complete system
+## Applying code critics to the complete system
 
 We started to run code critics on the complete system and fix them. We will continue on this path and we will add automated code critics in the hudson build scripts. In particular we removed more than you can expect duplicated code between classes and subclasses. We plan to add Pharo specific Lint Rules and also bring rule checking for all the hosted applications on our hudson server.
 
-# Support for server and headless images
+## Support for server and headless images
 
 Being able to run Pharo on headless servers is important for web development as well as for building scripts. We introduced a better way of handling non interactive mode. We want to make sure that Pharo can run without UI. Ideally we would like to be able to plug a UI layer on the fly to get a real headless mode but this is clearly future. But at least you know our vision.
 
-We improved the way the command line works. A new implementation is now available and it can support multiple extensions without conflicts.
+* We improved the way the command line works. A new implementation is now available and it can support multiple extensions without conflicts.
 
-Pharo has now a support for stdin, stdout and stderr.
+* Pharo has now a support for stdin, stdout and stderr.
 
-More robust and better startup/shutdown
 
+###More robust and better startup/shutdown. 
 At startup and shutdown the image executes the methods startUp: and shutdown: of registered classes (registered using addToStartUpList:, addToShutDownList:, ... methods and friends). Now we improved the robstuness of actions performed at startup by introducing a two stages process. During the first stage of start up the UI manager, the default uimanager is switched to a specific non interactive ui manager (StartupUIManager). Note that this specific non interactive UIManager kills the system on any attempt to open windows and interaction. So be warned, don't use interaction in the first phase. Then all registered classes execute their start up procedures (which should not imply interactive behavior). After startup list is finished, any deferred startup actions are executed, which you can add using the method addDeferredStartupAction: method. This change is important since it structures the startup and make sure that certain actions only occurs when they can run.
 
 # Better look and feel
@@ -80,7 +80,7 @@ Smalltalk resetTools. Note, that with tools registry, you are no longer need to 
 * Deferred UI messages was now better handled.
 * Speeding up the Help browser by 50%.
 
-After a long discussion that started at ESUG last year, we started to remove toolbuilder dependences. We should be able to remove ToolBuilder?. ToolBuilder was a good idea: a set of specification objects abstracted the common widgets and some of the existing tools were using it. It was potentially good to port the current and fixed set of tools to new UI frameworks. The current problems were that there is no new UI framework on the horizon and second the default tools could not take advantage of the new UI widgets of Polymorph. So since we would really like to get a new set of powerful widgets and since ToolBuilder? did not support an existing need, we will remove it. If the need arrives, we may reimplement it.
+After a long discussion that started at ESUG last year, we started to remove toolbuilder dependences. We should be able to remove ToolBuilder?. ToolBuilder was a good idea: a set of specification objects abstracted the common widgets and some of the existing tools were using it. It was potentially good to port the current and fixed set of tools to new UI frameworks. The current problems were that there is no new UI framework on the horizon and second the default tools could not take advantage of the new UI widgets of Polymorph. So since we would really like to get a new set of powerful widgets and since ToolBuilder  did not support an existing need, we will remove it. If the need arrives, we may reimplement it.
  
 
 #New libraries or Enhancement
@@ -91,7 +91,7 @@ A new method on:fork: is introduced, on error it will manipulate the stack and f
 #Weak Announcements
 Announcements are important and we improved the first naive implementation. Support for weak announcements was first added. Then announcement took advantage of the on:fork: introduction. It makes sure now that all system announcement will be delivered.
 
-* WeakOrderedCollection? needed for Magma has been added.
+* WeakOrderedCollection  needed for Magma has been added.
 * Generator was added.
 * Stratified Proxy Often when you build proxy, you cannot control all the messages sent to the proxy because the proxy implementation relies on DNU and ProtoObject. We designed a new version which does not suffer such limit based on an not so well known VM hook. Ghost a proxy library is also available.
 
@@ -102,7 +102,7 @@ We removed the old undo framework and introduced a brand new one working really 
 *  Now Set can contain nil.
 * Added lots of explicit exceptions for Collections errors (instead of just calling #error:)
 * Improved Smalltalk cleanUp, use it in #cleanUpForRelease.
-* SystemNavigation? has been further enhanced to work with environments.
+* SystemNavigation  has been further enhanced to work with environments.
 * More class comments
 Thanks to the wonderful idea of Laurent Laffont we started to systematically comment, uncommented classes!
 
@@ -112,7 +112,7 @@ While we continued to work on OPAL and in particular its decompiler and various 
 
 Sync with Squeak trunk code base of old compiler
 inline #whileTrue:
-Cleaning FakePool? usage
+Cleaning FakePool  usage
 Old positional experiments removed from compiler
 ifNotNil:, ifTrue: and friends are now added to the literal array and thus are shown when searching for "senders of".
  
@@ -137,7 +137,7 @@ Cleanups
 
 The system continues to contain a lot of dead code. In the 1.3 release cycle we continued cleaning unused code. We use a combination of two strategies. For one, deprecating code (moving classes and methods to the Deprecated13 package). This allows clients to continue to use this code and slowly migrate. The second strategy is hard and radical deletion.
 
-* Cleaning of ChangeSet, ChangeSorter? and related.
+* Cleaning of ChangeSet, ChangeSorter  and related.
 * remove ExternalSettings. A third preferences subsystem that saved preferences in files (unused).
 * Deprecation of PCXReadWriter, as this format sees not much use these days.
 * Clean up MVC leftovers.
@@ -147,7 +147,7 @@ We continued to clean some Etoy leftovers.
 * Uniclasses, which complicated the system considerably.
 * Imports, Tiles, random unused code.
 * We evaluated and cleaned the startup list and actions. We removed a lot of obsolete ones. Some should be fixed.
-* Duplicated code related to encoding of temps in CompiledMethods? was removed. Simplifies considerably understanding (and future cleanup) saving the image embedded in the vm executable has been removed. Simplifies image snapshot
+* Duplicated code related to encoding of temps in CompiledMethods  was removed. Simplifies considerably understanding (and future cleanup) saving the image embedded in the vm executable has been removed. Simplifies image snapshot
 * Cursor cleaning.
 * Deprecated13 contains 26 classes, 786 Methods with over 5000 lines of Code.
  
@@ -155,4 +155,4 @@ We continued to clean some Etoy leftovers.
 # Security
 
 We removed the old security manager as it was not used. Better things will be added in the future.
-As a start, there is a new way of dealing with plugin brings in more security and flexibility. Here are two new primitives which are added to the VM. SmalltalkImage?>>loadModule: aModuleName loads a module of the given name. Fail if module cannot be found, or cannot be loaded, or failed to initialize. SmalltalkImage?>>disableModuleLoading disables a new module loading mechanism for the rest of current session. This operation is not reversible. Any subsequent attempts to load either external or internal module(s) will fail.
+As a start, there is a new way of dealing with plugin brings in more security and flexibility. Here are two new primitives which are added to the VM. SmalltalkImage >>loadModule: aModuleName loads a module of the given name. Fail if module cannot be found, or cannot be loaded, or failed to initialize. SmalltalkImage >>disableModuleLoading disables a new module loading mechanism for the rest of current session. This operation is not reversible. Any subsequent attempts to load either external or internal module(s) will fail.
