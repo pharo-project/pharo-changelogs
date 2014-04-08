@@ -100,13 +100,14 @@ Smalltalk os env asDictionary inspect
 
 #Graphics
 
-Athens a vector graphics canvas is now integrated to Pharo. In the future it will replace all the existing canvases. Athens will be the base for a new generation of a fully vector graphic IDE. Cairo is now supported by default on all platforms.
-A new class Margin has been introduced to represent 1,2, or 4 number margins. It plays nicely with the widgets specification.
+Athens a vector graphics canvas is now integrated to Pharo. In the future it will replace all the existing canvases. * Athens will be the base for a new generation of a fully vector graphic IDE. Cairo is now supported by default on all platforms. A chapter is under construction. A tutorial and set of examples are available.
+* A new class Margin has been introduced to represent 1,2, or 4 number margins. It plays nicely with the widgets specification.
 
 ##Cleaning / Improving Morphic
+
 *PasteUpMorph has been cleaned. Now WorldMorph is not hidden inside PasteUpMorph but a nice subclass.
-* FontChooser has been cleaned. 
-* Color has been simplified and cleaned. In the past Color did not support alpha blending and TranslucentColor was there to play this role. Now there is only one class for Color supporting by default translucency.
+*FontChooser has been cleaned. 
+*Color has been simplified and cleaned. In the past Color did not support alpha blending and TranslucentColor was there to play this role. Now there is only one class for Color supporting by default translucency.
 *Widget improvements. MorphTreeMorph, Lists and other got improved. 
 *New Widgets such as Tabs have been added.
 *A new list implementation has been introduced.
