@@ -105,22 +105,16 @@ A new class Margin has been introduced to represent 1,2, or 4 number margins. It
 
 ##Cleaning / Improving Morphic
 *PasteUpMorph has been cleaned. Now WorldMorph is not hidden inside PasteUpMorph but a nice subclass.
-
 * FontChooser has been cleaned. 
-
 * Color has been simplified and cleaned. In the past Color did not support alpha blending and TranslucentColor was there to play this role. Now there is only one class for Color supporting by default translucency.
-
 *Widget improvements. MorphTreeMorph, Lists and other got improved. 
-
 *New Widgets such as Tabs have been added.
-
 *A new list implementation has been introduced.
-
 *A massive cleanup of layout frame usage has been performed to avoid creating unnecessary rectangles and in particular bogus (negative extent rectangles) creation is avoided. In Pharo 4.0 the class Rectangle should respect by construction the constraint that the height and width of a rectangle should be positive. 
 
 #Spec
 
-Spec a new interface building frameworks has been improved (less dependencies to Morphic), more 
+Spec a new interface building frameworks has been improved. It is not dependent anymore (or just a bit) from Morphic. new widgets are supported and a ticking window has been introduced.
 
 #Tools
 
