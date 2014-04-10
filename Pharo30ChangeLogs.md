@@ -1,6 +1,6 @@
 #Pharo 3.0 
 
-A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 30 a great release.  Pharo 3.0 saw a large set of changes and infrastructural improvements more: more than 2331 tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, compiler optimisations, ...) can be built.
+A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 30 a great release.  Pharo 3.0 saw a large set of changes and infrastructural improvements more: more than 2300 tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, compiler optimisations, ...) can be built.
 Remember that Pharo is your open-source system! And this is clear that you can get an impact on Pharo. 
 
 In addition, many changes have been made to support the generation of a more modular system. 
@@ -66,7 +66,7 @@ Pharo now contains an interpreter for the RB AST that is complete and he able to
 
 ##Compiler
 
-The Opal Compiler is now part of the image (not yet the default). Opal is a new compiler frameworks using visitor and Intermediate representation to support optimisations.  Opal is a stagged compiler. It is based on a real visitor and Intermediate representation. A massive amount of improvements have be done to make Opal working smoothly. Opal is a key infrastructure aspect for the next generation. The compiler API has been clean up and simplified. Simplifying all the old methods with large number of arguments has been done.  Support for blockclosures have been fully revisited and improved. Many changes have been made to also clarify the API. Opal is now able to parse totally Pharo. Special thanks for Marcus Denker and Clément Béra. The following paper describes it http://rmod.lille.inria.fr/archives/papers/Bera13a-OpalIWST.pdf
+The Opal Compiler is now the default compiler. Opal is a new compiler frameworks using visitor and Intermediate representation to support optimisations.  Opal is a stagged compiler. It is based on a real visitor and Intermediate representation. A massive amount of improvements have be done to make Opal working smoothly. Opal is a key infrastructure aspect for the next generation. The compiler API has been clean up and simplified. Simplifying all the old methods with large number of arguments has been done.  Support for blockclosures have been fully revisited and improved. Many changes have been made to also clarify the API. Opal is now able to parse totally Pharo. Special thanks for Marcus Denker and Clément Béra. The following paper describes it http://rmod.lille.inria.fr/archives/papers/Bera13a-OpalIWST.pdf
 
 Opal is based on the RB AST.
 * It uses RB Parser.
@@ -102,7 +102,8 @@ Smalltalk os env asDictionary inspect
 
 #Graphics
 
-Athens a vector graphics canvas is now integrated to Pharo. In the future it will replace all the existing canvases. * Athens will be the base for a new generation of a fully vector graphic IDE. Cairo is now supported by default on all platforms. A chapter is under construction. A tutorial and set of examples are available.
+Athens a vector graphics canvas is now integrated to Pharo. In the future it will replace all the existing canvases. 
+* Athens will be the base for a new generation of a fully vector graphic IDE. Cairo is now supported by default on all platforms. A chapter is under construction. A tutorial and set of examples are available.
 * A new class Margin has been introduced to represent 1,2, or 4 number margins. It plays nicely with the widgets specification.
 
 ##Cleaning / Improving Morphic
@@ -137,7 +138,7 @@ Nautilus has been enhanced to simplify some switching and to take advantage of t
 ##Removal of old tools
 
 Hierarchy Browser was not working and it has been removed as part of the complete rebuild of all the tools.
-In the future we expect to fully discard the old Browser. A new minimalist browser (emergency browser is under development).
+In the future we expect to fully discard the old Browser. A new minimalist browser (emergency browser) is under development.
 
 
 
@@ -172,8 +173,8 @@ Many improvements have been made in NativeBoost. The most important are
 
 RPackage went from one RPackageSet / multiple RPackages for one Monticello package to one RPackage / multiple RPackageTags for one Monticello package. This has improved synchronisation between Monticello and RPackage, and allowed new operations (promote / demote) and tools (PackageTreeNautilus).
 
-PackageInfo is not used anymore by the system and ready to be removed from the system. 
-Removal of the old ClassOrganizer.
+* PackageInfo is not used anymore by the system and ready to be removed from the system. 
+* Removal of the old ClassOrganizer.
 
 ##FileSystem improvements
 
