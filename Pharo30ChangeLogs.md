@@ -103,15 +103,15 @@ Smalltalk os env asDictionary inspect
 
 #Graphics
 
-Athens a vector graphics canvas is now integrated to Pharo. In the future it will replace all the existing canvases. 
+Athens, the vector graphics canvas is now integrated to Pharo. In the future it will replace all the existing canvases. 
 * Athens will be the base for a new generation of a fully vector graphics IDE. Cairo is now supported by default on all platforms. A tutorial and set of examples are available, a book chapter is being written.
 * A new class Margin has been introduced to represent 1,2, or 4 number margins. It plays nicely with the widgets specification.
+* Color has been simplified and cleaned. In the past Color did not support alpha blending and TranslucentColor was there to play this role. Now there is only one class for Color supporting by default translucency.
 
 ##Cleaning / Improving Morphic
 
 * PasteUpMorph has been cleaned. Now WorldMorph is not hidden inside PasteUpMorph but a nice subclass.
 * FontChooser has been cleaned. 
-* Color has been simplified and cleaned. In the past Color did not support alpha blending and TranslucentColor was there to play this role. Now there is only one class for Color supporting by default translucency.
 * Widget improvements. MorphTreeMorph, Lists and other got improved. 
 * New Widgets such as Tabs have been added.
 * A new list implementation has been introduced.
@@ -119,7 +119,10 @@ Athens a vector graphics canvas is now integrated to Pharo. In the future it wil
 
 #Spec
 
-Spec a new interface building frameworks has been improved. It is not dependent anymore (or just a bit) from Morphic. new widgets are supported and a ticking window has been introduced.
+Spec, the new interface building framework, has been improved. 
+* Dependecy on Morphic has been reduced
+* New widgets are supported 
+* A ticking window has been introduced
 
 #Tools
 
@@ -129,20 +132,18 @@ New tools have been developed. One of the idea is to deprecate the old tools and
 * Suggestions. Pharo 30 support AST-based navigation and menu selection. In the Code editor, try option-t on with the cursor in the code, it will open a list of the operation you can perform on the selected code.  Now it is possible to get the only applicable refactorings or senders/implementors based on the AST node on which the cursor is. Thanks Gisela Decuzzi for this great work. 
 * Kommiter. By default all the changes you did in your image get published, Komitter allows one to cherry pick the changes that should be published.  Kommitter has been developed by B. Van Ryseghem in Spec.
 * Versionner. Versionner helps to generate and manage Metacello configurations. It has been developed by C. Demarey.
-* Enhanced Refactorings. Some refactorings had some glitches that are now fixed. 
-* Nautilus has been improved to take advantage of the new package representation. Better Code Browser.
-Nautilus has been enhanced to simplify some switching and to take advantage of the package tags. Packages can be filtered to improve visibility.
+* Enhanced Refactorings. Some refactorings had some bugs that are now fixed. 
+* Nautilus has been improved to take advantage of the new package representation.
+* Nautilus has been enhanced to simplify some switching and to take advantage of the package tags. Packages can be filtered to improve visibility.
 * Enhanced Finder. The finder is a great tool to help finding information. When using the example based find, it has been improved to show the actual classes that effectively matched the examples.
 * Enhanced Critics Browser. The critics browser has been cleaned and enhanced.
 
 
 ##Removal of old tools
 
-Hierarchy Browser was not working and it has been removed as part of the complete rebuild of all the tools.
-In the future we expect to fully discard the old Browser. A new minimalist browser (emergency browser) is under development.
-
-
-
+* Most old tools have been replaced by new implementation. The remaining old tools will be removed in Pharo4.
+* Hierarchy Browser has been removed as the new browser can show a class hierarchy view.
+* A new minimalist browser (emergency browser) is under development.
 
 #Low-Level Meta Model
 
