@@ -6,6 +6,10 @@ Remember that Pharo is your open-source system!
 In addition, many changes have been made to support the generation of a more modular system. 
 This release integrates a quite large (really!) number of fixes and enhancements you can find @@Here list of bug in pdf@@. Ideed, we closed 2331 tickets! Thank you all for your contribution.
 
+The Fosdem14 presentation has a short overview of what is new in Pharo3: 
+* Video: https://www.youtube.com/watch?v=son_bhZ93ec 
+* Slides: http://www.slideshare.net/MarcusDenker/pharo3-at-fosdem
+
 # Infrastructure
 
 * Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
@@ -175,7 +179,7 @@ Many improvements have been made in NativeBoost. The most important are
 
 RPackage went from one RPackageSet / multiple RPackages for one Monticello package to one RPackage / multiple RPackageTags for one Monticello package. This has improved synchronisation between Monticello and RPackage, and allowed new operations (promote / demote) and tools (PackageTreeNautilus).
 
-* PackageInfo is not used anymore by the system and ready to be removed from the system. 
+* PackageInfo is not used anymore and ready to be removed from the system. 
 * Removal of the old ClassOrganizer.
 
 ##FileSystem improvements
@@ -184,7 +188,9 @@ RPackage went from one RPackageSet / multiple RPackages for one Monticello packa
 
 ##Keymappings
 
-Keymappings have been introduced. In the future version all the shortcuts will be defined using keymapping. There is a chapter available in the new forthcoming book: https://ci.inria.fr/pharo-contribution/job/PharoForTheEnterprise/lastSuccessfulBuild/artifact/. Thanks Guillermo Polito for this effort. 
+* Keymappings have been introduced.  Thanks Guillermo Polito for this effort. 
+* In the future version all the shortcuts will be defined using keymapping. 
+* There is a chapter available in the new forthcoming book: https://ci.inria.fr/pharo-contribution/job/PharoForTheEnterprise/lastSuccessfulBuild/artifact/.
 
 
 ###CharacterScanner improvements
@@ -202,7 +208,7 @@ Sound plugins on linux are now recompiled and part of the building process.
 
 #Networking
 
-* New version of Zinc and Zodiac. Sven van Caekenberghe continued to systematically improve Zinc our HTTP client/server architecture. 
+* New version of Zinc and Zodiac. Sven van Caekenberghe continued to systematically improve the HTTP client/server framework. 
 * Socket leaking external semaphores have been fixed.
 
 
@@ -221,6 +227,9 @@ Sound plugins on linux are now recompiled and part of the building process.
 For Pharo 40 we really want to put in place a building process that takes a small image and build by loading the system everybody uses. It will be based on the expertise built by Pavel Krivanek with his minimal images and the work of Guillermo Polito on bootstrapping the system. There will be a repackaging effort in addition to change to manage the project using Git as a back-end.
 From the Vm perspective we will use the new bytecode sets developed by C. Bera and E. Miranda as well as Spur and many other improvements.
 
+The video from Fosdem2014 has a discussion of what is planed for Pharo4 in addition:  
+* Video Youtube: http://www.youtube.com/watch?v=mUV9E03u52g 
+* Slide Slideshare: http://www.slideshare.net/MarcusDenker/2013-fosdempharo4
 
 #External projects and packages
 
