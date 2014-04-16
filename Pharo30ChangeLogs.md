@@ -11,7 +11,7 @@ This release integrates a quite large (really!) number of fixes and enhancements
 * Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
 * As google is shutting down the API support of the Issue tracker, we moved to FogBugz. (Thank you, Fog Creek!) https://pharo.fogbugz.com
 * Downloads have been moved from gforge to a dedicated server at http://files.pharo.org.
-* Better staged integration process on Jenkins and github.
+* Better staged integration process using Jenkins and github. https://pharo.fogbugz.com
 
 
 #Kernel
@@ -66,10 +66,10 @@ Pharo now contains an interpreter for the RB AST that is complete and he able to
 
 ##Compiler
 
-The Opal Compiler is now the default compiler. Opal is a new compiler frameworks using visitor and Intermediate representation to support optimisations.  Opal is a stagged compiler. It is based on a real visitor and Intermediate representation. A massive amount of improvements have be done to make Opal working smoothly. Opal is a key infrastructure aspect for the next generation. The compiler API has been clean up and simplified. Simplifying all the old methods with large number of arguments has been done.  Support for blockclosures have been fully revisited and improved. Many changes have been made to also clarify the API. Opal is now able to parse totally Pharo. Special thanks for Marcus Denker and Clément Béra. The following paper describes it http://rmod.lille.inria.fr/archives/papers/Bera13a-OpalIWST.pdf
+The Opal Compiler is now the default compiler. Opal is a new compiler framework using visitors and a bytecode level intermediate representation. A massive amount of improvements have been done to make Opal working smoothly and allowing Opal to be a key infrastructure for the next generation of Pharo. The compiler API has been cleaned and simplified. Special thanks for Marcus Denker and Clément Béra. The following short paper has a detailed description: http://rmod.lille.inria.fr/archives/papers/Bera13a-OpalIWST.pdf
 
 Opal is based on the RB AST.
-* It uses RB Parser.
+* It uses the RB Parser.
 * It is based on an IR backend for byte-code generation and manipulation.
 * Opal supports a mapping for debugger uses AST (pc->AST and AST->highlighting).
 * This version offers a radical cleanup of compiler related API.
@@ -77,13 +77,14 @@ Opal is based on the RB AST.
 
 ##Debugger
 
-There is a new Debugger: it has a real UI-independent model. The new debugger as a first Spec based UI and we can expect in the future to see more advanced features. 
+Pharo3 includes a new Debugger: it has a real UI-independent model 
+The new debugger as a first Spec based UI and we can expect in the future to see more advanced features. 
 
-The old debugger was mixing the view and the model. It was complex and hard to understand and extend. Andrei Chis from the SCG (Bern) implemented a complete clean and nice new debugger model that be independently scripted. On top of this model, a new UI similar to the old has been rewritten. Special thanks to Andrei Chis
+The old debugger was mixing the view and the model. It was complex and hard to understand and extend. Andrei Chis from SCG (University of Bern) implemented a complete clean new debugger model that can be scripted. On top of this model, a new UI similar to the old has been implemented. Special thanks to Andrei Chis
 
 # CommandLine
 
-The new commandline handling has been enhanced. 
+The commandline handling has been enhanced. 
 
 ```
 ./pharo Pharo.image URL --install 
@@ -103,7 +104,7 @@ Smalltalk os env asDictionary inspect
 #Graphics
 
 Athens a vector graphics canvas is now integrated to Pharo. In the future it will replace all the existing canvases. 
-* Athens will be the base for a new generation of a fully vector graphic IDE. Cairo is now supported by default on all platforms. A chapter is under construction. A tutorial and set of examples are available.
+* Athens will be the base for a new generation of a fully vector graphics IDE. Cairo is now supported by default on all platforms. A tutorial and set of examples are available, a book chapter is being written.
 * A new class Margin has been introduced to represent 1,2, or 4 number margins. It plays nicely with the widgets specification.
 
 ##Cleaning / Improving Morphic
