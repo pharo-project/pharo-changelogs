@@ -11,7 +11,7 @@ This release integrates a quite large (really!) number of fixes and enhancements
 * Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
 * As google is shutting down the API support of the Issue tracker, we moved to FogBugz. (Thank you, Fog Creek!)
 * Downloads have been moved from gforge to a dedicated server at http://files.pharo.org.
-* Better staged integration process on Jenkins and github thanks for Camillo Bruni for pushing this effort.
+* Better staged integration process on Jenkins and github.
 
 
 #Kernel
@@ -62,7 +62,7 @@ m do: [ :e |
 ```
 ## Full AST interpreter
 
-Pharo now contains an interpreter for the RB AST that is complete and he able to run all Kernel tests. It means that it covers the full exception and non-local return semantics of Pharo. This interpreter has been used to develop  test coverage tools. Special thanks to Camillo Bruni and Clément Béra.
+Pharo now contains an interpreter for the RB AST that is complete and he able to run all Kernel tests. It means that it covers the full exception and non-local return semantics of Pharo. This interpreter has been used to develop  test coverage tools. 
 
 ##Compiler
 
@@ -89,7 +89,7 @@ The new commandline handling has been enhanced.
 ./pharo Pharo.image URL --install 
 ```
 
-One does not need to give the configuration if the configuration name is canonical, e.g. has the same name as the repository. Special thanks to Camillo Bruni for pushing this. 
+One does not need to give the configuration if the configuration name is canonical, e.g. has the same name as the repository. 
 There is a full chapter in the deep into Pharo book http://www.deepintopharo.com
 
 
@@ -151,7 +151,7 @@ A new code importer has been extracted from the previous implementation.
 
 ##New class Builder
 
-The old class builder was an arcane and magical piece of code responsible for building classes and migrating instances. Thanks Martin Dias and Camillo Bruni for pushing this important effort. 
+The old class builder was an arcane and magical piece of code responsible for building classes and migrating instances. 
 
 ## Slots are meta objects representing instances
 
@@ -275,3 +275,8 @@ To name just a few examples:
 
 This and much more is easily installable with a few clicks right from the Configuration browser in the world menu. Many more Pharo 3.0 projects are available on repositories like Smalltalkhub.com, GitHub and others. 
 
+#Contributors
+We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the unvaluable contributions of our great community. In this version contributed directly: 
+Jean Baptiste Arnaud, Philippe Back, Clément Bera, Alexandre Bergel, Camillo Bruni, Sven Van Caekenberghe, Damien Cassou, Nicolas Cellier, Ben Coman, Gisela Decuzzi, Christophe Demarey, Sean DeNigris, Marcus Denker, Martin Dias, Stephane Ducasse, Stephan Eggermont, Luc Fabresse, Hilaire Fernandes, Tudor Girba, Thierry Goubier, Norbert Harlt, Nicolai Hess, Andre Hora, Pavel Krivanek, Jannik Laval, Max Leske, David Lewis, Esteban Lorenzano, Stefan Marr, Mariano Martinez Peck, Eliot Miranda, Nicolas Petton, Alain Plantec, Guillermo Polito, Damien Pollet, Benjamin Van Ryseghem, Camille Teruel, Frank Shearar, Igor Stasenko, Sebastian Tleye, Yuriy Tymchuk
+
+And many many more who contributed indirectly, by reporting bugs, participating in discussion threads, providing feedback, etc., etc., etc.
