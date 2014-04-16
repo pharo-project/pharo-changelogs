@@ -244,6 +244,7 @@ To name just a few examples:
 ##Web:
 
 * Seaside - the well know Smalltalk web framework
+* Pier - the Seaside based CMS
 * Bootstrap - Seaside add-on to to easily use the Twitter Bootstrap library
 * Iliad - for modern web applications
 
