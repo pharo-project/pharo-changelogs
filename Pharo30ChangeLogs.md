@@ -276,7 +276,9 @@ To name just a few examples:
 This and much more is easily installable with a few clicks right from the Configuration browser in the world menu. Many more Pharo 3.0 projects are available on repositories like Smalltalkhub.com, GitHub and others. 
 
 #Contributors
-We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the unvaluable contributions of our great community. In this version contributed directly: 
+We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the unvaluable contributions of our great community (yourself).  
+In this version contributed directly:  
+
 Jean Baptiste Arnaud, Philippe Back, Clément Bera, Alexandre Bergel, Camillo Bruni, Sven Van Caekenberghe, Damien Cassou, Nicolas Cellier, Ben Coman, Gisela Decuzzi, Christophe Demarey, Sean DeNigris, Marcus Denker, Martin Dias, Stephane Ducasse, Stephan Eggermont, Luc Fabresse, Hilaire Fernandes, Tudor Girba, Thierry Goubier, Norbert Harlt, Nicolai Hess, Andre Hora, Pavel Krivanek, Jannik Laval, Max Leske, David Lewis, Esteban Lorenzano, Stefan Marr, Mariano Martinez Peck, Eliot Miranda, Nicolas Petton, Alain Plantec, Guillermo Polito, Damien Pollet, Benjamin Van Ryseghem, Camille Teruel, Frank Shearar, Igor Stasenko, Sebastian Tleye, Yuriy Tymchuk
 
 And many many more who contributed indirectly, by reporting bugs, participating in discussion threads, providing feedback, etc., etc., etc.
