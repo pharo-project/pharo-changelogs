@@ -151,20 +151,13 @@ New tools have been developed. One of the idea is to deprecate the old tools and
 
 #Low-Level Meta Model
 
-##New Code Importer
-
+* New Code Importer
 A new code importer has been extracted from the previous implementation. 
-
-##New class Builder
-
+* New class Builder
 The old class builder was an arcane and magical piece of code responsible for building classes and migrating instances. 
-
-## Slots are meta objects representing instances
-
+* Slots are meta objects representing instances
 Similarly to classes being first class objects, slots are first class instance variables. Slots are used by the new class builder and in the future slots will be able to drive Opal to generate efficient code to implement different semantics. To know more about slots read the OOPSLA paper of Verwaest, Bruni et al. http://rmod.lille.inria.fr/archives/papers/Verw11a-OOSPLA11-FlexibleObjectLayouts.pdf
-
-## Cleaning Trait implementation
-
+* Cleaning Trait implementation
 A first cleaning of the trait implementation has been done. Now classes and traits are a bit more polymorphic.
 
 #Enhancements of NativeBoost
