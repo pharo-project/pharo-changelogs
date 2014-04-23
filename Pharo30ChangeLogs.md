@@ -1,6 +1,6 @@
 #Pharo 3.0 
 
-A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 30 a great release.  Pharo 3.0 saw a large set of changes, infrastructural improvements and others: more than 2300 tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, ...) can be built.
+A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 3.0 a great release. Pharo 3.0 saw a large set of changes, infrastructural improvements and others: more than 2300 tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, ...) can be built.  
 Remember that Pharo is your open-source system!
 
 In addition, many changes have been made to support the generation of a more modular system. 
@@ -13,10 +13,9 @@ The Fosdem14 presentation has a short overview of what is new in Pharo3:
 # Infrastructure
 
 * Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
-* As google is shutting down the API support of the Issue tracker, we moved to FogBugz. (Thank you, Fog Creek!) https://pharo.fogbugz.com
+* As google has shutdown the API support of the Issue Tracker, we moved to FogBugz. (Thank you, Fog Creek!) https://pharo.fogbugz.com
 * Downloads have been moved from gforge to a dedicated server at http://files.pharo.org.
 * Better staged integration process using Jenkins and github. https://pharo.fogbugz.com
-
 
 #Kernel
 
@@ -132,7 +131,7 @@ Spec, the new interface building framework, has been improved.
 
 New tools have been developed. One of the idea is to deprecate the old tools and to write the new ones in Spec so that we can reuse the logic.
 * New ChangeSorter. A new changeSorter has been developed by B. Van Ryseghem in Spec.
-* New Inspector. Implementation based on Spec and the fast NewList. It has been developed by C. Bera and C. Bruni.
+* New Inspector. Implementation based on Spec and the fast NewList.
 * Suggestions. Pharo 30 support AST-based navigation and menu selection. In the Code editor, try option-t on with the cursor in the code, it will open a list of the operation you can perform on the selected code.  Now it is possible to get the only applicable refactorings or senders/implementors based on the AST node on which the cursor is. Thanks Gisela Decuzzi for this great work. 
 * Kommiter. By default all the changes you did in your image get published, Komitter allows one to cherry pick the changes that should be published.  Kommitter has been developed by B. Van Ryseghem in Spec.
 * Versionner. Versionner helps to generate and manage Metacello configurations. It has been developed by C. Demarey.
@@ -141,7 +140,6 @@ New tools have been developed. One of the idea is to deprecate the old tools and
 * Nautilus has been enhanced to simplify some switching and to take advantage of the package tags. Packages can be filtered to improve visibility.
 * Enhanced Finder. The finder is a great tool to help finding information. When using the example based find, it has been improved to show the actual classes that effectively matched the examples.
 * Enhanced Critics Browser. The critics browser has been cleaned and enhanced.
-
 
 ##Removal of old tools
 
@@ -152,13 +150,13 @@ New tools have been developed. One of the idea is to deprecate the old tools and
 #Low-Level Meta Model
 
 * New Code Importer
-A new code importer has been extracted from the previous implementation. 
+  A new code importer has been extracted from the previous implementation.  
 * New class Builder
-The old class builder was an arcane and magical piece of code responsible for building classes and migrating instances. 
+  The old class builder was an arcane and magical piece of code responsible for building classes and migrating instances. 
 * Slots are meta objects representing instances
-Similarly to classes being first class objects, slots are first class instance variables. Slots are used by the new class builder and in the future slots will be able to drive Opal to generate efficient code to implement different semantics. To know more about slots read the OOPSLA paper of Verwaest, Bruni et al. http://rmod.lille.inria.fr/archives/papers/Verw11a-OOSPLA11-FlexibleObjectLayouts.pdf
+  Similarly to classes being first class objects, slots are first class instance variables. Slots are used by the new class builder and in the future slots will be able to drive Opal to generate efficient code to implement different semantics. To know more about slots read the OOPSLA paper of Verwaest, Bruni et al. http://rmod.lille.inria.fr/archives/papers/Verw11a-OOSPLA11-FlexibleObjectLayouts.pdf
 * Cleaning Trait implementation
-A first cleaning of the trait implementation has been done. Now classes and traits are a bit more polymorphic.
+  A first cleaning of the trait implementation has been done. Now classes and traits are a bit more polymorphic.
 
 #Enhancements of NativeBoost
 
@@ -185,7 +183,6 @@ RPackage went from one RPackageSet / multiple RPackages for one Monticello packa
 * In the future version all the shortcuts will be defined using keymapping. 
 * There is a chapter available in the new forthcoming book: https://ci.inria.fr/pharo-contribution/job/PharoForTheEnterprise/lastSuccessfulBuild/artifact/.
 
-
 ###CharacterScanner improvements
 
 The characterScanner has been speed up and cleaned. Special thanks to Tim Rowledge and Nicolas Cellier for their hard work.
@@ -198,12 +195,10 @@ Sound plugins on linux are now recompiled and part of the building process.
 
 @@Esteban@@
 
-
 #Networking
 
 * New version of Zinc and Zodiac. Sven van Caekenberghe continued to systematically improve the HTTP client/server framework. 
 * Socket leaking external semaphores have been fixed.
-
 
 #Cleanups
 
@@ -269,9 +264,16 @@ To name just a few examples:
 
 ##Databases:
 
-* OpenDBXDriver - for accessing relational databases
+###Tools
+* DBXTalk/Glorp - provides Object-Relational mapping for several database drivers (PostgreSQL, OpenDBXDriver). 
+* Voyage - provides Object-Document mapping for MongoDB. 
+
+###Drivers
+* OpenDBXDriver - provides access relational databases (MySQL, Oracle, MSSQL, PostgreSQL)
 * PunQLite - provides access to the embeddable UnQlite NoSQL database engine
 * SQLite3 - provides access the embeddable SQLite3 relational database engine
+* MongoTalk - provides access to Mongo databases. 
+* Prhiak - provides access to Riak databases.
 
 ##For compatibility:
 
