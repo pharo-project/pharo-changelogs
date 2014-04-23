@@ -16,7 +16,8 @@ The Fosdem14 presentation has a short overview of what is new in Pharo3:
 * We made a theme cleanup, keeping just the ones that we can maintain properly. 
 
 #Infrastructure
-
+* Zeroconf scripts updated. 
+* Pharo ppa for ubuntu systems now available.  
 * Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
 * As google has shutdown the API support of the Issue Tracker, we moved to FogBugz. (Thank you, Fog Creek!) https://pharo.fogbugz.com
 * Downloads have been moved from gforge to a dedicated server at http://files.pharo.org.
