@@ -10,7 +10,12 @@ The Fosdem14 presentation has a short overview of what is new in Pharo3:
 * Video: https://www.youtube.com/watch?v=son_bhZ93ec 
 * Slides: http://www.slideshare.net/MarcusDenker/pharo3-at-fosdem
 
-# Infrastructure
+#User interface 
+* Glamorous Theme (renamed into Pharo3 Theme to avoid collisions) is not the default theme. 
+* A new eclipse-based icon set is not the default icon set.
+* We made a theme cleanup, keeping just the ones that we can maintain properly. 
+
+#Infrastructure
 
 * Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
 * As google has shutdown the API support of the Issue Tracker, we moved to FogBugz. (Thank you, Fog Creek!) https://pharo.fogbugz.com
@@ -189,11 +194,12 @@ The characterScanner has been speed up and cleaned. Special thanks to Tim Rowled
 
 #VM
 
-##Sound
-
-Sound plugins on linux are now recompiled and part of the building process.
-
-@@Esteban@@
+* Created Pharo VM flavours, branded and packaged for Pharo needs.  
+* Sound plugin are now included in the VM. There are still problems with the ALSA plugin in linux, but we going to fix them soon. 
+* Pharo VM for OSX now compiles over CLANG. 
+* Fixed an important bug who prevented the PharoS VM to run properly on OSX.
+* Included several fixes ported from the vanilla CogVM. 
+* iPharoS VM (for iOS) now can be built using the regulat CMakeMaker process. 
 
 #Networking
 
