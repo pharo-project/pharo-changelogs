@@ -1,10 +1,10 @@
 #Pharo 3.0 
 
-A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 3.0 a great release. Pharo 3.0 saw a large set of changes, infrastructural improvements and others: more than 2300 tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, ...) can be built.  
+A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 3.0 a great release. Pharo 3.0 saw a large set of changes, infrastructural improvements and others: more than 2350 tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems (graphics, UI, ...) can be built.  
 Remember that Pharo is your open-source system!
 
 In addition, many changes have been made to support the generation of a more modular system. 
-This release integrates a quite large (really!) number of fixes and enhancements you can find @@Here list of bug in pdf@@. Ideed, we closed 2331 tickets! Thank you all for your contribution.
+This release integrates a quite large (really!) number of fixes and enhancements you can find at pharo.fogbugz.com (you will need an account there, sorry). Ideed, we closed 2331 tickets! Thank you all for your contribution.
 
 The Fosdem14 presentation has a short overview of what is new in Pharo3: 
 * Video: https://www.youtube.com/watch?v=son_bhZ93ec 
