@@ -12,40 +12,74 @@ The Fosdem14 presentation has a short overview of what is new in Pharo3:
 * Slides: http://www.slideshare.net/MarcusDenker/pharo3-at-fosdem
 ]
 
-#User interface 
-* Dark theme now available
+New stuff
+=========
 
-#Infrastructure
-* Zeroconf scripts updated. 
-* Pharo ppa for ubuntu systems now available.  
-* Instead of the one .app directory, we now have three zip files for the three architectures: mac, win and linux.
-* As google has shutdown the API support of the Issue Tracker, we moved to FogBugz. (Thank you, Fog Creek!) https://pharo.fogbugz.com
-* Downloads have been moved from gforge to a dedicated server at http://files.pharo.org.
-* Better staged integration process using Jenkins and github. https://pharo.fogbugz.com
+- GTools 
+	- Playground
+	- Inspector
+	- Spotter
+- Slots
+- Reflectivity
+- Dark theme, 
+- ShoreLine reporter
+- TxModel, a modern text model who works with Athens (Preview)
+- OSWindow, a new way to handle windows and input events (Preview)
+- Glamour, a mature declarative browser builder. 
 
-#Kernel
+Updated stuff
+=============
 
-## Slots
+- Zinc [EXPLANATION]
+- Fuel [EXPLANATION]
+- Versionner [EXPLANATION]
 
-## Reflection enhancements
+Important changes
+=================
 
-##Compiler
+User interface
+--------------
+- FreeType fonts now default (Source Sans Pro and Source Code Pro)
+- Enhances to Nautilus Refactorings 
+- Enhances to Nautilus to detect: examples, scripts, initializations
+- Enhanced Monticello GUI (including status icons)
 
-##Debugger
+Athens
+------
+- enhanced Morph drawing with Athens (almost all widgets now can be rendered)
+- more examples
 
-#Graphics
+System
+------
+- Enhanced Collection hierarchy vocabulary
+- Enhanced String vocabulary
+- Fixed and important bug in Delay
+- TimeStamp class replaced with DateAndTime
+- ContextPart and MethodContext classes replaced with Context
+- #on:sent:to: Announcer message replaced with #when:send:to:
 
-##Morphic now can use Athens
-[COMPLETE]
+Compiler
+--------
+- OpalDecompiler
+(lots of things... Marcus?)
 
-#Tools
-We are evolving all the tool set for Pharo with the inclusion of the new GTools!
-[COMPLETE]
+VM
+--- 
+- Now running on Raspbian
+- Added out-of-the-box: libgit2, libssh2, libsdl2
 
-# Previews
+Cleanups
+========
 
-* TxModel
-* OSWindow
+- Lots of Morphic cleanups
+- Lots of Spec cleanups
+
+Removals
+========
+
+- PackageInfo
+- ObjectExplorer
+- Spotlight
 
 #External projects and packages
 
@@ -62,8 +96,6 @@ To name just a few examples:
 * Units - to deal with units
 * DBPedia - to access structured content from DBPedia, a Wikipedia project
 * Moose - platform for software and data analysis
-* GToolkit - Pharo development tools 
-* Glamour - data browsing engine
 * CodeCity - 3D visualization engine
 * Roassal - 2D visualization engine
 * GraphET - charting engine
