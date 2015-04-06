@@ -65,8 +65,10 @@ Compiler
 
 VM
 --- 
-- Now running on Raspbian
+- Now can be compiled on Raspbian
+- Now can be compiled on FreeBSD
 - Added out-of-the-box: libgit2, libssh2, libsdl2
+- several small fixes
 
 Cleanups
 ========
