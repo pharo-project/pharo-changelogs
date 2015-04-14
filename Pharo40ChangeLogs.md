@@ -21,12 +21,18 @@ New stuff
 - TxModel, a modern text model who works with Athens (Preview)
 - OSWindow, a new way to handle windows and input events (Preview)
 - Glamour, a mature declarative browser builder
-- Dark theme.
+- Dark theme
 
 Updated stuff
 =============
 
 - Zinc
+	- new object logging
+	- improvements to character encoding/decoding
+	- improvements to URL parsing
+	- bug fixes, simplifications, comments
+- Zodiac
+	- bug fixes
 - Fuel
 - Versionner
 
