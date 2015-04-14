@@ -19,13 +19,12 @@ New stuff
 	- Playground
 	- Inspector
 	- Spotter
-- Slots
-- Reflectivity
-- Dark theme, 
-- ShoreLine reporter
+- Slots model instance variables as first class enities and enable meta-programming on this level.
+- ShoreLine reporter: submit information automatically when errors happen
 - TxModel, a modern text model who works with Athens (Preview)
 - OSWindow, a new way to handle windows and input events (Preview)
-- Glamour, a mature declarative browser builder. 
+- Glamour, a mature declarative browser builder
+- Dark theme.
 
 Updated stuff
 =============
@@ -60,8 +59,9 @@ System
 
 Compiler
 --------
+- Many bugs are fixed
+- Backends for new bytecode sets
 - OpalDecompiler
-(lots of things... Marcus?)
 
 VM
 --- 
