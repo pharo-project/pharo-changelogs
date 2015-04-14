@@ -6,11 +6,8 @@ Remember that Pharo is your open-source system!
 In addition, many changes have been made to support the generation of a more modular system. 
 This release integrates a quite large (really!) number of fixes and enhancements you can find at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). Ideed, we closed [COMPLETE] tickets! Thank you all for your contribution.
 
-[ REPLACE THIS WITH MARCUS NEW PRESENTATION
-The Fosdem14 presentation has a short overview of what is new in Pharo3: 
-* Video: https://www.youtube.com/watch?v=son_bhZ93ec 
-* Slides: http://www.slideshare.net/MarcusDenker/pharo3-at-fosdem
-]
+The Fosdem15 presentation has a short overview of what is new in Pharo4: 
+* Slides: http://www.slideshare.net/MarcusDenker/2015-fosdempharo
 
 New stuff
 =========
