@@ -85,7 +85,7 @@ Removals
 
 #External projects and packages
 
-Many existing add-on projects already moved their code to Pharo 3.0 and many new shiny projects already appeared.
+Many existing add-on projects already moved their code to Pharo 4.0 and many new shiny projects already appeared.
 To name just a few examples:
 
 ##Frameworks:
@@ -142,7 +142,7 @@ To name just a few examples:
 * FFI - the foreign function interface that later got replaced by NativeBoost 
 * OldAlien - the Alien interface for external bindings
 
-This and much more is easily installable with a few clicks right from the Configuration browser in the world menu. Many more Pharo 3.0 projects are available on repositories like Smalltalkhub.com, GitHub and others. 
+This and much more is easily installable with a few clicks right from the Configuration browser in the world menu. Many more Pharo 4.0 projects are available on repositories like Smalltalkhub.com, GitHub and others. 
 
 #Contributors
 We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the unvaluable contributions of our great community (yourself).  
