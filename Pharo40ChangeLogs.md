@@ -26,9 +26,9 @@ New stuff
 Updated stuff
 =============
 
-- Zinc [EXPLANATION]
-- Fuel [EXPLANATION]
-- Versionner [EXPLANATION]
+- Zinc
+- Fuel
+- Versionner
 
 Important changes
 =================
@@ -76,9 +76,9 @@ Cleanups
 Removals
 ========
 
-- PackageInfo
-- ObjectExplorer
-- Spotlight
+- PackageInfo (replaced by RPackage)
+- ObjectExplorer (replaced by GTInspector)
+- Spotlight (replaced by GTSpotter)
 
 #External projects and packages
 
@@ -113,7 +113,6 @@ To name just a few examples:
 
 ##Tools:
 
-* ScriptManager - to manage scripts 
 * Pomodoro - a pomodoro timer
 * TilingWindowManager - to organize your screen
 
