@@ -55,7 +55,7 @@ System
 ------
 - Enhanced Collection hierarchy vocabulary
 - Enhanced String vocabulary
-- Fixed and important bug in Delay
+- Fixed an important bug in Delay and factored out DelayScheduling
 - TimeStamp class replaced with DateAndTime
 - ContextPart and MethodContext classes replaced with Context
 - #on:sent:to: Announcer message replaced with #when:send:to:
