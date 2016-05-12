@@ -14,8 +14,8 @@ New Stuff
 
 All Issues
 ---------
-Many changes have been made to support the generation of a more modular system.  This release integrates 
-a quite large number of fixes and enhancements more than 2450! List is so big that we cannot put it here 
+Many changes have been made to support the generation of a more modular system. This release integrates 
+a quite large number of fixes and enhancements: more than 2450! List is so big that we cannot put it here 
 (it would have any sense), but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). 
 
 Thank you all for your contribution.
