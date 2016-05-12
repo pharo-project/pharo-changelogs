@@ -3,10 +3,7 @@
 A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 5.0 a great release. Pharo 5.0 saw a large set of changes, infrastructural improvements and others: more than [NUMBER] tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems can be built.  
 Remember that Pharo is your open-source system!
 
-In addition, many changes have been made to support the generation of a more modular system. 
-This release integrates a quite large number of fixes and enhancements you can find at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). Thank you all for your contribution.
-
-New stuff
+New Stuff
 ---------
 
 - The PharoVM is now based on Spur, the new memory management, and it brings with it a 35% speedup!
@@ -14,6 +11,14 @@ New stuff
 - The Glamorous Toolkit now includes the GTDebugger to offer a moldable infrastructure that allows the developer to customize the debugger deeply.
 - The underlying Reflectivity mechanism has reached maturity with multiple pieces coming together to empower developers to instrument their own systems. For example, we now have breakpoints implemented as just a simple extension of this mechanism.
 - QualityAssistant is now part of the image to provide live feedback during development.
+
+All Issues
+---------
+Many changes have been made to support the generation of a more modular system.  This release integrates 
+a quite large number of fixes and enhancements more than 2450! List is so big that we cannot put it here 
+(it would have any sense), but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). 
+
+Thank you all for your contribution.
 
 #Contributors
 We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the invaluable contributions of our great community (yourself).  More than seventy people directly contributed to Pharo 5.0: 
