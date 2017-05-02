@@ -43,8 +43,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - Introduction of objects immutability
 - Introduction of `FullBlockClosure` which will help for future evolutions of Pharo 
 - `Ephemerons` support, introduce Ephemeron Registry
-- `Sista Encoder`
-- Support of alternative bytecode sets
+- Support of alternative bytecode sets and introduction of `Sista Encoder`, the encoder for the SistaV1 bytecode set. This will be the base of future Pharo's improvements 
 
 ### Reflectivity
 
