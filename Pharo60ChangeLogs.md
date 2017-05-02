@@ -26,14 +26,18 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - Inspector, Debugger and other tools are now based on FastTable for better performance
 - GToolkit, GTools update
 - Quality Assistant improvements
-- more reliable interruption by `CMD+.`
+- More reliable interruption by `CMD+.`
 - Playground variables are visible from debugger
 - Debugger temp names mapping is fixed
 - "close all debuggers" in taskbar context menu
 - "Run To Here" in GTDebugger
-- filtering and critiques in MessageBrowser
-- split large variable entries in the Variables menu
-- improved Dependency Analyzer
+- Filtering and critiques in MessageBrowser
+- Improved Dependency Analyzer
+- Nautilus 
+- - Split large variable entries in the Variables menu
+- - Deprecated methods are shown with strikethrough emphasis
+- - Abstract classes are shown in italic with a slight color adjustment 
+
 
 ### VM related
 
@@ -59,6 +63,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 
 - Dark Theme improvements, better themes switching
 - support of two double quotes inside comments
+- StringMorph can now display emphasis underlined (2r100) and strikethrough (2r10000)
 - standalone Morphic worlds in separate windows
 - fix of several memory leaks
 - improve working directory structure (introduce pharo-local)
@@ -81,6 +86,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - unify Dictionary APIs
 - package manifests improvements
 - improve RadioButton Group
+- faster source code fetching from .changes&.sources
 
 ### Cleanups
 
@@ -90,8 +96,9 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - turn of catalog search in Spotter by default
 - remove Chroma-CubeHelix, TxWorkspace
 - rename `Pragma>>#selector` to `Pragma>>#methodSelector`
-- improve icons management (`#iconNmaed:` instead of relying on DNU)
+- improve icons management (`#iconNamed:` instead of relying on DNU)
 - limit use of `#asClass`
+- Tab, TabBar, TabManager, and LockableTab renamed with a Morph postfix
 
 ### Unit testing
 
