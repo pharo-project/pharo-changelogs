@@ -1,6 +1,8 @@
 # Pharo 6.0 
 
-A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 6.0 a great release. Pharo 6.0 saw a large set of changes, infrastructural improvements and others: more than [NUMBER] tickets got closed. Our actions are targeted at building a sound infrastructure on top of which new generation of systems can be built.  
+A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 6.0 a great release. 
+Pharo 6.0 saw a large set of changes, infrastructural improvements and others: more than 1400 tickets got closed. 
+Our actions are targeted at building a sound infrastructure on top of which new generation of systems can be built.  
 Remember that Pharo is your open-source system!
 
 ## New Stuff
