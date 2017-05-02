@@ -17,13 +17,13 @@ Remember that Pharo is your open-source system!
 
 ## All Issues
 
-In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant are:
+In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant are:
 
 ### Tools
 
 - Epicea - code changes manager
 - Iceberg - Git repositories manager
-- Inspector, Debugger and ohter tools are now based on FastTable for better performance
+- Inspector, Debugger and other tools are now based on FastTable for better performance
 - GToolkit, GTools update
 - Quality Assistant improvements
 - more reliable interruption by `CMD+.`
@@ -33,7 +33,7 @@ In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant 
 - "Run To Here" in GTDebugger
 - filtering and critiques in MessageBrowser
 - split large variable entries in the Variables menu
-- imrpoved Dependency Analyzer
+- improved Dependency Analyzer
 
 ### VM related
 
@@ -61,7 +61,7 @@ In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant 
 - support of two double quotes inside comments
 - standalone Morphic worlds in separate windows
 - fix of several memory leaks
-- improve working directory directory structure (introduce pharo-local)
+- improve working directory structure (introduce pharo-local)
 - better autocategorisation of method
 - FuzzyMatcher for approximate string matching
 - Glamour integration in Spec
@@ -76,13 +76,13 @@ In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant 
 - Fuel improvements
 - enable `<example>` methods to be easily executed
 - support for `<sampleInstance>`
-- new class and methods API for tags as replacemnt for categories and protocols
+- new class and methods API for tags as replacement for categories and protocols
 - `TabMorph` improvements
 - unify Dictionary APIs
 - package manifests improvements
 - improve RadioButton Group
 
-### Clenaups
+### Cleanups
 
 - `Object>>#name` deprecation
 - better system modularization
@@ -103,7 +103,7 @@ In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant 
 
 ### Network
 
-- suport Server Name Indication (SNI) in Zodiac/SSLPlugin
+- support Server Name Indication (SNI) in Zodiac/SSLPlugin
 - Zinc/Zodiac update
 
 The complete list of fixed issues is too big to be placed here, but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). 
