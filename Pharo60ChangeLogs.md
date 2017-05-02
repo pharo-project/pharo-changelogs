@@ -38,7 +38,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 ### VM related
 
 - 64-bits support
-- improve host platforms management (32-bit/64-bit), 
+- improve host platforms management (32-bit/64-bit)
 - improved UnifiedFFI
 - introduction of objects immutability
 - introduction of `FullBlockClosure`
@@ -66,7 +66,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - FuzzyMatcher for approximate string matching
 - Glamour integration in Spec
 - renaming (`CMD+R`) in Nautilus supports more AST nodes
-- `anObject asMethodConst` to cache expressions dynamically.
+- `anObject asMethodConst` to cache expressions dynamically
 - `GlobalIdentifier` for computer identification
 - `NeoUUIDGenerator` for UUID generation
 - STON was improved and is now used by Monticello FileTree
@@ -97,7 +97,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 
 - `RecursionStopper`
 - new process specific variable `CurrentExecutionEnvironment` with values: `DefaultExecutionEnvironment` by default and `TestExecutionEnvironment` during test run
-- SUnit improvements: time limit for tests, preventing "forked debuggers".
+- SUnit improvements: time limit for tests, preventing "forked debuggers"
 - new assert extension to compare floats by closeTo:
 - more class comments and documentation
 
