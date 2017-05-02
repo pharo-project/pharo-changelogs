@@ -26,7 +26,7 @@ In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant 
 - Inspector, Debugger and ohter tools are now based on FastTable for better performance
 - GToolkit, GTools update
 - Quality Assistant improvements
-- more reliable interruption by CMD+.
+- more reliable interruption by `CMD+.`
 - Playground variables are visible from debugger
 - Debugger temp names mapping is fixed
 - "close all debuggers" in taskbar context menu
@@ -41,7 +41,7 @@ In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant 
 - improve host platforms management (32-bit/64-bit), 
 - improved UnifiedFFI
 - introduction of objects immutability
-- introduction of FullBlockClosure
+- introduction of `FullBlockClosure`
 - Ephemerons support, introduce Ephemeron Registry
 - Sista Encoder
 - support of alternative bytecode sets
@@ -65,38 +65,38 @@ In Pharo 6 over 1400 fixes and enhancemens was integrated. The most significant 
 - better autocategorisation of method
 - FuzzyMatcher for approximate string matching
 - Glamour integration in Spec
-- renaming (CMD+R) in Nautilus supports more AST nodes
-- anObject asMethodConst to cache expressions dynamically.
-- GlobalIdentifier for computer identification
-- NeoUUIDGenerator for UUID generation
+- renaming (`CMD+R`) in Nautilus supports more AST nodes
+- `anObject asMethodConst` to cache expressions dynamically.
+- `GlobalIdentifier` for computer identification
+- `NeoUUIDGenerator` for UUID generation
 - STON was improved and is now used by Monticello FileTree
 - storing of suspended announcements 
-- improved newAnonymousSubclass
+- improved `newAnonymousSubclass`
 - inheritable process specific variables
 - Fuel improvements
-- enable <example> methods to be easily executed
-- support for <sampleInstance>
+- enable `<example>` methods to be easily executed
+- support for `<sampleInstance>`
 - new class and methods API for tags as replacemnt for categories and protocols
-- TabMorph improvements
+- `TabMorph` improvements
 - unify Dictionary APIs
 - package manifests improvements
 - improve RadioButton Group
 
 ### Clenaups
 
-- Object>>name deprecation
+- `Object>>#name` deprecation
 - better system modularization
 - ability of the system to be fully bootstrapped from source codes
 - turn of catalog search in Spotter by default
 - remove Chroma-CubeHelix, TxWorkspace
-- rename #Pragma>>#selector to Pragma>>#methodSelector
-- improve icons management (#iconNmaed: instead of relying on DNU)
-- limit use of #asClass
+- rename `Pragma>>#selector` to `Pragma>>#methodSelector`
+- improve icons management (`#iconNmaed:` instead of relying on DNU)
+- limit use of `#asClass`
 
 ### Unit testing
 
-- RecursionStopper
-- new process specific variable CurrentExecutionEnvironment with values: DefaultExecutionEnvironment by default and TestExecutionEnvironment during test run
+- `RecursionStopper`
+- new process specific variable `CurrentExecutionEnvironment` with values: `DefaultExecutionEnvironment` by default and `TestExecutionEnvironment` during test run
 - SUnit improvements: time limit for tests, preventing "forked debuggers".
 - new assert extension to compare floats by closeTo:
 - more class comments and documentation
