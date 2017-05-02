@@ -2,18 +2,18 @@
 
 A large, international community of developers worked hard for several months to iron out all problems and to make Pharo 6.0 a great release. 
 Pharo 6.0 saw a large set of changes, infrastructural improvements and others: more than 1400 tickets got closed. 
-Our actions are targeted at building a sound infrastructure on top of which new generation of systems can be built.  
+Our actions are targeted at building a sound infrastructure on top of which new generation of systems can be built.
 Remember that Pharo is your open-source system!
 
-## New Stuff
+## Overall
 
-- The PharoVM and image is now provided in 64-bit version and brings even better performance and stability
+- The PharoVM and image are now provided in 64-bit version in Linux and OSX and brings even better performance and stability
 - A new code changes management system named Epica for easier reviewing and recovering of your code
-- Integrated support for Git and easy-to-use tool for repositories and commits management named Iceberg (as preview for Pharo 7)
-- Unified foreign function interface (UFFI) for interfacing with the outside world was significantly improved
+- Integrated support for Git and easy-to-use tool for repositories and commits management named `Iceberg` (as preview for Pharo 7)
+- `Unified foreign function interface` (UFFI) for interfacing with the outside world was significantly improved
 - Introduction of objects immutability, alternative bytecode sets and block closures independent on outer context 
 - The whole Pharo is now able to be bootstrapped from source codes managed by Git and Pharo modularity was improved
-- The Dark Theme was improved and set as default color theme for Pharo
+- The `Dark Theme` was improved and set as default color theme for Pharo
 
 ## All Issues
 
@@ -21,90 +21,105 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 
 ### Tools
 
-- Epicea - code changes manager
-- Iceberg - Git repositories manager
-- Inspector, Debugger and other tools are now based on FastTable for better performance
-- GToolkit, GTools update
-- Quality Assistant improvements
-- more reliable interruption by `CMD+.`
-- Playground variables are visible from debugger
-- Debugger temp names mapping is fixed
-- "close all debuggers" in taskbar context menu
-- "Run To Here" in GTDebugger
-- filtering and critiques in MessageBrowser
-- split large variable entries in the Variables menu
-- improved Dependency Analyzer
+- `Epicea` - Code changes manager
+- `Iceberg` - Git repositories manager
+- `GTInspector`, `GTDebugger` and other tools are now based on FastTable to display list of items for better performances
+- `GToolkit`, `GTools` update
+- `Quality Assistant` improvements
+- More reliable interruption by `CMD+.`
+- `Playground` variables are now visible from debugger
+- `Debugger` temp names mapping is fixed
+- _Close all debuggers_ in taskbar context menu
+- _Run To Here_ in `GTDebugger`
+- Filtering of the results and critiques in the `MessageBrowser`
+- Split large variable entries in the Variables menu
+- Improvements of the `Dependency Analyzer`
 
 ### VM related
 
 - 64-bits support
-- improve host platforms management (32-bit/64-bit)
-- improved UnifiedFFI
-- introduction of objects immutability
-- introduction of `FullBlockClosure`
-- Ephemerons support, introduce Ephemeron Registry
-- Sista Encoder
-- support of alternative bytecode sets
+- Improve host platforms management (32-bit/64-bit)
+- Improved UnifiedFFI
+- Introduction of objects immutability
+- Introduction of `FullBlockClosure` which will help for future evolutions of Pharo 
+- `Ephemerons` support, introduce Ephemeron Registry
+- `Sista Encoder`
+- Support of alternative bytecode sets
 
 ### Reflectivity
 
-- Reflectivity improvements
-- haltOnce is active by default per method. It does not require global turning on and it is managed from source code area in Nautilus
-- execution counter for message nodes in source code area in Nautilus
-- API for metalinks on AST nodes
-- mirror primitives
-- inlined method const can be implemented by metalinks
+- General improvements
+- `haltOnce` is active by default per method. It does not require global turning on and it is managed from source code area in `Nautilus`
+- Execution counter for message nodes in source code area in `Nautilus`
+- API for `Metalinks` on AST nodes
+- Mirror primitives (Those are reflection primitives which access object state without messaging them, see `MirrorPrimitives` class)
+- Inlined method const can be implemented by `Metalinks`
 
 ### Other
 
-- Dark Theme improvements, better themes switching
-- support of two double quotes inside comments
-- standalone Morphic worlds in separate windows
-- fix of several memory leaks
-- improve working directory structure (introduce pharo-local)
-- better autocategorisation of method
-- FuzzyMatcher for approximate string matching
-- Glamour integration in Spec
-- renaming (`CMD+R`) in Nautilus supports more AST nodes
+- Dark Theme improvements
+- Improvement of theme change while windows are open
+- Support of two double quotes inside comments
+- Standalone Morphic worlds in separate windows
+- Fix of several memory leaks
+- Improve working directory structure (introduction of a `pharo-local` directory to includes Pharo directories as `package-cache`)
+- Better autocategorisation of methods
+- Introduction of a `FuzzyMatcher` for approximate string matching
+- `Glamour` integration in `Spec`
+- Renaming (`CMD+R`) in `Nautilus` supports more AST nodes
 - `anObject asMethodConst` to cache expressions dynamically
 - `GlobalIdentifier` for computer identification
-- `NeoUUIDGenerator` for UUID generation
-- STON was improved and is now used by Monticello FileTree
-- storing of suspended announcements 
-- improved `newAnonymousSubclass`
-- inheritable process specific variables
+- `NeoUUIDGenerator` replace the old UUIDGenerator
+- `STON` was improved and is now used by `Monticello FileTree`
+- Storing of suspended announcements 
+- Improved `newAnonymousSubclass`
+- Inheritable process specific variables
 - Fuel improvements
-- enable `<example>` methods to be easily executed
-- support for `<sampleInstance>`
-- new class and methods API for tags as replacement for categories and protocols
+- Enable `<example>` methods to be easily executed
+- Support for `<sampleInstance>`
+- New class and methods API for tags as replacement for categories and protocols
 - `TabMorph` improvements
-- unify Dictionary APIs
-- package manifests improvements
-- improve RadioButton Group
+- Unify `Dictionary` APIs
+- Package manifests improvements
+- Improve `RadioButton` groups
 
 ### Cleanups
 
-- `Object>>#name` deprecation
-- better system modularization
-- ability of the system to be fully bootstrapped from source codes
-- turn of catalog search in Spotter by default
-- remove Chroma-CubeHelix, TxWorkspace
-- rename `Pragma>>#selector` to `Pragma>>#methodSelector`
-- improve icons management (`#iconNmaed:` instead of relying on DNU)
-- limit use of `#asClass`
+- `Object>>#name` is now deprecated and will be removed in Pharo 7
+- Better system modularization
+- Ability of the system to be fully bootstrapped from source codes
+- Turn of catalog search in `Spotter` by default (This improve the stability of Pharo under poor internet connection)
+- Remove `Chroma-CubeHelix` and `TxWorkspace`
+- Rename `Pragma>>#selector` to `Pragma>>#methodSelector`
+- Improve icons management (`#iconNmaed:` was introduce to replace DNUs)
+- Limit use of `#asClass` in order to rely on an environment
+- It is now possible to give a rewrite rule when deprecating a method to automatically rewrite code with deprecation (`#deprecated:transformWith:`)
+- Deprecation of:
+    - `Object>>name`
+    - `ShortRunArray` class
+    - `Object>>confirm:orCancel:`
+    - `Object>>ifNil:ifNotNilDo:`
+    - `Object>>ifNotNilDo:`
+    - `Object>>ifNotNilDo:ifNil:`
+    - `Collection>>ifEmpty:ifNotEmptyDo:`
+    - `Collection>>ifNotEmptyDo:`
+    - `Collection>>ifNotEmptyDo:ifEmpty:`
+    - `SequenciableCollection>>copyLast:`
+    - `Integer>>asBytesDescription`
+    -  `Pragma>>method:`
 
-### Unit testing
+### Unit testing/Documentation
 
-- `RecursionStopper`
-- new process specific variable `CurrentExecutionEnvironment` with values: `DefaultExecutionEnvironment` by default and `TestExecutionEnvironment` during test run
+- `RecursionStopper`: It provides an easy way to check if we are in a recursion and execute code just once in a recursion.
+- New process specific variable `CurrentExecutionEnvironment` with values: `DefaultExecutionEnvironment` by default and `TestExecutionEnvironment` during test run
 - SUnit improvements: time limit for tests, preventing "forked debuggers"
-- new assert extension to compare floats by closeTo:
-- more class comments and documentation
+- New assert extension to compare floats by closeTo:
+- More class comments and documentation
 
 ### Network
 
-- support Server Name Indication (SNI) in Zodiac/SSLPlugin
-- Zinc/Zodiac update
+- Support `Server Name Indication` (SNI) in `Zodiac/SSLPlugin`
+- `Zinc/Zodiac` update
 
 The complete list of fixed issues is too big to be placed here, but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). 
 
