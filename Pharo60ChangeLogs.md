@@ -17,10 +17,9 @@ Remember that Pharo is your open-source system!
 
 ## All Issues
 
-In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant are:
-The complete list of fixed issues is too big to be placed here, but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). 
+In Pharo 6 over 1400 fixes and enhancements was integrated.
 
-Thank you all for your contribution.
+The complete list of fixed issues is too big to be placed here, but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (requires account). 
 
 ### Tools
 
@@ -36,7 +35,7 @@ Thank you all for your contribution.
 - _Run To Here_ in `GTDebugger`
 - Filtering of the results and critiques in the `MessageBrowser`
 - Improvements of the `Dependency Analyzer`
-- Nautilus 
+- `Nautilus` 
 - - Split large variable entries in the Variables menu
 - - Deprecated methods are shown with strikethrough emphasis
 - - Abstract classes are shown in italic with a slight color adjustment 
@@ -133,6 +132,8 @@ Thank you all for your contribution.
 
 We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the invaluable contributions of our great community (yourself).  
 More than seventy people directly contributed to Pharo 6.0: 
+
+Thank you all for your contribution.
 
 ### Contributors for Pharo 6.0
 
