@@ -94,19 +94,51 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - Limit use of `#asClass` in order to rely on an environment
 - It is now possible to give a rewrite rule when deprecating a method to automatically rewrite code with deprecation (`#deprecated:transformWith:`)
 - Deprecation of:
-    - `Object>>name`
-    - `ShortRunArray` class
-    - `Object>>confirm:orCancel:`
-    - `Object>>ifNil:ifNotNilDo:`
-    - `Object>>ifNotNilDo:`
-    - `Object>>ifNotNilDo:ifNil:`
-    - `Collection>>ifEmpty:ifNotEmptyDo:`
-    - `Collection>>ifNotEmptyDo:`
-    - `Collection>>ifNotEmptyDo:ifEmpty:`
-    - `SequenciableCollection>>copyLast:`
-    - `Integer>>asBytesDescription`
-    -  `Pragma>>method:`
-
+    - Object>>#name
+    - Object>>#confirm:orCancel:
+    - Object>>#ifNil:ifNotNilDo:
+    - Object>>#ifNotNilDo:
+    - Object>>#ifNotNilDo:ifNil:
+    - Behavior>>#layout
+    - Behavior>>#layout:
+    - BitBlt class>>#current
+    - BlockCannotReturn>>#deadHome
+    - BlockCannotReturn>>#deadHome:
+    - Collection>>#groupBy:having:
+    - Collection>>#ifEmpty:ifNotEmptyDo:
+    - Collection>>#ifNotEmptyDo:
+    - Collection>>#ifNotEmptyDo:ifEmpty:
+    - CompiledMethod>>#getSource
+    - DebugAction>>#keyText:
+    - DiskStore>>#basicCreationTime:
+    - DiskStore>>#basicModificationTime:
+    - DiskStore>>#basicSize:
+    - FilePluginPrims>>#size:
+    - FileSystem>>#creationTime:
+    - FileSystem>>#size:
+    - FileSystemStore>>#basicCreationTime:
+    - FileSystemStore>>#basicSize:
+    - FileSystemStore>>#creationTime:
+    - FileSystemStore>>#modificationTime:
+    - FileSystemStore>>#size:
+    - HashedCollection>>#someElement
+    - IconStyler>>#iconProvider
+    - Integer>>#asBytesDescription
+    - MIMEDocument>>#type
+    - MemoryStore>>#basicCreationTime:
+    - MemoryStore>>#basicModificationTime:
+    - MemoryStore>>#basicSize:
+    - Point>>#scaleTo:
+    - Pragma>>#method:
+    - Pragma>>#selector
+    - SequenceableCollection>>#copyLast:
+    - SmalltalkImage>>#evaluate:
+    - TBehavior>>#propertyValueAt:
+    - TBehavior>>#propertyValueAt:ifAbsent:
+    - TBehavior>>#propertyValueAt:put:
+    - TestResult>>#correctCount
+    - some other methods in externally managed packages (get complete list by `SystemNavigation default allMethods select: #isDeprecated`)
+    
 ### Unit testing/Documentation
 
 - `RecursionStopper`: It provides an easy way to check if we are in a recursion and execute code just once in a recursion.
