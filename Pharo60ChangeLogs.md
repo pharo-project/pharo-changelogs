@@ -11,6 +11,7 @@ Remember that Pharo is your open-source system!
 - A new code changes management system named Epica for easier reviewing and recovering of your code
 - Integrated support for Git and easy-to-use tool for repositories and commits management named `Iceberg` (as preview for Pharo 7)
 - `Unified foreign function interface` (UFFI) for interfacing with the outside world was significantly improved
+- The PharoVM is now part of OpenSmalltalk initiative
 - Introduction of objects immutability, alternative bytecode sets and block closures independent on outer context 
 - The whole Pharo is now able to be bootstrapped from source codes managed by Git and Pharo modularity was improved
 - The `Dark Theme` was improved and set as default color theme for Pharo
@@ -40,6 +41,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - 64-bits support
 - Improve host platforms management (32-bit/64-bit)
 - Improved UnifiedFFI
+- The PharoVM is now part of OpenSmalltalk initiative (https://github.com/OpenSmalltalk/opensmalltalk-vm)
 - Introduction of objects immutability
 - Introduction of `FullBlockClosure` which will help for future evolutions of Pharo 
 - `Ephemerons` support, introduce Ephemeron Registry
