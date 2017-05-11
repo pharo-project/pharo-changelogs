@@ -18,7 +18,9 @@ Remember that Pharo is your open-source system!
 
 ## All Issues
 
-In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant are:
+In Pharo 6 over 1400 fixes and enhancements was integrated.
+
+The complete list of fixed issues is too big to be placed here, but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (requires account). 
 
 ### Tools
 
@@ -33,8 +35,11 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - _Close all debuggers_ in taskbar context menu
 - _Run To Here_ in `GTDebugger`
 - Filtering of the results and critiques in the `MessageBrowser`
-- Split large variable entries in the Variables menu
 - Improvements of the `Dependency Analyzer`
+- `Nautilus` 
+- - Split large variable entries in the Variables menu
+- - Deprecated methods are shown with strikethrough emphasis
+- - Abstract classes are shown in italic with a slight color adjustment 
 
 ### VM related
 
@@ -62,6 +67,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - Improvement of theme change while windows are open
 - Support of two double quotes inside comments
 - Standalone Morphic worlds in separate windows
+- StringMorph can now display emphasis underlined (2r100) and strikethrough (2r10000)
 - Fix of several memory leaks
 - Improve working directory structure (introduction of a `pharo-local` directory to includes Pharo directories as `package-cache`)
 - Better autocategorisation of methods
@@ -76,10 +82,11 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - Improved `newAnonymousSubclass`
 - Inheritable process specific variables
 - Fuel improvements
-- Enable `<example>` methods to be easily executed
+- Enable methods using `<example>` to be easily executed
 - Support for `<sampleInstance>`
 - New class and methods API for tags as replacement for categories and protocols
 - `TabMorph` improvements
+- faster source code fetching from .changes & .sources
 - Unify `Dictionary` APIs
 - Package manifests improvements
 - Improve `RadioButton` groups
@@ -87,6 +94,7 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 ### Cleanups
 
 - `Object>>#name` is now deprecated and will be removed in Pharo 7
+- Tab, TabBar, TabManager, and LockableTab renamed with a Morph postfix
 - Better system modularization
 - Ability of the system to be fully bootstrapped from source codes
 - Turn of catalog search in `Spotter` by default (This improve the stability of Pharo under poor internet connection)
@@ -154,14 +162,12 @@ In Pharo 6 over 1400 fixes and enhancements was integrated. The most significant
 - Support `Server Name Indication` (SNI) in `Zodiac/SSLPlugin`
 - `Zinc/Zodiac` update
 
-The complete list of fixed issues is too big to be placed here, but you can review all issues at [FogBugz issue tracker](https://pharo.fogbugz.com) (you will need an account there, sorry). 
-
-Thank you all for your contribution.
-
 ## Contributors
 
 We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the invaluable contributions of our great community (yourself).  
 More than seventy people directly contributed to Pharo 6.0: 
+
+Thank you all for your contribution.
 
 ### Contributors for Pharo 6.0
 
