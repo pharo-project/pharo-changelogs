@@ -7,7 +7,7 @@ Remember that Pharo is your open-source system!
 
 ## Highlights
 
-- The PharoVM and image are also provided in 64-bit version in Linux and OSX and bring even better performance and stability
+- Pharo is now provided in 64-bit version in Linux and OSX and bring even better performance and stability (beware, this is a new technology and a small amount of tests is still failing)
 - A new code changes management system named Epicea for easier reviewing and recovering of your code easily
 - Integrated support for Git through an easy-to-use tool for repositories and commits management named `Iceberg` (as a preview for Pharo 6, it will be the default in Pharo 7)
 - `The unified foreign function interface` (UnifiedFFI) for interfacing with the outside world is significantly improved
