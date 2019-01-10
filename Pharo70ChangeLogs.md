@@ -40,7 +40,6 @@ As the complete list of fixed issues is too large to be placed here, you can rev
   - Suitable for the remote scenario
   - "Dynamic protocols", support multiple tags per method
   - Not required star convention for class extension
-  - Support multiple tags per class
   - Visibility option for inherited methods
   - Variable view as the special mode for method group view.
   - Better keyboard navigation
