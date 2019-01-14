@@ -5,6 +5,7 @@ A large, international community of developers worked hard for several months to
 # Highlights
 
 - Pharo development moved to Github and Pharo is now bootstraped
+- 64bit VM for windows as technical preview
 - Introduction of a modular implementation of Stateful traits (See user documentation [here](https://github.com/pharo-open-documentation/pharo-wiki/blob/master/General/Traits.md))
 - Replacement of `Nautilus` by [Calypso System Browser](https://github.com/pharo-ide/Calypso) 
 - New version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new intefrace more user friendly.
@@ -114,6 +115,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - FastTable improvements
 
 # VM interface
+- 64bit VM for windows as technical preview
 - DoubleWord and DoubleByte arrays
 - Add EncoderForSistaV1
 - Read-only literals support
