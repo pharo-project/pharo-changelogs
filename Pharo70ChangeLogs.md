@@ -4,21 +4,21 @@ A large, international community of developers worked hard for several months to
 
 # Highlights
 
-- Pharo development moved to Github and Pharo is now bootstraped
-- 64bit VM for windows as technical preview
+- Pharo development moved to Github and Pharo is now bootstrapped
+- 64bit VM for windows as a technical preview
 - Introduction of a modular implementation of Stateful traits (See user documentation [here](https://github.com/pharo-open-documentation/pharo-wiki/blob/master/General/Traits.md))
 - Replacement of `Nautilus` by [Calypso System Browser](https://github.com/pharo-ide/Calypso) 
-- New version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new intefrace more user friendly.
+- A new version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new interface more user-friendly.
 - Migrate `Streams` to `Zinc streams` implementation that is more modular
 
 # All issues
 
-Over 2100 fixes and enhancements were integrated in this release.
+Over 2100 fixes and enhancements were integrated into this release.
 
-As the complete list of fixed issues is too large to be placed here, you can review it on [the FogBugz issue tracker](https://pharo.fogbugz.com) (requires account). 
+As the complete list of fixed issues is too large to be placed here, you can review it on [the FogBugz issue tracker](https://pharo.fogbugz.com) (requires an account). 
 
 ## Revolutionary kernel changes
-- Pharo is now bootstraped
+- Pharo is now bootstrapped
 - Modular stateful traits
 - Traits flattening in kernel packages
 - New sources file for every bootstrapped version, empty changes
@@ -89,11 +89,11 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 
 # New projects
 - Integration of `Calypso`
-- Integration of `WebBrowser`, an utility to open the default web browser of the user on an URL
+- Integration of `WebBrowser`, a utility to open the default web browser of the user on an URL
 - Integration of `ReferenceFinder` to find reference paths between objects to help find memory leaks
 - Integration of `Hermes`, a binary code loader for Pharo's bootstrap
-- Integration of `Refactoring 2`, a rearchitecture of the `Refactoring` project
-- Integration of `Commander`, a projct to implement `Commander` design pattern
+- Integration of `Refactoring 2`, a re-architecture of the `Refactoring` project
+- Integration of `Commander`, a project to implement `Commander` design pattern
 - Integration of `ClassAnnotation`, a reusable mechanism for first class annotations in Pharo
 
 # Spec
@@ -106,7 +106,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - Use the white theme by default
 - Improve themes switching
 - Main menu bar to make Pharo more standard to other applications
-- Improvement of the desgin of the `Taskbar`
+- Improvement of the design of the `Taskbar`
 - New window management shortcuts
 - Better support of fallback bitmap fonts
 - Improved Inspector refreshing
@@ -115,7 +115,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - FastTable improvements
 
 # VM interface
-- 64bit VM for windows as technical preview
+- 64bit VM for windows as a technical preview
 - DoubleWord and DoubleByte arrays
 - Add EncoderForSistaV1
 - Read-only literals support
@@ -126,7 +126,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 
 # Reflectivity
 - Breakpoints improvements
-- Introduction of a Breackpoint browser (under the `Debugging` menu bar entry)
+- Introduction of Breackpoint browser (under the `Debugging` menu bar entry)
 - Test coverage using metalinks
 - Reflectivity and metalinks improvements
 
