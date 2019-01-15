@@ -24,7 +24,8 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - New sources file for every bootstrapped version, empty changes
 - New class builder
 - Binary packages loading (Hermes)
-- Use of `Zinc streams` as default streams (a link to transition help would be useful)
+- Use of `Zinc streams` as default streams 
+  - migration guideline: https://github.com/pharo-open-documentation/pharo-wiki/blob/master/Migration/MigrationToPharo7.md
 
 ## Infrastructure changes
 - Switch to GitHub
@@ -135,7 +136,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - Startup now running in a fresh process
 - Better pin messages
 - NewValueHolder and Model API unification
-- Better working and image directories meaning separation (?)
+- Better separation of working and image directories
 - SortFunctions are now composable
 - Better OSWindow support
 - Converted rules to the Renraku architecture
