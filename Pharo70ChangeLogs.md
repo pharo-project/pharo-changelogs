@@ -5,7 +5,7 @@ A large, international community of developers worked hard for several months to
 # Highlights
 
 - Pharo development moved to Github and Pharo is now bootstrapped
-- 64bit VM for Windows as a technical preview
+- 64-bit VM for Windows as a technical preview
 - Introduction of a modular implementation of Stateful traits (see user documentation [here](https://github.com/pharo-open-documentation/pharo-wiki/blob/master/General/Traits.md))
 - Replacement of `Nautilus` by [Calypso System Browser](https://github.com/pharo-ide/Calypso) 
 - A new version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new interface more user-friendly
