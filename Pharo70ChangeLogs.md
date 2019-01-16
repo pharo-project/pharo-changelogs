@@ -145,3 +145,17 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - Optional password management for command line handlers
 - System dependencies tests
 - Unified way to obtain package manifests
+
+## Contributors
+
+We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the invaluable contributions of our great community (yourself).  
+More than seventy people directly contributed to Pharo 7.0: 
+
+Thank you all for your contribution.
+
+### Contributors for Pharo 7.0
+
+Marcus Denker, Torsten Bergmann, Esteban Lorenzano, Guille Polito, Pablo Tesone, Stéphane Ducasse, Cyril Ferlicot, Vincent Blondeau, Denis Kudriashov, Julien Delplanque, Tim Mackinnon, Max Leske, Andrew Black, Clement Bera, Ben Coman, Eric Gade, Yuriy Tymchuk, Nicolas Cellier, Biyalou-Sama Asbath, Myroslava, Gabriel Omar Cotelli, Sean DeNigris, Juraj Kubelka, Noury Bouraqadi, Holger Freyther, Geoff Reedy, Norbert Hartl, Paul DeBruicker, Alain Plantec, Martín Dias, Peter Uhnak, Tomohiro Oda, Benoît Verhaeghe, Santiago Bragagnolo, Wouter van Zuilen, Bernhard Pieber, Damien Pollet, Geoff Hill, Gustavo Santos, Hans-Martin Mosner, Ronie Salgado, Philippe Back, Aliaksei Syrel, Dayne Guerra, Rafael Luque, Serge Stinckwich, Vincent Aranega, Hernán Morales Durand, Petr Fischer, Rajula Vineet Reddy, Alexandre Bergel, Esteban A. Maringolo, Jan Blizničenko, Johan Brichau, Luc Fabrese, Quentin Ducasse, Sébastien Roccaserra, Stephan Eggermont, Sven Van Caekenberghe, TAKANO Mitsuhiro, Pavel Krivanek, Allex Oliveira, Cristophe Demarey, Lionel Akue, Nicolai Hess, Martin McClure, Alistair Grant, Bernardo Ezequiel Contreras, Yoan Geran, Pierre Tsapliayev, Milton Mamani, Matteo Marra, Thomas Dupriez
+
+And many many more who contributed indirectly, by reporting bugs, participating in discussion threads, providing feedback, etc., etc., etc.
+
