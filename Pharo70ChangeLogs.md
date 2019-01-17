@@ -4,12 +4,12 @@ A large, international community of developers worked hard for several months to
 
 # Highlights
 
-- Pharo development moved to Github and Pharo is now bootstrapped
+- Pharo development moved to Github and Pharo is now fully bootstrapped from source
 - 64-bit VM for Windows as a technical preview
 - Introduction of a modular implementation of Stateful traits (see user documentation [here](https://github.com/pharo-open-documentation/pharo-wiki/blob/master/General/Traits.md))
 - Replacement of `Nautilus` by [Calypso System Browser](https://github.com/pharo-ide/Calypso) 
-- A new version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new interface more user-friendly
-- Migration of `Streams` to the `Zinc streams` implementation that is more modular
+- A complete new version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new interface more user-friendly
+- Migration of `Streams` to the `Zinc streams` implementation that is more modular and modern
 
 # All issues
 
@@ -18,7 +18,7 @@ Over 2100 fixes and enhancements were integrated into this release.
 As the complete list of fixed issues is too large to be placed here, you can review it on [the FogBugz issue tracker](https://pharo.fogbugz.com) (requires an account). 
 
 ## Revolutionary kernel changes
-- Pharo is now bootstrapped
+- Pharo is now bootstrapped from source of the core
 - Modular stateful traits
 - Traits flattening in kernel packages
 - New sources file for every bootstrapped version, empty changes
@@ -26,31 +26,32 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - Binary packages loading (Hermes)
 - Use of `Zinc streams` as default streams 
   - migration guideline: https://github.com/pharo-open-documentation/pharo-wiki/blob/master/Migration/MigrationToPharo7.md
+- Support for executable and testable example at method level
 
 ## Infrastructure changes
-- Switch to GitHub
-- Tonel code format 
+- Switch from SmalltalkHub to GitHub
+- Tonel code format for better git handling and reading
 - Update building infrastructure to Jenkins 2
 
 # Code management
 - Introduction of Calypso, the new system browser
-  - New navigation model    
-  - Faster UI
-  - Tabs toolbar instead of single source code panel
-  - Explicit commands (e.g., add new method) instead of duplicated menu and shortcuts
-  - Extendable by plugins
-  - Suitable for the remote scenario
-  - "Dynamic protocols", supporting multiple tags per method
-  - No longer requires star convention for class extension
-  - Visibility option for inherited methods
-  - Variable view as the special mode for method group view.
-  - Better keyboard navigation
-  - And many more improvements
+- New navigation model    
+- Faster UI
+- Tabs toolbar instead of single source code panel
+- Explicit commands (e.g., add new method) instead of duplicated menu and shortcuts
+- Extendable by plugins
+- Suitable for the remote scenario
+- "Dynamic protocols", supporting multiple tags per method
+- No longer requires star convention for class extension
+- Visibility option for inherited methods
+- Variable view as the special mode for method group view.
+- Better keyboard navigation
+- And many more improvements
 
 # Iceberg
-- A new friendly user interface
+- A totally rewamp and friendly user interface
 - Simplification of solving problems with repositories
-- Workflow simplification
+- Workflow simplification (follow the repair propositions)
 - Better GitHub, BitBucket, GitLab support
 - Improved code merging and comparisons
 - New code serialization format (Tonel)
@@ -58,7 +59,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - Documentation
 - Better error handling, tags support
 - Improved Iceberg-Metacello integration
-- Credentials store
+- Credentials store management
 
 # Cleanups
 - Remove Nautilus
@@ -93,7 +94,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - Integration of `WebBrowser`, a utility to open the default web browser of the user on an URL
 - Integration of `ReferenceFinder` to find reference paths between objects to help find memory leaks
 - Integration of `Hermes`, a binary code loader for Pharo's bootstrap
-- Integration of `Refactoring 2`, a re-architecture of the `Refactoring` project
+- Integration as preview of `Refactoring 2`, a re-architecture of the `Refactoring` project
 - Integration of `Commander`, a project to implement `Command` design pattern
 - Integration of `ClassAnnotation`, a reusable mechanism for first-class annotations in Pharo
 
@@ -132,7 +133,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - Reflectivity and metalink improvements
 
 # Other
-- The logic of the `Finder` was rewritten
+- The logic of the `Finder` was fully rewritten
 - Startup now running in a fresh process
 - Better pin messages
 - NewValueHolder and Model API unification
@@ -155,7 +156,7 @@ Thank you all for your contribution.
 
 ### Contributors for Pharo 7.0
 
-Marcus Denker, Torsten Bergmann, Esteban Lorenzano, Guille Polito, Pablo Tesone, Stéphane Ducasse, Cyril Ferlicot, Vincent Blondeau, Denis Kudriashov, Julien Delplanque, Tim Mackinnon, Max Leske, Andrew Black, Clement Bera, Ben Coman, Eric Gade, Yuriy Tymchuk, Nicolas Cellier, Biyalou-Sama Asbath, Myroslava, Gabriel Omar Cotelli, Sean DeNigris, Juraj Kubelka, Noury Bouraqadi, Holger Freyther, Geoff Reedy, Norbert Hartl, Paul DeBruicker, Alain Plantec, Martín Dias, Peter Uhnak, Tomohiro Oda, Benoît Verhaeghe, Santiago Bragagnolo, Wouter van Zuilen, Bernhard Pieber, Damien Pollet, Geoff Hill, Gustavo Santos, Hans-Martin Mosner, Ronie Salgado, Philippe Back, Aliaksei Syrel, Dayne Guerra, Rafael Luque, Serge Stinckwich, Vincent Aranega, Hernán Morales Durand, Petr Fischer, Rajula Vineet Reddy, Alexandre Bergel, Esteban A. Maringolo, Jan Blizničenko, Johan Brichau, Luc Fabrese, Quentin Ducasse, Sébastien Roccaserra, Stephan Eggermont, Sven Van Caekenberghe, TAKANO Mitsuhiro, Pavel Krivanek, Allex Oliveira, Cristophe Demarey, Lionel Akue, Nicolai Hess, Martin McClure, Alistair Grant, Bernardo Ezequiel Contreras, Yoan Geran, Pierre Tsapliayev, Milton Mamani, Matteo Marra, Thomas Dupriez, Asbathou Biyalou-Sama.
+Gabriel Omar Cotelli, Gustavo Santos, Marcus Denker, Torsten Bergmann, Esteban Lorenzano, Bernardo Ezequiel Contreras, Guille Polito, Pablo Tesone, Yoan Geran, Stéphane Ducasse, Cyril Ferlicot, Vincent Blondeau, Denis Kudriashov, Julien Delplanque, Tim Mackinnon, Max Leske, Andrew P. Black, Tomohiro Oda, Clément Béra, Ben Coman, Eric Gade, Yuriy Tymchuk, Nicolas Cellier, Biyalou-Sama Asbath, Myroslava, Sean DeNigris, Juraj Kubelka, Noury Bouraqadi, Holger Freyther, Geoff Reedy, Norbert Hartl, Paul DeBruicker, Alain Plantec, Martín Dias, Peter Uhnak, Tomohiro Oda, Benoît Verhaeghe, Santiago Bragagnolo, Wouter van Zuilen, Bernhard Pieber, Damien Pollet, Geoff Hill, Hans-Martin Mosner, Ronie Salgado, Philippe Back, Aliaksei Syrel, Dayne Guerra, Rafael Luque, Serge Stinckwich, Vincent Aranega, Hernán Morales Durand, Petr Fischer, Rajula Vineet Reddy, Alexandre Bergel, Esteban A. Maringolo, Jan Blizničenko, Johan Brichau, Luc Fabrese, Quentin Ducasse, Sébastien Roccaserra, Stephan Eggermont, Sven Van Caekenberghe, Takano Mitsuhiro, Pavel Krivanek, Allex Oliveira, Christophe Demarey, Lionel Akue, Nicolai Hess, Martin McClure, Alistair Grant, Pierre Tsapliayev, Milton Mamani, Matteo Marra, Thomas Dupriez, Asbathou Biyalou-Sama.
 
 And many many more who contributed indirectly, by reporting bugs, participating in discussion threads, providing feedback, etc., etc., etc.
 
