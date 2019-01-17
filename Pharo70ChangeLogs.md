@@ -57,6 +57,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - New code serialization format (Tonel)
 - Repositories metadata
 - Documentation
+-- https://docs.google.com/document/d/14_RmTdA_8ta5I1mipeaxw7hasxKseovnGEOKK8pd8us/edit
 - Better error handling, tags support
 - Improved Iceberg-Metacello integration
 - Credentials store management
