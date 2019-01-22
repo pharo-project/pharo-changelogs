@@ -8,7 +8,7 @@ A large, international community of developers worked hard for several months to
 - 64-bit VM for Windows as a technical preview
 - Introduction of a modular implementation of Stateful traits (see user documentation [here](https://github.com/pharo-open-documentation/pharo-wiki/blob/master/General/Traits.md))
 - Replacement of `Nautilus` by [Calypso System Browser](https://github.com/pharo-ide/Calypso) 
-- A complete new version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new interface more user-friendly
+- A complete new version of [Iceberg](https://github.com/pharo-vcs/Iceberg) with a new, more user-friendly interface
 - Migration of `Streams` to the `Zinc streams` implementation that is more modular and modern
 
 # All issues
@@ -49,7 +49,7 @@ As the complete list of fixed issues is too large to be placed here, you can rev
 - And many more improvements
 
 # Iceberg
-- A totally rewamp and friendly user interface
+- A totally rewamped and friendly user interface
 - Simplification of solving problems with repositories
 - Workflow simplification (follow the repair propositions)
 - Better GitHub, BitBucket, GitLab support
