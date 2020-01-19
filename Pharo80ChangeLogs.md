@@ -59,7 +59,6 @@ More than 1500 fixes and enhancements were integrated into this release. For the
 	- better layouts
 	- easier testing
 	- applications management
-- most of the internal tools use `Spec 2` now
 
 ## Look & Feel
 - dark theme as default
