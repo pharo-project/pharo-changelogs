@@ -1,6 +1,6 @@
 # Pharo 8.0
 
-A large international community of developers is working hard to prepare a new revolutionary changes for the Pharo platform like the headless VM with support of various new displaying backends, superb debugging experience and seamless integration with the operating system. We are pleased to introduce the new stable Pharo 8.0 release that will allow you to taste the first fruits of their efforts. This release is focused on performance improvements, bug fixes and system cleanups. More than 1500 pull-requests were integrated to the base system, which does not include the heroic work on the new virtual machine, UI framework and other tools.
+A large international community of developers is working hard to prepare new revolutionary changes for the Pharo platform like the headless VM with support of various new displaying backends, superb debugging experience and seamless integration with the operating system. We are pleased to introduce the new stable Pharo 8.0 release that will allow you to taste the first fruits of their efforts. This release is focused on performance improvements, bug fixes and system cleanups. More than 1500 pull-requests were integrated into the base system, which does not include the heroic work on the new virtual machine, UI framework and other tools.
 
 ## Highlights
 
@@ -11,7 +11,7 @@ A large international community of developers is working hard to prepare a new r
 	- full backwards compatibility with the old windows management
 	- threaded FFI with callbacks support
 - better system performance
-- new generation of Spec UI building framework (preview)
+- the new generation of Spec UI building framework (preview)
 - new tests management tool called DrTests (preview)
 - new code completion engine
 
@@ -61,7 +61,7 @@ More than 1500 fixes and enhancements were integrated into this release. For the
 	- applications management
 
 ## Look & Feel
-- dark theme as default
+- the dark theme as default
 - fonts corruption fixes
 - more settings for production images
 - copy windows title command
@@ -129,7 +129,7 @@ More than 1500 fixes and enhancements were integrated into this release. For the
 - ...and many more small fixes and improvements...
 
 ## Contributors
-We always say Pharo is yours. Is yours because we made it for you, but most important, because is made by the invaluable contributions of our great community (yourself).  
+We always say Pharo is yours. Is yours because we made it for you, but most important because it is made by the invaluable contributions of our great community (yourself).  
 More than seventy people directly contributed to Pharo 8.0: 
 
 Thank you all for your contribution.
