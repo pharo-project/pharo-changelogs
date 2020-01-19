@@ -135,7 +135,7 @@ More than seventy people directly contributed to Pharo 8.0:
 
 Thank you all for your contribution.
 
-### Contributors for Pharo 7.0
+### Contributors for Pharo 8.0
 
 TODO
 
