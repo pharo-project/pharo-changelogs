@@ -85,7 +85,7 @@ More than 1500 fixes and enhancements were integrated into this release. For the
 - `Beacon` - logging engine
 - `SUnit-Visitor` - standardized way to visit test suites
 - `Spec 2` (preview) - UI building framework with multiple backends 
-- `Commander 2` (preview) - advanced command pattern implementation
+- `Commander 2` (preview) - advanced command pattern implementation and documentation [http://books.pharo.org/booklet-Commander/](http://books.pharo.org/booklet-Commander/)
 
 ## Performance
 - faster Collections implementation
