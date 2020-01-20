@@ -11,6 +11,7 @@ A large international community of developers is working hard to prepare new rev
 	- full backwards compatibility with the old windows management
 	- threaded FFI with callbacks support
 - better system performance
+- many more tests (UI, FFI, ...) and testable documentation via executable comments. Each commit is validated by 64617 tests.
 - the new generation of Spec UI building framework (preview)
 - new tests management tool called DrTests (preview)
 - new code completion engine
