@@ -14,7 +14,7 @@ A large international community of developers w hard to prepare new revolutionar
 	- Class comments now can be made in microdown format (Markdown compatible)
 	- Classes now can be declared using the new "fluid" api (Preview)
 - New completion framework that adapts better to edition contexts and is customizable
-- Fast Universal FFI which now uses libFFI as backend.
+- Fast Universal non-blocking FFI which now uses libFFI as backend.
 - Virtual machine
 	- Idle VM
 	- Support for ARM 64bit
@@ -27,8 +27,8 @@ A large international community of developers w hard to prepare new revolutionar
 ## All issues
 Pharo 9 got an amazing development activity. It saw the raise of enhancements and bug fixes.  
 - 252 forks on github
-- 1174+ issues @@TO UPDATE@@
-- 1925+ Pull requests @@TO UPDATE@@, not counting separately managed projects such as:
+- 1400+ issues
+- 2150+ Pull requests, not counting separately managed projects such as:
 	- [http://github.com/pharo-spec/Spec](http://github.com/pharo-spec/Spec)
 	- [http://github.com/pharo-spec/NewTools](http://github.com/pharo-spec/NewTools)
 	- [http://github.com/pharo-vcs/Iceberg](http://github.com/pharo-vcs/Iceberg)
@@ -192,9 +192,7 @@ Thank you all for your contributions.
 
 ### Contributors for Pharo 9.0
 
-@@TODO@@
-Serge Stinckwich, Myroslava Romaniuk, Hilaire Fernandes, Alexandre Bergel, David Bajger, Sean DeNigris, Theodore Moen, Dayne Guerra Calle, Juraj Kubelka, Max Leske, Santiago Jose Dandois, Alistair Grant, Sabine Mana, Chia Yu, Stephan Eggermont, Milton Mamani, Pavel Krivanek, Ben Coman, Marcus Denker, Pierre Misse, Christophe Demarey, Allex Oliveira, Andreina Cota, Theo Rogliano, Clément Dutriez, Quentin Ducasse, Cyril Ferlicot, Cameron Bierwagen, Marek Niepieklo, Clotilde Toullec, Esteban Lorenzano, Vincent Blondeau, Danil Osipchuk, Eiichiro Ito, Noury Bouraqadi, Oleksandr Zaytsev, Jason Riggs, Alain Plantec, Kasper Osterbye, Leonardo Cecchi, Chi Huynh, Santiago Bragagnolo, Antonio Pierro, Pablo Tesone, Tim Mackinnon, Wesley Duerksen, Wilfred Hughes, John Brant, Evelyn Cusi Lopez, Manuel Leuenberger, Thomas Dupriez, Norbert Hartl, Gabriel Omar Cotelli, Carlo Teixeira, Guille Polito, Torsten Bergmann, Damien Pollet, Holger Hans Peter Freyther, Julio Ripoll, Carolina Hernandez Phillips, Julien Delplanque, Hugo Lasnier, James Foster, Will Hensel, Erik Stel, Sven Van Caekenberghe, Martín Dias, Tomohiro Oda, Konrad Hinsen, Sébastien Roccaserra, Stéphane Ducasse, Denis Kudriashov, Ellis Harris, Steven Costiou, Jan Bliznicenko, Eliot Miranda, Nicolas Cellier, Clément Béra.
-
+Aaron Bieber, Ackerley Tng, Alban Benmouffek, Ale Cossio, Alexandre Bergel, Alistair Grant, Allex Oliveira, Angela Chia-Ling, Arturo Zambrano, Asbathou Biyalou-Sama, Ben Coman, Benoit Verhaegue, Carlo Teixeira, Carlos Lopez, Carolina Hernandez, Charles A. Monteiro, Christoph Thiede, Christophe Demarey, ClotildeToullec, Cyril Ferlicot, Damien Pollet, Daniel Aparicio, David Bajger, David Sánchez i Gregori, Denis Kudriashov, Ellis Harris, Eric Brandwein, Eric Gade, Erik Stel, ErikOnBike, Esteban Lorenzano, Esteban Villalobos, Evelyn Cusi Lopez, Evelyn Cusi Lopez, Ewan Dawson, Francis Pineda, Francis Pineda, Gabriel Omar Cotelli, Geraldine Galindo, Giovanni Corriga, Guille Polito, Himanshu jld, Johan Brichau, Jonathan van Alteren, Jordan Montt, Julien Delplanque, Kamil Kukura, Kasper Østerbye, Kurt Kilpela, Laurine Dargaud, Marco Rimoldi, Marcus Denker, Martin Dias, Martin McClure, Massimo Nocentini, Max Leske, Maximilian Ignacio Willembrinck Santander, Milton Mamani Torres, Moussa Saker, Myroslava Romaniuk, Nicolas Anquetil, Norbert Hartl, Nour Djihan, Oleksandr Zaitsev, Pablo Sánchez Rodríguez, Pablo Tesone, Pavel Krivanek, Philippe Lesueur, Pierre Misse, Rakshit P., Rob Sayers, Roland Bernard, Ronie Salgado, Sean DeNigris, Sebastian Jordan Montaño, Serge Stinckwich, Stephan Eggermont, Steven Costiou, Stéphane Ducasse, Sven Van Caekenberghe, Thomas Dupriez, Théo Lanord, Théo Rogliano, Todd Blanchard, Torsten Bergmann, Vincent Blondeau, Wéslleymberg Lisboa.
 
 And many many more who contributed indirectly, by reporting bugs, participating in discussion threads, providing feedback, etc., etc., etc.
 
