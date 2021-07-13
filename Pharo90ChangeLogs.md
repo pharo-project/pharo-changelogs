@@ -10,17 +10,17 @@ But this is just a teaser, since we have treated more than 2150 pull requests!
 	- new playground, 
 	- new object centric inspector, 
 	- new object centric debugger.
-	- Better Refactorings
-	- Class comments now can be made in microdown format (Markdown compatible)
-	- Classes now can be declared using the new "fluid" api (Preview)
+	- better and new Refactorings
+	- class comments are now written in Microdown format (Markdown compatible)
+	- classes now can be declared using the new "fluid" api (Preview)
 - New completion framework that adapts better to edition contexts and is customizable
 - Fast Universal non-blocking FFI which now uses libFFI as backend.
 - Virtual machine
 	- Idle VM
 	- Support for ARM 64bit
 	- Support for Apple M1
-- When runningthe UI environment, it now uses SDL 2.0 as back-end by default
-	- extended event handling, including trackpad support
+	- Built for Ubuntu 18.04, 19.04, 20.04, 21.04, 21.10; Debian 9, 10, Testing; Fedora 32, 32, 34; openSUSE 15.1, 15.2, Tumbleweed; Manjaro; Arch
+- When running the UI environment, it now uses Uses SDL 2.0 as back-end by default. It supports extended event handling, including trackpad support.
 - General speed up due to compiler optimisations and UI simplification
 - And many, many more tests.
 
