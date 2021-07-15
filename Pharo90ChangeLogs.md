@@ -6,7 +6,7 @@ But this is just a teaser since we have treated more than 2150 pull requests!
 
 ## Highlights
 
-- Full redesign of the Spec UI framework (new logic, application, style, **GTK3 backeend**)
+- Full redesign of the Spec UI framework (new logic, application, style, **GTK3 backend**)
 - Tools: 
 	- new playground, 
 	- new object-centric inspector, 
