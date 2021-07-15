@@ -1,6 +1,7 @@
 # Pharo 9
 
-A large international community of developers worked hard to prepare a new release of the Pharo platform with innovations like the implementation of a new UI framework that accepts different backends (currently our own, Morphic, plus Gtk3), the use of it to re-implement in a revolutionary way some of the tools of the environment (playground, inspector, debugger, spotter), incorporating the new concept of "object-centric debugging" and a big set of changes in the virtual machine level, from a real AIO event-driven VM to support for ARM64 and including the new Apple M1! 
+A large international community of developers worked hard to prepare a new release of the Pharo platform with innovations like the implementation of a new UI framework that accepts different backends (currently our own, Morphic, plus Gtk3), the use of it to re-implement in a revolutionary way some of the tools of the environment (playground, inspector, debugger, spotter), incorporating the new concept of "object-centric debugging" and a big set of changes in the virtual machine level, from a real AIO event-driven VM to support for ARM64 including the new Apple M1!
+
 But this is just a teaser since we have treated more than 2150 pull requests! 
 
 ## Highlights
