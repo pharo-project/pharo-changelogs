@@ -43,7 +43,7 @@ You read the method, and you systematically get examples to show you how to use 
 And you can execute the comment (they are also accessible as tests through the DrTest GUI)! 
 
 ## New and enhanced refactorings
-Pharo 9 made a gret effort on refactorings.  
+Pharo 9 made a great effort on refactorings.  
 Pharo 9 is shipped with new refactorings (such as Extract to Setup XXX more?).  
 Many refactorings got enhanced. Extract method can now extract a method out of methods in a full hierarchy in one click.  
 Refactorings are now accessible in place i.e., instance variables, class variables...
