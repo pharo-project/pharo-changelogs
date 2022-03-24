@@ -4,17 +4,94 @@ A large international community of developers worked hard to prepare a new relea
 
 ## Highlights
 
-- 
+- Pharo 10 Higlights
+- Spec 2 major release	
+	- all layouts are now dynamic
+	- API cleaning	
+	- add support for more presenters
+- A lot of cleaning
+- Removal of Spec 1 (tools written in Spec 1 have been rewritten in Spec 2)
+- Removal of Glamour and GTTools (were not maintained anymore)
+- Improved debugging infrastructure
+- Drop support of V3PlusClosures byte code set
+- Removal of unused FFI packages
+- Zinc (HTTP client/server) components update
+- Roassal 3 update
+
+## All issues
+
+### General
+
+- Fluid class definition greatly improved (and now functional, even if not activated by default)
+- Improve refactors (push down, extract method, 
+- Improve code critiques (and migrated to Spec2)
+- Improve FileReference (fixes in relative Paths, canonicalization of names)
+- Improve quality rules (test categorisation, better explanation of rules) 
+- Improve debugging infrastructure (sindarin, 
+- Fixes in compiler (when using whileTrue:)
+- Fixes on shortcut printing (on OSX)
+- Fixes undo/redo in the rubric editor
+- Microdown (and beautiful comments) revamped
+- Enhanced FFI: exposing the function ABI, add TFProcessLocalWorker.
+- All repeated literals in image are now shared.
+- Enhanced autocompletion support for large images.
+- Fuel serializer now supports stateful traits.
+- Metacello implements the function "lock" to avoid further modifications to a loaded project.
+- Modularisation work: Keymapping, Freetype, ThreadedFFI, Athens, TaskIT
+- Networking: improve ipv6
+- Removed GTTools
+- Removed Glamour
+- Removed Spec1
+- Removed unused FFI package (Alien, most of FFI-Kernel)
+- Removed old EncoderForV3PlusClosures
+- ... and many (many for real) clean ups and small enhancements that would be impossible to sumarize here.
+
+### Spec
+
+- Deprecation of class side defaultSpec, now all layouts can be defined in instance side (but defaultLayout can still be defined in class side, in case of need)
+- Deprecation of all WithSpec suffixes. Now to open a presenter window you just use #open/#openModal, etc. (this was a lot more work as you may think).
+- Added #asWindow, #asModalWindow to allow user to modify the window presenter (adding extent, ot title, for example) without needingto override `initializeWindow:` and before the window is opened.
+- All layouts are dynamic and can be modified on runtime (API depending the layout). 
+- Enhancement SpApplication with notion of iconProvider
+- Added some standard dialogs (inform, request, confirm) to SpApplication
+- Added a progress bar standard dialog/processor (SpJobListPresenter)
+- Enhanced CommonWidgets: SpFilteringListPresenter, etc.
+- Many improvements to SpCodePresenter, including syntax highlight, better code operations, text search, etc. 
+- Implemented drag&drop (not all widget, but required).
+- Enhanced styleSheets usage
+- Box, grid and scrollable layouts implement SpTAlignable (to better place its contents).
+- Enhanced API for building grid layouts.
+- Fix all remaining memory leaks (well, some may remain, as always... but we removed all we found ;)
+ 
+### Newtools
+
+- For the new tools already included in the image, this was largely a maintenance release, with a lot of small improbevents in performance and usability.
+- Spotter has received several iterations looking to improve its reliability and responsibility. It now incorporates also some improvement oriented to large images too.
+- Playground has incorporated hooks allowing better extensibility and received several fixes on how code works (mostly due to fixes on `SpCodePresenter`).
+- Debugger received some stability fixes. 
+- We incorporated also other migrated tools: Dependency Analyser, Critiques Browser, Font Chooser and several minor tools, allowing the removal of Spec1.
+- Increment the amount of tests.
+- Fixed printing of object information in inspector, to prevent huge chunks of text.
+ 
+### Roassal3
+
+- The visualisation engine now is in version v0.9.9f
+
+### Virtual Machine
+
+- Virtual Machine is now v9.0.13, full changelog can be seen here: https://github.com/pharo-project/opensmalltalk-vm/blob/pharo-9/CHANGELOG.md
 
 ## Contributors
 
 We always say Pharo is yours. It is yours because we made it for you, but most importantly because it is made by the invaluable contributions of our great community (yourself).  
-More than seventy people directly contributed to Pharo 10.0: 
+More than seventy people directly contributed to Pharo 10.0:  
 
 Thank you all for your contributions.
 
 ### Contributors for Pharo 10
 
-...
+Aaron Bieber, Ackerley Tng, Alban Benmouffek, Alejandra Cossio, Aless Hosry, Alexandre Bergel, Aliaksei Syrel, Alistair Grant, Arturo Zambrano, Asbathou Biyalou-Sama, Axel Marlard, Bernardo Contreras, Bernhard Pieber, Carlo Teixeira, Carlos Lopez, Carolina Hernandez, Christophe Demarey, Clotilde Toullec, Connor Skennerton, Cyril Ferlicot, Dave Mason, David Wickes, Denis Kudriashov, Eric Gade, Erik Stel, Esteban Lorenzano, Evelyn Cusi Lopez, Gabriel Omar Cotelli, Geraldine Galindo, Giovanni Corriga, Guille Polito, Himanshu, Jan Bliznicenko, Jaromir Matas, Kasper Østerbye, Kausthub Thekke Madathil, Konrad Hinsen, Kurt Kilpela, Luz Paz, Marco Rimoldi, Marcus Denker, Martín Dias, Massimo Nocentini, Max Leske, Maximilian-ignacio Willembrinck Santander, Miguel Campero, Milton Mamani Torres, Norbert Hartl, Nour Djihan, Noury Bouraqadi, Oleksandr Zaitsev, Pablo Sánchez Rodríguez, Pablo Tesone, Pavel Krivanek, Pierre Misse Chanabier, Raffaello Giulietti, Rakshit, Renaud de Villemeur, Rob Sayers, Roland Bernard, Sean DeNigris, Sebastian Jordan Montt, Stephan Eggermont, Steven Costiou, Stéphane Ducasse, Sven Van Caekenberghe, Theo Rogliano, Thomas Dupriez, Théo Lanord, Torsten Bergmann, Vincent Blondeau
 
 And many many more who contributed indirectly by reporting bugs, participating in discussion threads, providing feedback etc., etc., etc.
+
+
