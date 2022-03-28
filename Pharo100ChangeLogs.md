@@ -19,6 +19,15 @@ A large international community of developers worked hard to prepare a new relea
 - Roassal 3 update
 
 ## All issues
+Current Pharo development status.
+- 275 forks on GitHub
+- 600+ issues
+- 700+ Pull requests, not counting separately managed projects such as:
+	- [http://github.com/pharo-spec/Spec](http://github.com/pharo-spec/Spec)
+	- [http://github.com/pharo-spec/NewTools](http://github.com/pharo-spec/NewTools)
+	- [http://github.com/pharo-vcs/Iceberg](http://github.com/pharo-vcs/Iceberg)
+	- [http://github.com/pharo-project/opensmalltalk-vm](http://github.com/pharo-project/opensmalltalk-vm)
+
 
 ### General
 
@@ -75,7 +84,7 @@ A large international community of developers worked hard to prepare a new relea
  
 ### Roassal3
 
-- The visualisation engine now is in version v0.9.9f
+- The visualisation engine now is in version v0.9.9f, full changelog can be seen here: https://github.com/ObjectProfile/Roassal3/releases
 
 ### Virtual Machine
 
