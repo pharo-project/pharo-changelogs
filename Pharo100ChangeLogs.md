@@ -4,7 +4,6 @@ A large international community of developers worked hard to prepare a new relea
 
 ## Highlights
 
-- Pharo 10 Higlights
 - Spec 2 major release	
 	- all layouts are now dynamic
 	- API cleaning	
