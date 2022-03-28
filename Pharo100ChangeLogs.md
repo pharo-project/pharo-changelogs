@@ -31,7 +31,7 @@ Current Pharo development status.
 ### General
 
 - Fluid class definition greatly improved (and now functional, even if not activated by default)
-- Improve refactors (push down, extract method, 
+- Improve refactors (push down, extract method, ...)
 - Improve code critiques (and migrated to Spec2)
 - Improve FileReference (fixes in relative Paths, canonicalization of names)
 - Improve quality rules (test categorisation, better explanation of rules) 
@@ -39,7 +39,7 @@ Current Pharo development status.
 - Fixes in compiler (when using whileTrue:)
 - Fixes on shortcut printing (on OSX)
 - Fixes undo/redo in the rubric editor
-- Microdown (and beautiful comments) revamped
+- Microdown V2 (and beautiful comments) revamped
 - Enhanced FFI: exposing the function ABI, add TFProcessLocalWorker.
 - All repeated literals in image are now shared.
 - Enhanced autocompletion support for large images.
@@ -57,9 +57,9 @@ Current Pharo development status.
 ### Spec
 
 - Deprecation of class side defaultSpec, now all layouts can be defined in instance side (but defaultLayout can still be defined in class side, in case of need)
-- Deprecation of all WithSpec suffixes. Now to open a presenter window you just use #open/#openModal, etc. (this was a lot more work as you may think).
-- Added #asWindow, #asModalWindow to allow user to modify the window presenter (adding extent, ot title, for example) without needingto override `initializeWindow:` and before the window is opened.
-- All layouts are dynamic and can be modified on runtime (API depending the layout). 
+- Deprecation of all withSpec suffixes. Now to open a presenter window you just use #open/#openModal, etc. (this was a lot more work as you may think).
+- Added #asWindow, #asModalWindow to allow user to modify the window presenter (adding extent, ot title, for example) without needing to override `initializeWindow:` and before the window is opened.
+- All layouts are dynamic and can be modified at run time (API depending the layout). 
 - Enhancement SpApplication with notion of iconProvider
 - Added some standard dialogs (inform, request, confirm) to SpApplication
 - Added a progress bar standard dialog/processor (SpJobListPresenter)
@@ -73,8 +73,8 @@ Current Pharo development status.
  
 ### Newtools
 
-- For the new tools already included in the image, this was largely a maintenance release, with a lot of small improbevents in performance and usability.
-- Spotter has received several iterations looking to improve its reliability and responsibility. It now incorporates also some improvement oriented to large images too.
+- For the new tools already included in the image, this was largely a maintenance release, with a lot of small improvements in performance and usability.
+- Spotter has received several iterations looking to improve its reliability and responsibility. It now incorporates also some improvements oriented to large images too.
 - Playground has incorporated hooks allowing better extensibility and received several fixes on how code works (mostly due to fixes on `SpCodePresenter`).
 - Debugger received some stability fixes. 
 - We incorporated also other migrated tools: Dependency Analyser, Critiques Browser, Font Chooser and several minor tools, allowing the removal of Spec1.
