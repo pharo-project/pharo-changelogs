@@ -10,7 +10,7 @@ A large international community of developers worked hard to prepare a new relea
 	- add support for more presenters
 - A lot of cleaning
 - Removal of Spec 1 (tools written in Spec 1 have been rewritten in Spec 2)
-- Removal of Glamour and GTTools (were not maintained anymore)
+- Removal of Glamour and GTTools (were not maintained anymore and got rewritten in Spec 2)
 - Improved debugging infrastructure
 - Drop support of V3PlusClosures byte code set
 - Removal of unused FFI packages
