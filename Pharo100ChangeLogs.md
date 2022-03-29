@@ -86,19 +86,33 @@ Current Pharo development status.
 - The visualisation engine now is in version v0.9.9f, full changelog can be seen here: https://github.com/ObjectProfile/Roassal3/releases
 
 ### Virtual Machine
+Virtual Machine is now v9.0.13, full changelog can be seen here: https://github.com/pharo-project/opensmalltalk-vm/blob/pharo-9/CHANGELOG.md
 
-- Virtual Machine is now v9.0.13, full changelog can be seen here: https://github.com/pharo-project/opensmalltalk-vm/blob/pharo-9/CHANGELOG.md
+- Improving the Socket implementation:
+    - Better Out of Band Data Handling
+    - Better Name Resolution
+    - Faster Handling of Network Events in OSX
+- Improvements in the Asynchronous I/O Support and native implementations for each OS
+- Improvements in FFI
+    - Multiple ABI support
+    - Better Marshalling of LargeIntegers
+- Improving Debugging in Windows
+- Automatic Build and Test in all Platforms (OSX Intel & ARM / Linux Intel & ARM 32/64 / Windows Intel)
+- Message Profiling
+- Fixes in Floats ARM 32 Bits
+- Cleanups / Tests 
+- Third Party Libraries Update
 
 ## Contributors
 
 We always say Pharo is yours. It is yours because we made it for you, but most importantly because it is made by the invaluable contributions of our great community (yourself).  
-More than seventy people directly contributed to Pharo 10.0:  
+More than eighty people directly contributed to Pharo 10.0:  
 
 Thank you all for your contributions.
 
 ### Contributors for Pharo 10
 
-Aaron Bieber, Ackerley Tng, Alban Benmouffek, Alejandra Cossio, Aless Hosry, Alexandre Bergel, Aliaksei Syrel, Alistair Grant, Arturo Zambrano, Asbathou Biyalou-Sama, Axel Marlard, Bernardo Contreras, Bernhard Pieber, Carlo Teixeira, Carlos Lopez, Carolina Hernandez, Christophe Demarey, Clotilde Toullec, Connor Skennerton, Cyril Ferlicot, Dave Mason, David Wickes, Denis Kudriashov, Eric Gade, Erik Stel, Esteban Lorenzano, Evelyn Cusi Lopez, Gabriel Omar Cotelli, Geraldine Galindo, Giovanni Corriga, Guille Polito, Himanshu, Jan Bliznicenko, Jaromir Matas, Kasper Østerbye, Kausthub Thekke Madathil, Konrad Hinsen, Kurt Kilpela, Luz Paz, Marco Rimoldi, Marcus Denker, Martín Dias, Massimo Nocentini, Max Leske, Maximilian-ignacio Willembrinck Santander, Miguel Campero, Milton Mamani Torres, Norbert Hartl, Nour Djihan, Noury Bouraqadi, Oleksandr Zaitsev, Pablo Sánchez Rodríguez, Pablo Tesone, Pavel Krivanek, Pierre Misse Chanabier, Raffaello Giulietti, Rakshit, Renaud de Villemeur, Rob Sayers, Roland Bernard, Sean DeNigris, Sebastian Jordan Montt, Stephan Eggermont, Steven Costiou, Stéphane Ducasse, Sven Van Caekenberghe, Theo Rogliano, Thomas Dupriez, Théo Lanord, Torsten Bergmann, Vincent Blondeau
+Aaron Bieber, Ackerley Tng, Alban Benmouffek, Alejandra Cossio, Aless Hosry, Alexandre Bergel, Aliaksei Syrel, Alistair Grant, Arturo Zambrano, Asbathou Biyalou-Sama, Axel Marlard, Bastien Degardins, Ben Coman, Bernardo Contreras, Bernhard Pieber, Carlo Teixeira, Carlos Lopez, Carolina Hernandez, Christophe Demarey, Clotilde Toullec, Connor Skennerton, Cyril Ferlicot, Dave Mason, David Wickes, Denis Kudriashov, Eric Gade, Erik Stel, Esteban Lorenzano, Evelyn Cusi Lopez, Ezequiel R. Aguerre, Gabriel Omar Cotelli, Geraldine Galindo, Giovanni Corriga, Guille Polito, Himanshu, Jan Bliznicenko, Jaromir Matas, Kasper Østerbye, Kausthub Thekke Madathil, Konrad Hinsen, Kurt Kilpela, Luz Paz, Marco Rimoldi, Marcus Denker, Martín Dias, Massimo Nocentini, Max Leske, Maximilian-ignacio Willembrinck Santander, Miguel Campero, Milton Mamani Torres, Nahuel Palumbo, Norbert Hartl, Norm Green, Nour Djihan, Noury Bouraqadi, Oleksandr Zaitsev, Pablo Sánchez Rodríguez, Pablo Tesone, Pavel Krivanek, Pierre Misse-Chanabier, Quentin Ducasse, Raffaello Giulietti, Rakshit, Renaud de Villemeur, Rob Sayers, Roland Bernard, Ronie Salgado, Santiago Bragagnolo, Sean DeNigris, Sebastian Jordan Montt, Soufyane Labsari, Stephan Eggermont, Steven Costiou, Stéphane Ducasse, Sven Van Caekenberghe, Theo Rogliano, Thomas Dupriez, Théo Lanord, Torsten Bergmann, Vincent Blondeau.
 
 And many many more who contributed indirectly by reporting bugs, participating in discussion threads, providing feedback etc., etc., etc.
 
