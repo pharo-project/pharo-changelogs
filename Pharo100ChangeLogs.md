@@ -37,7 +37,7 @@ Current Pharo development status.
 - Improve code critiques (and migrated to Spec2)
 - Improve FileReference (fixes in relative Paths, canonicalization of names)
 - Improve quality rules (test categorisation, better explanation of rules) 
-- Improve debugging infrastructure (sindarin, 
+- Improve debugging infrastructure (sindarin) 
 - Fixes in compiler (when using whileTrue:)
 - Fixes on shortcut printing (on OSX)
 - Fixes undo/redo in the rubric editor
