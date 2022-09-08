@@ -31,15 +31,31 @@ Current Pharo development status.
     - Debugger fixes
     - Cleanups for CleanBlock hierarchy
 - Debugger 
+    - Adding possibility to add bindings in debugger context interaction model
     - Lots of small improvements
+    - Lots of small UI fixes and tweaks
     - Cleanups
+- Inspector
+    - Columns now can be resized
+    - Lots of small UI fixes and tweaks
 - MetaLinks 
     - can be put on Pragmas
+- TestRunner
+    - We added a new experimental model
+- DoIts (Relevan in playground, etc.)
+    - we now can compile DoIts without a method header and without the need of code reformatting (without having to add a return).
+- Compiler
+    - It can now create methods from a Bytecode IR
+- Metamodel
+    - Storage of class comments enhanced
+    - 
 
 ### Speed
 
 - Improve #indexOfMonth: to not create symbols and compare without using #match 
 - Major speedup of the SelectorTable
+- Reduce Symbol creation during compilation and interactive use
+- support for arithmetic SIMD bytecodes 
 
 ### Fixes
 
@@ -47,9 +63,11 @@ Current Pharo development status.
 - MiniDrTests raise error 
 - Support UTF8 in Git Commit messages
 - Fix context menu commands of the StDebugger stack.
+- Enabled IM support in SDL2
 
 ### CleanUps
 
+- Deprecated10 package removed
 - Simplify SymbolTable code
 - remove methods that are the same in the superclass
 - Image size Reduced
@@ -69,5 +87,8 @@ Thank you all for your contributions.
 @@TODO@@
 
 And many many more who contributed indirectly by reporting bugs, participating in discussion threads, providing feedback etc., etc., etc.
+
+
+Latest taken into account: === 29/2022
 
 
