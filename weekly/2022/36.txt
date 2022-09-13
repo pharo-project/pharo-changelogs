@@ -1,0 +1,107 @@
+This week (36/2022) on the Pharo Issue Tracker
+
+
+We merged 24 PRs last week.
+
+
+Features
+========
+
+[improvement] add microsecond to API #11493
+	https://github.com/pharo-project/pharo/pull/11493
+		
+- adding entries in the debug world menu to enable / disable all breakpoints in the image #11614
+	https://github.com/pharo-project/pharo/pull/11614
+	
+	
+- Adding an API in OCBytecodeToASTCache, RBMethodNode and RBBlockNode to map AST nodes to a pc range. #11651
+	https://github.com/pharo-project/pharo/pull/11651
+	
+Speed
+=====
+
+- 11597-RPackagetoTagName-possibly-creates-an-extra-symbol #11604
+	https://github.com/pharo-project/pharo/pull/11604
+	
+Git/Iceberg
+===========
+
+- Treat trait class side definitions like class class side definitions too #1609
+	https://github.com/pharo-vcs/iceberg/pull/1609
+	
+- Fix/1426: ZnInvalidUTF8 when reading a commit message #1611
+	https://github.com/pharo-vcs/iceberg/pull/1611
+
+- When the remote server cuts the connection or there is an issue in th… #1613
+	https://github.com/pharo-vcs/iceberg/pull/1613
+	
+- Only compute critiques when needed #1610
+	https://github.com/pharo-vcs/iceberg/pull/1610
+
+Fixes
+=====
+
+- 11635-Compiler-eval-an-expression-with-halt-and-bindings-opens-Emergency-Evaluator #11637
+		https://github.com/pharo-project/pharo/pull/11637
+		
+- Attempt to fix scrolling behavior in RubAbstractTextArea & friends #11583
+	https://github.com/pharo-project/pharo/pull/11583
+
+- Fix leaking subscriptions in SpRubFindReplaceService #11608
+	https://github.com/pharo-project/pharo/pull/11608
+
+- Make explicit hostname and port work with bitbucket #11585
+	https://github.com/pharo-project/pharo/pull/11585
+	
+- Fix behavior of sum: on collections of doubles #11600
+	https://github.com/pharo-project/pharo/pull/11600
+
+- FTTableMorph: Allow expansion/collapse of nodes using arrow keys #11644
+	https://github.com/pharo-project/pharo/pull/11644
+	
+- [Quick review] fix #11265: Underscore in class name breaks text completion #11487
+	https://github.com/pharo-project/pharo/pull/11487
+	
+- FTTableMorph: Pass some keyboard events to the filter field if it is focused #11647
+	https://github.com/pharo-project/pharo/pull/11647
+
+
+Cleanup
+=======
+
+- RubAbstractTextArea: Avoid a superfluous isNotNil in handleEdit: #11645
+	https://github.com/pharo-project/pharo/pull/11645
+	
+- Cleanups necessary in FreeType #11636
+	https://github.com/pharo-project/pharo/pull/11636
+	
+- 11558-leadingChar-is-provided-but-unused #11654
+	https://github.com/pharo-project/pharo/pull/11654
+		
+Comments
+=========
+
+- Expand class comment for Set #11642
+	https://github.com/pharo-project/pharo/pull/11642
+	
+- Update vm links with the new pharo-vm repo #11652
+	https://github.com/pharo-project/pharo/pull/11652
+	
+- 11612-RBComment-class-comment #11653
+	https://github.com/pharo-project/pharo/pull/11653
+	
+	
+Pharo 10
+========
+
+- backportPharo10-11635-Compiler-eval-an-expression #11638
+	https://github.com/pharo-project/pharo/pull/11638
+	
+Pharo 9
+========
+
+- Use iceberg 2.0.5.1 #11596
+	https://github.com/pharo-project/pharo/pull/11596
+	
+	
+	
