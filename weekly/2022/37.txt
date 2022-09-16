@@ -1,0 +1,68 @@
+We merged 18 PRs this week.
+
+
+Features
+========
+
+- Creating a user interface for Time Profiler and Andreas Profiler #11673
+	https://github.com/pharo-project/pharo/pull/11673
+	
+- FileBrowser loadable again: P10+ updates, multiple fixes #409
+	https://github.com/pharo-spec/NewTools/pull/409
+
+Fixes
+=====
+
+- Improve FileReference>>= #11663
+	https://github.com/pharo-project/pharo/pull/11663
+
+- Enabling formating of uncompiled method #11672
+	https://github.com/pharo-project/pharo/pull/11672
+
+- Fix case insensitive auto-completion setting #11564
+	https://github.com/pharo-project/pharo/pull/11564
+
+- SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR=0 on Linux #11664
+	https://github.com/pharo-project/pharo/pull/11664
+	
+- Reduce false positives of some general rules #11682
+	https://github.com/pharo-project/pharo/pull/11682
+	
+- Git: Make remote comparison work better between remotes with different urls
+	https://github.com/pharo-vcs/iceberg/pulse
+
+- 97-Inspector-Meta-tab-Browse-on-class-opens-UndefinedObject #416
+	https://github.com/pharo-spec/NewTools/pull/416
+
+Cleanup
+=======
+
+- unify-category-Context #11686
+	https://github.com/pharo-project/pharo/pull/11686
+	
+- Corrected spelling per Issue #11674 #11675
+	https://github.com/pharo-project/pharo/pull/11675
+	
+- Cleaning CharacterSet class >> #allCharacters #11662
+	https://github.com/pharo-project/pharo/pull/11662
+	
+- Deprecated method Character class >> #allCharacters and replaced its references #11660
+	https://github.com/pharo-project/pharo/pull/11660
+	
+- Clean ast core #11681
+	https://github.com/pharo-project/pharo/pull/11681
+	
+Comments
+========
+
+- Expand Heap, Interval, LinkedList class comments #11667
+	https://github.com/pharo-project/pharo/pull/11667
+	
+- Adds executable comments to False and True classes #11666
+	https://github.com/pharo-project/pharo/pull/11666
+	
+Pharo 10
+=======
+
+- Revert "Creates Graphical UI for AndreasProfiler and TimeProfiler" #11676
+	https://github.com/pharo-project/pharo/pull/11676
