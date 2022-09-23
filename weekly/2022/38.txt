@@ -1,0 +1,52 @@
+This week (38/2022) on the Pharo Issue Tracker
+
+We merged 13 PRs and closed 12 issues this week:
+
+There are many more PRs ready in need of a rieview:
+		https://github.com/pharo-project/pharo/pulls
+
+
+Fixes
+=====
+
+- Pharo11: Bug fix + code cleanup for issue #11705: Error: Instances of RBProtocolEnvironment are not indexable #11708
+	https://github.com/pharo-project/pharo/pull/11708
+	
+- Fix for segmentation fault issue on new Pharo 11 image #11715
+	https://github.com/pharo-project/pharo/pull/11715
+	
+- Integrate Roassal3 v0.9.9i2 #11711
+	https://github.com/pharo-project/pharo/pull/11711
+	https://github.com/pharo-project/pharo/pull/11704
+	
+- clean String reading from FFI to return bytes to allow decoding with any decoder. #11668
+	https://github.com/pharo-project/pharo/pull/11668
+	
+- DrTest see extension classes #11689
+	https://github.com/pharo-project/pharo/pull/11689
+
+- fix testIconProvider #1314
+		https://github.com/pharo-spec/Spec/pull/1314
+
+- Adds a setting to change the default playground cache directory. #419
+	https://github.com/pharo-spec/NewTools/pull/419
+
+- [Debugger] Improving skipUpTo stability + reintegration in the advanced debugging tools #415
+	https://github.com/pharo-spec/NewTools/pull/415
+	
+Cleanups
+========
+
+- 11613-Review-RBLiteralNode-classvalue #11701
+	https://github.com/pharo-project/pharo/pull/11701
+	
+- 4995-Epicea-fix-EpApplyPreviewerTesttestTraitModification #11691
+	https://github.com/pharo-project/pharo/pull/11691
+	
+- deprecate taskbarIcon and systemIcon #11695
+	https://github.com/pharo-project/pharo/pull/11695
+	
+Websites
+========
+
+- Fixed SSL problems with https://consortium.pharo.org 
