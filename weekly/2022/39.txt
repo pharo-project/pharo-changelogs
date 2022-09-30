@@ -1,0 +1,61 @@
+This week (39/2022) on the Pharo Issue Tracker
+
+This week we merged 13 PRs:
+
+
+Fixes
+=====
+
+Fixing ProfilerUI issues #11732
+	https://github.com/pharo-project/pharo/pull/11732
+	
+Prevent BlockClosure>>benchFor: to loop infinitely #11698
+	https://github.com/pharo-project/pharo/pull/11698
+	
+Integrate Roassal3 v0.9.9j #11728
+	https://github.com/pharo-project/pharo/pull/11728
+	
+Make title bar layout dependent on new settings option and OS #11719
+	https://github.com/pharo-project/pharo/pull/11719
+	
+11720-Improve-ReUtilityMethodsRule #11722
+	https://github.com/pharo-project/pharo/pull/11722
+		
+Upgrading the version of libgit2-bindings. #1616
+	https://github.com/pharo-vcs/iceberg/pull/1616
+	
+
+
+Speed
+=====
+
+11725-Startup-Slow-in-OSX-previous-to-Monterrey #11726
+	https://github.com/pharo-project/pharo/pull/11726
+	
+Faster Array>>asX and Array>>as: #11716
+	https://github.com/pharo-project/pharo/pull/11716
+	
+Features
+========
+
+Add Point>>#isInRectangle #11721
+	https://github.com/pharo-project/pharo/pull/11721
+	
+allow to specify accept callback on an option list #1315
+	https://github.com/pharo-spec/Spec/pull/1315
+
+Cleanup
+=======
+
+- Moving Deferred messages to instance side #11714
+	https://github.com/pharo-project/pharo/pull/11714
+
+- 11631-Clarify-if-TViewModelMock3-is-in-correct-package #11690
+	https://github.com/pharo-project/pharo/pull/11690
+	
+	
+Pharo10
+=======
+
+Pharo10: Bug fix + code cleanup for issue #11705: Error: Instances of RBProtocolEnvironment are not indexable #11706
+	https://github.com/pharo-project/pharo/pull/11706
