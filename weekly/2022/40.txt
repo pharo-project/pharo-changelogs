@@ -1,0 +1,68 @@
+This week (40/2022) on the Pharo Issue Tracker
+
+We merged 16 PRs this week:
+
+Fixes
+=====
+
+- 11671-MetaLinks-on-methods-with-no-return-statement-implicit-self-are-called-twice #11759
+	https://github.com/pharo-project/pharo/pull/11759
+	
+- Fix "undo" operation erroneously removing the dirty flag when undo operation performed after saving #11655
+	https://github.com/pharo-project/pharo/pull/11655
+	
+- fix 11709: DTRFTPlugin class missing even though #11513 was merged #11736
+	https://github.com/pharo-project/pharo/pull/11736
+	
+- Remove unused refactor #11738
+	https://github.com/pharo-project/pharo/pull/11738
+	
+- Fix RefactoringChangeTests on fluid #11741
+	https://github.com/pharo-project/pharo/pull/11741
+	
+- Class definition popup uses the default class syntax (fluid with the new default) #11737
+	https://github.com/pharo-project/pharo/pull/11737
+	
+- Debugger selection messed up when using breakpoints in a block #11733 #11734
+	https://github.com/pharo-project/pharo/pull/11734
+
+
+Features
+========
+
+- Add a browser tool to see package dependencies #11700
+	https://github.com/pharo-project/pharo/pull/11700
+
+Speed
+=====
+
+- Removing the reification of TFSameThreadCall #11739
+	https://github.com/pharo-project/pharo/pull/11739
+	
+Documentation	
+=============
+
+- Add executable comments on Collection for do: and stream related #11699
+	https://github.com/pharo-project/pharo/pull/11699
+
+	
+Cleanups
+========
+
+- Improve compiler plugin implementation for P11 #11761
+	https://github.com/pharo-project/pharo/pull/11761
+	
+- Rename AddClass refactoring/transformation to InsertClass and cleanup #11757
+	https://github.com/pharo-project/pharo/pull/11757
+
+- 11753-Enhance-Breakpoint-API-with-enabled-method #11758
+	https://github.com/pharo-project/pharo/pull/11758
+	
+- Move nameToDisplay from Refactoring-Changes to Ring-Definitions-Core #11751
+	https://github.com/pharo-project/pharo/pull/11751
+	
+- Replace nested conditions with guard close #11754
+	https://github.com/pharo-project/pharo/pull/11754
+	
+- Refactoring engine small cleanup #11746
+	https://github.com/pharo-project/pharo/pull/11746
