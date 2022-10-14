@@ -1,0 +1,65 @@
+This week (41/2022) on the Pharo Issue Tracker
+
+
+Fixes
+=====
+
+- CopyClassRefactoring copies class comment as well #11789
+	https://github.com/pharo-project/pharo/pull/11789
+	
+- add missing utf8StringFromCString methods #11791
+	https://github.com/pharo-project/pharo/pull/11791
+	
+- Fixed resolving desktop file location #11768
+	https://github.com/pharo-project/pharo/pull/11768
+
+Features
+========
+
+- 11775 feature request adding breakpoint groups and break on count breakpoints #11776
+	https://github.com/pharo-project/pharo/pull/11776
+	
+- Multiline Executable Comments #11774
+	https://github.com/pharo-project/pharo/pull/11774
+
+CI
+==
+
+- Odd PR builds use the the latest VM, else use the stable VM #11678
+	https://github.com/pharo-project/pharo/pull/11678
+
+
+Tests
+=====
+
+- Reflectivity: more tests for multiple links #11782
+	https://github.com/pharo-project/pharo/pull/11782
+
+Cleanups
+========
+
+- simplify Closure>>#arguments by using #collect: #11772
+	https://github.com/pharo-project/pharo/pull/11772
+
+- Syntactic check a single >>> on executable comments #11784
+	https://github.com/pharo-project/pharo/pull/11784
+
+- Remove obsolete code in RBCondition
+	https://github.com/pharo-project/pharo/pull/11767
+	
+- Categorize refactorings and transformations #11783
+	https://github.com/pharo-project/pharo/pull/11783
+	
+- Cleanup-ClassParser-CDClassDefinitionModel #11787
+	https://github.com/pharo-project/pharo/pull/11787
+	
+- Move RBReplacePreview to NautilusRefactoring #11765
+	https://github.com/pharo-project/pharo/pull/11765
+	
+
+Comments
+========
+
+- Add more executable comments for Collection #11683
+	https://github.com/pharo-project/pharo/pull/11683
+	
