@@ -1,0 +1,48 @@
+This week (42/2022) on the Pharo Issue Tracker
+
+We merged 9 PRs this week
+
+
+Features
+=======
+
+- Add a shortcut to extract method refactoring #11814
+	https://github.com/pharo-project/pharo/pull/11814
+
+
+Fixes
+=====
+
+- Fix : missing isScripting method in LessonView #11815
+	https://github.com/pharo-project/pharo/pull/11815
+
+- Update comment to reflect refactoring actions #11778
+	https://github.com/pharo-project/pharo/pull/11778
+	
+- CI: when getting pharo version/prefix on PR, do not use --first-parent #11780
+	https://github.com/pharo-project/pharo/pull/11780
+	
+- Pharo11: 6191 find between substrings freezes the image #11771
+	https://github.com/pharo-project/pharo/pull/11771
+	
+Cleanups
+========
+
+- 11792-FFIConstantHandleTest-calls-deprecated-method-FFIExternalReferencehandle #11793
+	https://github.com/pharo-project/pharo/pull/11793
+	
+- moved the condition creation from the calypso package to the breakpoint #11807
+	https://github.com/pharo-project/pharo/pull/11807
+	
+Tests
+=====
+
+- This adds an example and a test for Fluid Slot definitions #11786
+	https://github.com/pharo-project/pharo/pull/11786
+	
+	
+Pharo10
+=======
+
+- Pharo10: CI: when getting pharo version/prefix on PR, do not use --first-parent #11785
+	https://github.com/pharo-project/pharo/pull/11785
