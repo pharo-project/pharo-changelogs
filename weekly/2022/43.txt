@@ -1,0 +1,38 @@
+This week (43/2022) on the Pharo Issue Tracker
+
+We merged 8 PRs this week:
+
+
+Features
+========
+
+- Add a shortcut to extract method refactoring #11814
+	https://github.com/pharo-project/pharo/pull/11814
+	
+- Adding removeKey:ifAbsent: #11821
+	https://github.com/pharo-project/pharo/pull/11821
+	
+- add Collection>>atRandom:weighting: and cie and tests #11829
+	https://github.com/pharo-project/pharo/pull/11829
+	
+	
+
+Fixes
+========
+- Fix : missing isScripting method in LessonView #11815
+	https://github.com/pharo-project/pharo/pull/11815
+	
+- made rename method refactor "Spec2 compliant" #11826
+	https://github.com/pharo-project/pharo/pull/11826
+	
+- Cleanup-asCollectionElement-ChunkFileFormatParser #11827
+	https://github.com/pharo-project/pharo/pull/11827	
+
+- Bugfix: Browse class from Meta inspector pane #425
+	https://github.com/pharo-spec/NewTools/pull/425
+	
+Pharo10
+=======
+
+- Pharo10: 6191 find between substrings freezes the image #11770
+	https://github.com/pharo-project/pharo/pull/11770
