@@ -1,0 +1,34 @@
+This week (44/2022) on the Pharo Issue Tracker
+
+
+We merged 7 PRs this week
+
+Fixes
+=====
+
+- 11727 double click and drag does not select whole words #11838
+	https://github.com/pharo-project/pharo/pull/11838
+
+- ClassParser: CDVariableNode should use AST of the variable definition #11788
+	https://github.com/pharo-project/pharo/pull/11788
+	
+- Closes #11817. The class creation text suggestion in Calypso now uses the current cl… #11846
+	https://github.com/pharo-project/pharo/pull/11846
+	
+- fixing OCBcToASTCache so that pcsForNode: gives the bytecode offsets associated to a node, in the ascending order #11847
+	https://github.com/pharo-project/pharo/pull/11847
+	
+- Change extract method shortcut to cmd e, cmd m #11839
+	https://github.com/pharo-project/pharo/pull/11839
+	
+- Fix #11794: Enhance CI to use the right VM version #11795
+	https://github.com/pharo-project/pharo/pull/11795
+	
+
+
+Refactoring Engine
+==================
+
+- Transition MoveMethodToClassSide refactoring to use driver object #11825
+	https://github.com/pharo-project/pharo/pull/11825
+
