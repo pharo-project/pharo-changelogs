@@ -1,0 +1,72 @@
+This week (45/2022) on the Pharo Issue Tracker
+
+
+We merged 17 PR this week:
+
+Code Coverage
+=============
+
+- Package 'Coverage' as a higher level API for code coverage #11830
+	https://github.com/pharo-project/pharo/pull/11830
+
+- Coverage: add static callgraphs #11866
+	https://github.com/pharo-project/pharo/pull/11866
+
+Refactoring Engine
+==================
+
+- Transition deprecate method refactoring to use driver #11851
+	https://github.com/pharo-project/pharo/pull/11851
+	
+- Fix: #11868 generate hash and printOn: are NOT refactoring so indicat… #11869
+	https://github.com/pharo-project/pharo/pull/11869
+		
+- Fixes #11872 adding abstract method and improving generate accessors #11873
+	https://github.com/pharo-project/pharo/pull/11873
+	
+- Fixes #11874: Remove new method to class side #11875
+	https://github.com/pharo-project/pharo/pull/11875
+	
+- fix #11877: Cleaning Replace Calls Transformation #11878
+	https://github.com/pharo-project/pharo/pull/11878
+
+
+Fixes
+=====
+
+- Fix #11843 renaming a manifest breaks. #11857
+	https://github.com/pharo-project/pharo/pull/11857
+	
+- 11842-Context-menu-on-class-variables-opens-debug-menu #11864
+	https://github.com/pharo-project/pharo/pull/11864
+	
+- Fixes the problem related to backwards selection. Closes #11848 #11849
+	https://github.com/pharo-project/pharo/pull/11849
+	
+- Fix the printString of sequences including the same modifier. #11865
+	https://github.com/pharo-project/pharo/pull/11865
+
+
+Cleanup
+=======
+
+- Fix: #11852 one less obsolete pragma #11856
+	https://github.com/pharo-project/pharo/pull/11856
+	
+- Fix: #11854 removing useless code and obsolete pragmas! #11855
+	https://github.com/pharo-project/pharo/pull/11855
+	
+- Clean blocks simpler checks #11879
+	https://github.com/pharo-project/pharo/pull/11879
+	
+- #instVarNamed: does not need to send #asSymbol to the name #11860
+	https://github.com/pharo-project/pharo/pull/11860
+
+- Make drtests spec2 compatible #11859
+	https://github.com/pharo-project/pharo/pull/11859
+	
+Pharo10
+=======
+
+- [improvement] backport of #11487: Underscore in class name breaks text completion #11837
+	https://github.com/pharo-project/pharo/pull/11837
