@@ -1,0 +1,100 @@
+We merged 18 PRs
+
+Lots of improvements related to  BlockClosures this week. 
+
+First some helper methods on the AST:
+- #hasNonLocalReturn: check if there is a non-local return
+- #isConstant: Blocks of the kind [#justSomeLiteral]
+- #constantValue: return that literal (and nil for empty [] )
+- #numArgs for RBBlockNode, as we have already for BlockClosure  "[:a | ] sourceNode numArgs"
+
+Some improvements for isClean:
+- unify between AST and BlockClosure
+- more tests
+- inlined blocks can be clean, important as it is recursive: [true ifTrue: []] should be clean
+- cleanup code in CleanBlock, receiver is known to be nil
+
+Compiler support for ConstantBlockClosure:
+- We can specialize clean blocks of the kind [#justSomeLiteral] to execute faster
+- add ConstantBlockClosure, add compiler support, active when compiling with clean blocks enabled
+
+Compiler support for full block without outer context:
+- we only need the outerContext for non-local returns. 
+- add support to IRBuilder for full blocks without outer context
+- implement compiler support (option #optionBlockClosureOptionalOuter, false for now)
+
+Quick return for Blocks:
+- Compile quickreturn for CompiledBlock, just like CompiledMethod (e.g. for [^1]).
+- speeds up execution a little (but of course not creation)
+
+Block Closures
+==============
+
+- AST: add a recursive #hasNonLocalReturn and #isConstant #11882
+	https://github.com/pharo-project/pharo/pull/11882
+	
+- add #numArgs to RBBlockNode #11902
+	https://github.com/pharo-project/pharo/pull/11902
+
+- CleanBlock cleanup code: there should be no receiver ivar #11884
+	https://github.com/pharo-project/pharo/pull/11884
+	
+- 11881-RBBlockNodeisClean-takes-every-optimized-block-to-be-not-clean #11890
+	https://github.com/pharo-project/pharo/pull/11890
+	
+- 1883-CleanBlockChecker-does-not-recurse-into-the-blocks #11900
+	https://github.com/pharo-project/pharo/pull/11900
+	
+- ConstantBlockClosure: active when compiling with clean blocks enabled #11894
+	https://github.com/pharo-project/pharo/pull/11894
+	
+- CompiledBlocks: compile quick returns #11907
+	https://github.com/pharo-project/pharo/pull/11907
+
+- IRBuilder: add support for outerContext flag for Closure creation #11905
+	https://github.com/pharo-project/pharo/pull/11905
+	
+- 11911-Compiler-add-compiler-option-for-outerContextNeeded #11917
+	https://github.com/pharo-project/pharo/pull/11917
+	
+
+
+Fixes
+=====
+
+- Register-as-basicInspector #431
+	https://github.com/pharo-spec/NewTools/pull/431
+	
+- 11803 return value of inspect should be the receiver and not a sp window presenter #11886
+	https://github.com/pharo-project/pharo/pull/11886
+	
+- Fixes #429, VersionBrowser: left pane empty #430
+	https://github.com/pharo-spec/NewTools/pull/430
+
+- Turn off ReLongMethodsRule for test methods #11892
+	https://github.com/pharo-project/pharo/pull/11892
+	
+- ClassParser: Implement #asSlot to return a correct Slot instances for complex slots #11898
+	https://github.com/pharo-project/pharo/pull/11898
+	
+- Fixes #11802 - Adds full consistency checks to class Time #11891
+	https://github.com/pharo-project/pharo/pull/11891
+	
+- Fixing to correctly get the VM for running the tests #11897
+	https://github.com/pharo-project/pharo/pull/11897
+	
+- Fixes #429, VersionBrowser: left pane empty #430
+	https://github.com/pharo-spec/NewTools/pull/430
+	
+Cleanup
+=======
+- 11810-FT2Handle-classstartUp-compiled-code-on-image-startup #11811
+	https://github.com/pharo-project/pharo/pull/11811
+	   
+	
+	
+Comments
+=========
+
+- fixing comments in package Regex #11888
+	https://github.com/pharo-project/pharo/pull/118
