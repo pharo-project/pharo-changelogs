@@ -1,0 +1,132 @@
+This week (47/2022) on the Pharo Issue Tracker.
+
+We merge 33 PRs this week.
+
+
+Features / Enhancements
+=========
+
+- Introducing new icons #11896
+	https://github.com/pharo-project/pharo/pull/11896
+	
+- Enhancement: PackageManifest with an own system icon #11956
+	https://github.com/pharo-project/pharo/pull/11956
+	
+- ReNotOptimizedIfNilRule #11932
+	https://github.com/pharo-project/pharo/pull/11932
+	
+- Sync #basicInspect and inspect #11899
+	https://github.com/pharo-project/pharo/pull/11899
+	
+	
+Blocks / Compiler
+=======
+
+Constant blocks now implement correct error handling wrt to number of arguments, we now have an option to enable compiling constant block (#optionConstantBlockClosure) and can recompile the whole system with compiling constant blocks.
+
+
+- 11912-Compiler-add-option-for-constant-blocks #11927
+	https://github.com/pharo-project/pharo/pull/11927
+
+- Blocks: pcInOuter-not-Debugging #11951
+	https://github.com/pharo-project/pharo/pull/11951
+
+- Class comments for Compiler classes (mostly exceptions) #11948
+	https://github.com/pharo-project/pharo/pull/11948
+	
+- Some smaller fixes/cleanups related to Blocks #11936
+	https://github.com/pharo-project/pharo/pull/11936
+
+- Context-print-no-isClean-check #11922
+	https://github.com/pharo-project/pharo/pull/11922
+	
+- 11901-ConstantBlockClosure-raise-error-if-called-with-wrong-number-of-args #11919
+	https://github.com/pharo-project/pharo/pull/11919
+
+- Better-CompiledCode-Inspector: highlight in source #436
+	https://github.com/pharo-spec/NewTools/pull/436
+	
+- Inspect-CompiledBlock-IR #435
+	https://github.com/pharo-spec/NewTools/pull/435
+	
+	
+Fixes
+=====
+
+- fix OSWIndowDriver shutdown while saving #11831
+	https://github.com/pharo-project/pharo/pull/11831
+
+- do not rebuild all Calypso tools at each selection change #11952
+	https://github.com/pharo-project/pharo/pull/11952
+
+- EpHasImpactVisitor>>visitProtocolRemoval: handle protocols that only contain trait methods. #11942
+	https://github.com/pharo-project/pharo/pull/11942
+
+- RubTextEditor: Bind the MENU key to open the context menu #11659
+	https://github.com/pharo-project/pharo/pull/11659
+	
+- Fixes #11925, ExternalBrowser does not show class definition from ST files Bug #11929
+	https://github.com/pharo-project/pharo/pull/11929
+	
+- 11762 cannot view st file content with code file browser #11924
+	https://github.com/pharo-project/pharo/pull/11924
+	
+- Fix debugger to update debugger extensions when a context is selected in the stack + fixing bytecode extension #405
+	https://github.com/pharo-spec/NewTools/pull/405
+
+
+Git Support
+==========
+
+- Forget repository iceberg error on windows #1633
+	https://github.com/pharo-vcs/iceberg/pull/1633
+	
+- Fixing the error handling. #1631
+	https://github.com/pharo-vcs/iceberg/pull/1631
+	
+- Migrate GT inspector extensions to new tools model #1630
+	https://github.com/pharo-vcs/iceberg/pull/1630
+
+CI Setup
+========
+
+- Fixing runKernelTests to make it work with alternating VMs #11935
+	https://github.com/pharo-project/pharo/pull/11935
+	
+- Improve bootstrap.sh #11824
+	https://github.com/pharo-project/pharo/pull/11824
+	
+Cleanup
+=======
+
+- Remove old comment editors #11945
+	https://github.com/pharo-project/pharo/pull/11945
+
+- Cleanup on The package TestRunner #11509
+	https://github.com/pharo-project/pharo/pull/11509
+	
+	
+Trivial Cleanups
+===============
+
+- Cleanup TypingVisitor>>#initialize method category #11958
+	https://github.com/pharo-project/pharo/pull/11958
+	
+- Clenaup MemoryLogger>>#initialize #11962
+	https://github.com/pharo-project/pharo/pull/11962
+	
+- Cleanup: Fix lint TFTestCallbackExceptionHandler>>#initialize #11960
+	https://github.com/pharo-project/pharo/pull/11960
+	
+- simplify some users of #ifNil:ifNotNil: to use not nil arg #11930
+	https://github.com/pharo-project/pharo/pull/11930
+	
+- Use-optimizable-ifTrue #11923
+	https://github.com/pharo-project/pharo/pull/11923
+	
+- remove the unused <return:> pragma in spotter #434
+	https://github.com/pharo-spec/NewTools/pull/434
+	
+ - avoid #asSymbol for the defaultFont. fixes #1329 #1330
+ 	https://github.com/pharo-spec/Spec/pull/1330
+ 
