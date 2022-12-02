@@ -1,0 +1,134 @@
+This week (48/2022) on the Pharo Issue Tracker.
+
+
+This week we merged 34 PRs. 
+
+
+
+Features
+========
+
+- New refactoring changes preview presenter #11887
+	https://github.com/pharo-project/pharo/pull/11887
+
+- Creating a method to print the "full" debug stack #11983
+	https://github.com/pharo-project/pharo/pull/11983
+	
+- 11544 enhance socket to show meaningful errors #11921
+	https://github.com/pharo-project/pharo/pull/11921
+
+- Adding debugger extension visitor to display variables from extensions (as Chest) #402
+	https://github.com/pharo-spec/NewTools/pull/402
+	
+- add a Method Source View for Context #440
+	https://github.com/pharo-spec/NewTools/pull/440
+
+
+Blocks
+======
+
+- Tests for clean and constant blocks #12015
+	https://github.com/pharo-project/pharo/pull/12015
+
+- Support #isReturnSpecial on CompiledBlock #11987
+	https://github.com/pharo-project/pharo/pull/11987
+	
+- 11966-Implement-BlockClosurehomeMethod-without-using-home #12000
+	https://github.com/pharo-project/pharo/pull/12000
+
+- StDebugger-stackSelectionMethodContext-homeMethod #445
+	https://github.com/pharo-spec/NewTools/pull/445
+	
+- use Context>>#homeMethod #12023
+	https://github.com/pharo-project/pharo/pull/12023
+	
+- 11967-Implement-findMethodContextSuchThat #12013
+	https://github.com/pharo-project/pharo/pull/12013
+	
+- ConstantBlock-fix-DebuggerTest #12024
+	https://github.com/pharo-project/pharo/pull/12024
+	
+
+Fixes
+=====
+
+- 11844-Renaming-a-package-loses-all-the-package-extensions #11982
+	https://github.com/pharo-project/pharo/pull/11982
+	
+- [Compiler] fix code generation when compiling syntax errors: EnglobingError #11947
+	https://github.com/pharo-project/pharo/pull/11947
+	
+- fix var lookup in debugger when block pushed on stack #11989
+	https://github.com/pharo-project/pharo/pull/11989
+	
+- Fix print on recursive array #11916
+	https://github.com/pharo-project/pharo/pull/11916
+
+- 11937-Cycling-of-Halos-does-not-work-anymore #12016
+	https://github.com/pharo-project/pharo/pull/12016
+	
+- Fixed #11946. Added SequenceableCollection>>truncatedToSize and a trait to test it #11988
+	https://github.com/pharo-project/pharo/pull/11988
+
+- Fix: "Copy stack to clipboard" doesnt copy the whole stack #442
+	https://github.com/pharo-spec/NewTools/pull/442
+
+
+Speed
+=====
+
+- Fix slow execution time when using CharacterSet or CharacterSetComple… #11991
+	https://github.com/pharo-project/pharo/pull/11991
+
+- 12006-Performance-Regression-in-Fuel-Serialization-of-Blocks--CompiledMethods #12022
+	https://github.com/pharo-project/pharo/pull/12022
+	
+External Packages
+=================
+
+- Updating version of tonel #12003
+	https://github.com/pharo-project/pharo/pull/12003
+	
+- Integrate Roassal3 v0.9.9k #12012
+	https://github.com/pharo-project/pharo/pull/12012
+
+
+Cleanup Help
+============
+
+- Fix #11949 less help class #11950
+	https://github.com/pharo-project/pharo/pull/11950
+	
+- Fix spechelp problem #11999
+	https://github.com/pharo-project/pharo/pull/11999
+	
+- Fix 11994 Another pass to remove help classes. Waiting for the integr… #11996
+	https://github.com/pharo-project/pharo/pull/11996
+	
+- Removing help support #12001
+	https://github.com/pharo-project/pharo/pull/12001
+	
+- Removing remaing Help Topic references #444
+	https://github.com/pharo-spec/NewTools/pull/444
+
+- remove help processor #443
+	https://github.com/pharo-spec/NewTools/pull/443
+	
+- remove Spec2-Help #1333
+	https://github.com/pharo-spec/Spec/pull/1333
+	
+	
+Trival Cleanups
+===============
+
+- Cleanup STON classes who show lint issue on categorization of #initia… #11964
+	https://github.com/pharo-project/pharo/pull/11964
+	
+- add tag "system" #11985
+	https://github.com/pharo-project/pharo/pull/11985
+	
+- 12009-ProperMethodCategorizationTesttestNoUncategorizedMethods-fails-on-CI #12010
+	https://github.com/pharo-project/pharo/pull/12010
+	
+- Trivial-clean-Morph #12025
+	https://github.com/pharo-project/pharo/pull/12025
