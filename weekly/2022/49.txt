@@ -1,0 +1,88 @@
+This week (49/2022) on the Pharo Issue Tracker.
+
+
+This week we merged 20 PRs. 
+
+
+Blocks
+======
+Status: All tests green when compiling with ConstantBlockClosure (but the option is not yet enabled by default)
+Work continues to reducing the use of #home by using #homeMethod instead of "home method"
+
+- 12008-Blocks-check-senders-of-compiledCode-can-we-use-homeMethod #12032
+	https://github.com/pharo-project/pharo/pull/12032
+
+- Context-use-homeMethod #12007
+	https://github.com/pharo-project/pharo/pull/12007
+
+- some trivial improvements batched (Compiler / Context / Blocks) #12035
+	https://github.com/pharo-project/pharo/pull/12035
+	
+- ConstantBlocks-fix-testIsNotTerminatedWhenItIsInsideLastTerminationMethod #12026
+	https://github.com/pharo-project/pharo/pull/12026
+
+- ConstantBlocks-Fix-Announcement-Tests #12027
+	https://github.com/pharo-project/pharo/pull/12027
+	
+- Disablequickreturn in blocks #12053
+	https://github.com/pharo-project/pharo/pull/12053
+
+
+Refactoring Engine
+==================
+
+- Refactor make class abstract #12060
+	https://github.com/pharo-project/pharo/pull/12060
+	
+	
+Features
+=====
+
+- Environment: comment #allMethods, add #methods #12028
+	https://github.com/pharo-project/pharo/pull/12028
+	
+- help method for converting integers into corresp… #11800
+	https://github.com/pharo-project/pharo/pull/11800
+	
+- Extend DiffMorph to make it navigable accross differences #11641
+	https://github.com/pharo-project/pharo/pull/11641
+
+
+Fixes
+=====
+
+- 12049-CI-failure-in-build-testSetUpMethodInSUnitTestsNeedsToBeInRunningProtocol #12051
+	https://github.com/pharo-project/pharo/pull/12051
+	
+- Fix #11995: Handle attempted creation of existing package gracefully #12048
+	https://github.com/pharo-project/pharo/pull/12048
+	
+- Should fix issue 11915 - Pharo compound shortcuts #11954
+	https://github.com/pharo-project/pharo/pull/11954
+	
+- [fix] Pharo issue # 11390: Browsing implementors/senders from source code editors doesn't browse expected selector #1298
+	https://github.com/pharo-spec/Spec/pull/1298
+	
+- Using version v3.0.4 of libgit to fix the 1.4.4 version in linux #1643
+	https://github.com/pharo-vcs/iceberg/pull/1643
+	
+- Fix Crash when invalid credentials #1642
+	https://github.com/pharo-vcs/iceberg/pull/1642
+
+Cleanup
+=======
+
+- Replacing baseColor method call from class to instance side #12030
+	https://github.com/pharo-project/pharo/pull/12030
+	
+- Fix lint issues #11978
+	https://github.com/pharo-project/pharo/pull/11978
+	
+- 12046 has non standard palette is always returning false #12047
+	https://github.com/pharo-project/pharo/pull/12047
+	
+Pharo10
+=======
+
+- [backport] CompiledCode: add #bytecodes #12031
+	https://github.com/pharo-project/pharo/pull/12031
