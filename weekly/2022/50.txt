@@ -1,0 +1,82 @@
+This week (50/2022) on the Pharo Issue Tracker: 
+
+We merged 19 PRs, fixing 38 issues.
+
+
+Features
+========
+
+- Fix 12044 introduces hexString and related tests #12045
+	https://github.com/pharo-project/pharo/pull/12045
+	
+
+Blocks
+======
+
+- Enable Constant Block Compilation by default #11931
+	https://github.com/pharo-project/pharo/pull/11931
+	
+- 11984-CompiledBlockhasMethodReturn-is-not-a-good-name #12020
+	https://github.com/pharo-project/pharo/pull/12020
+	
+- 11965-Implement-ContextactiveHome-without-using-home #12063
+	https://github.com/pharo-project/pharo/pull/12063
+	
+- 12014-HECompiledBlockvalue-send-non-exiting-selector-encoderClassName #12070
+	https://github.com/pharo-project/pharo/pull/12070
+	
+- 12034-Context-we-have-both-home-and-methodReturnContext #12098
+	https://github.com/pharo-project/pharo/pull/12098
+
+- Context: unify #selector and #methodSelector #12100
+	https://github.com/pharo-project/pharo/pull/12100
+	
+
+Refactoring Engine
+==================
+
+- Introduce input validation as first precondition of a refactoring #12050
+	https://github.com/pharo-project/pharo/pull/12050
+
+
+Fixes
+=====
+
+- 12066-CI-test-failing-on-CI-SystemDependenciesTesttestExternalBasicToolsDependencies #12073
+	https://github.com/pharo-project/pharo/pull/12073
+
+- Add missing keyDown: message in FTSearchFunction #12087
+	https://github.com/pharo-project/pharo/pull/12087
+	
+- Fix: #12089 the metaclass was placing one # while it should not! + ad… #12090
+	https://github.com/pharo-project/pharo/pull/12090
+	
+- Fix class editor not refreshing when switching between class/instance sides #12095
+	https://github.com/pharo-project/pharo/pull/12095
+	
+- 12110-ReAbstractCritique-asModalWindow #12111
+	https://github.com/pharo-project/pharo/pull/12111
+	
+- Debugger-Implementors-Of #1337
+	https://github.com/pharo-spec/Spec/pull/1337
+	
+- Fix Filetree to Tonel transformation #1646
+	https://github.com/pharo-vcs/iceberg/pull/1646
+	
+Cleanups
+========
+
+- merge ReAssignmentWithoutEffectRule and ReRemoveAssignmentWithoutEffectRule #12071
+	https://github.com/pharo-project/pharo/pull/12071
+	
+- Factorize the list of VM parameters #12072
+	https://github.com/pharo-project/pharo/pull/12072
+	
+- Cleanup: lint cleanup regarding class side #initialize categorization for Metacello classes #12076
+	https://github.com/pharo-project/pharo/pull/12076
+	
+- Small lint issue in Athens cairo tests #12092
+	https://github.com/pharo-project/pharo/pull/12092
+	
+- Cleanup: Fix typo in DailyNonInteractiveTranscript>>#initializeStream #12094
+	https://github.com/pharo-project/pharo/pull/12094
