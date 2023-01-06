@@ -1,0 +1,68 @@
+We merged 32 PRs and closed 16 issues this week
+
+Features
+=========
+
+- Slots: For experiments, add Setting for unrestricted definitions #12113
+	https://github.com/pharo-project/pharo/pull/12113
+	
+- Introduce release test to check that "selectors send but not implemented" cases do not grow #12117
+	https://github.com/pharo-project/pharo/pull/12117
+
+- New rule to remove unnecessary separators and dots #12167
+	https://github.com/pharo-project/pharo/pull/12167
+	
+- Potential Magritte extensions to be harvested to improve collection #12179
+	https://github.com/pharo-project/pharo/pull/12179
+
+
+Fixes
+=====
+
+- DoubleLinkedList newFrom: does not work correctly #12164
+	https://github.com/pharo-project/pharo/pull/12164
+
+- Formatter adds unnecessary empty line before (first) method comment #12178
+	https://github.com/pharo-project/pharo/pull/12178
+
+- Recursion found #12182
+	https://github.com/pharo-project/pharo/pull/12182
+	
+- fix Set class comment #12222
+	https://github.com/pharo-project/pharo/pull/12222
+	
+- RBMakeClassAbstractTransformation-no-whitespace #12209
+	https://github.com/pharo-project/pharo/pull/12209
+	
+- fix TFProcessLocalWorker with callbacks #12207
+	https://github.com/pharo-project/pharo/pull/12207
+	
+- ReCompactSourceCodeCritic should change origin method - not methodClass #12202
+	https://github.com/pharo-project/pharo/pull/12202
+	
+- 12157-BadHasherhash-should-return-a-value #12199
+	https://github.com/pharo-project/pharo/pull/12199
+	
+- 12191-RBAddMethodChange-moves-all-uncategorized-to-accessing #12192
+	https://github.com/pharo-project/pharo/pull/12192
+
+Cleanup
+=======
+
+- Move SearchFacade to MonticelloGUI #12144
+	https://github.com/pharo-project/pharo/pull/12144
+
+- 11634-Unimplemented-message-send-in-FT2FaceemboldenOutline #12103
+	https://github.com/pharo-project/pharo/pull/12103
+	
+- extract return statement from ifTrue:ifFalse: expression. fix: #12155 #12156
+	https://github.com/pharo-project/pharo/pull/12156
+	
+- Cleanup: fix lints for morphic classes on class side #initialize (SECOND ATTEMPT) #12160
+	https://github.com/pharo-project/pharo/pull/12160
+	
+- Cleanup: more instance side #initialize categorization cleanups (SECOND ATTEMPT) #12227
+	https://github.com/pharo-project/pharo/pull/12227
+	
+- Many (12) whitespace cleanups PR like: Cleanup: Condense AST- packages #12185
+	https://github.com/pharo-project/pharo/pull/12185
