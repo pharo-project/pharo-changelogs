@@ -1,0 +1,97 @@
+This week (2/2023) on the Pharo Issue Tracker: 
+
+
+42 PRs merged, 40 Issues closed
+
+
+Features
+
+- RubTextEditor/TextEditor: Make ctrl+backspace delete the previous word #12096
+	https://github.com/pharo-project/pharo/pull/12096
+
+- Add source and target labels to SpChooserPresenter ( #1341) #1342
+	https://github.com/pharo-spec/Spec/pull/1342
+
+
+Git/Iceberg
+============
+
+- add a manual way to add/remove tags #1657
+	https://github.com/pharo-vcs/iceberg/pull/1657
+	
+- add default tag "system" to bootstrap registered projects #12303
+	https://github.com/pharo-project/pharo/pull/12303
+	
+- fix bad categorizations #1655
+	https://github.com/pharo-vcs/iceberg/pull/1655
+	
+- Adapt to latest spec2 pass2 #1632
+	https://github.com/pharo-vcs/iceberg/pull/1632
+	
+	
+Refactoring Engine
+==================
+
+- Cleaning RB issues #12151
+	https://github.com/pharo-project/pharo/pull/12151
+	
+- Refactorings cleanup #12256
+	https://github.com/pharo-project/pharo/pull/12256
+		
+	
+Fixes
+=====
+
+- Fix refactoring using old class def #12195
+	https://github.com/pharo-project/pharo/pull/12195
+	
+- remove ByteLayout from FFIBackend and children #12225
+	https://github.com/pharo-project/pharo/pull/12225
+	
+- 12289-Refactoring-Tests-are-failling-when-using-Fluid-syntax #12290
+	https://github.com/pharo-project/pharo/pull/12290
+	
+- Fix hasSelector:specialSelectorIndex: on FFI methods that are compiled #12305
+	https://github.com/pharo-project/pharo/pull/12305
+	
+- 12300-Compiler-is-slow-with-string-literals-containing-exclamation-marks #12306
+	https://github.com/pharo-project/pharo/pull/12306
+	
+	
+Cleanups
+========
+
+- 18 whitespace cleanups like
+	Cleanup: Condense CodeImport packages #12229
+  https://github.com/pharo-project/pharo/pull/12229
+  
+- 5 remove return out of isTrue:ifFalse: lke
+	extract return from ifTrue:ifFalse: expression in Number floor #12292
+	https://github.com/pharo-project/pharo/pull/12292
+  
+- remove #Numeric from source code. #12265
+ 	 https://github.com/pharo-project/pharo/pull/12265
+	 
+- 12307 remove gt pragma #12308
+	https://github.com/pharo-project/pharo/pull/12308
+	
+- Unncessary class RBMissingOpenerErrorNode #12313
+	https://github.com/pharo-project/pharo/pull/12313
+
+- Class RBShortAssignmentToken is not needed anymore #12315
+	https://github.com/pharo-project/pharo/pull/12315
+	
+  
+ Comments
+ ========
+ 
+- Improving layoutFrame comments and add examples (fixes #12259) #12260
+ 	https://github.com/pharo-project/pharo/pull/12260
+	
+- extract comments as runnable example in Number>>#// #12263
+	https://github.com/pharo-project/pharo/pull/12263
+	
+- use isInstanceSide message in example #12270
+	https://github.com/pharo-project/pharo/pull/12270
+	
+	
