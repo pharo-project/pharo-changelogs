@@ -1,0 +1,61 @@
+This week (3/2023) on the Pharo Issue Tracker: 
+
+
+We merged 34 pull requests, fixing 32 issues
+
+
+Features
+========
+
+- Add ifCutOn:doWithCutAndUncuts: #12374
+	https://github.com/pharo-project/pharo/pull/12374
+	
+- Lint rule warning for Calypso to warn unconditional recursion #12389
+	https://github.com/pharo-project/pharo/pull/12389
+
+- Add #normalizeCamelCase and test #12373
+	https://github.com/pharo-project/pharo/pull/12373
+
+- Add Generator class>>onDo: #12395
+	https://github.com/pharo-project/pharo/pull/12395
+	
+Fixes
+=====
+
+- Variables: Fix Prrinting and Fluid Class definition that uses ClassVariable #12333
+	https://github.com/pharo-project/pharo/pull/12333
+
+- Spotter is broken> DNU #tools #12397
+	https://github.com/pharo-project/pharo/pull/12397
+	
+- fixes #1659 IceCredentialStore did not understand #repositoryModel #1661
+	https://github.com/pharo-vcs/iceberg/pull/1661
+
+- Issue 1275: Notify scroll changes #1344
+	https://github.com/pharo-spec/Spec/pull/1344
+
+- fix tags access #1660
+	https://github.com/pharo-vcs/iceberg/pull/1660
+
+
+Cleanup
+=======
+
+- Move SmallInteger class>>#guideToDivision comment to class comment. #12391
+	https://github.com/pharo-project/pharo/pull/12391
+	
+- avoid hardcoding smalltalk everywhere and just factor out some use fo… #449
+	https://github.com/pharo-spec/NewTools/pull/449
+
+- Refactoring/categorizing unexposed refactorings #12370
+	https://github.com/pharo-project/pharo/pull/12370
+
+- 20x cleanups of the kind
+	Cleanup: Condense FFI-Kernel package #12328
+	https://github.com/pharo-project/pharo/pull/12328
+	
+- extract return from ifTrue:ifFalse: expression and whitespaces at the eol #12332
+	https://github.com/pharo-project/pharo/pull/12332
+	
+- extract return from ifTrue:ifFalse: expression #12177
+	https://github.com/pharo-project/pharo/pull/12177
