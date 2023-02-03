@@ -1,0 +1,109 @@
+This week (4/2023) on the Pharo Issue Tracker: We merged 39 PRs and closed 77 issues
+
+
+Features
+========
+
+- Introduce new string comparison primitive #12504
+	https://github.com/pharo-project/pharo/pull/12504
+
+- Profiler: simplify world menu #12501
+	https://github.com/pharo-project/pharo/pull/12501
+	
+- ReSentNotImplementedRule: take Pragma into account #12295
+	https://github.com/pharo-project/pharo/pull/12295
+	
+- 12431 Better user experience for final dot critique and cleaning #12455
+	https://github.com/pharo-project/pharo/pull/12455
+	
+- Fix #3067: Float>>#closeTo: does not use Float>>epsilon as default precision #12451
+	https://github.com/pharo-project/pharo/pull/12451
+	
+- Fix #3332: New package committed by Iceberg is always dirty #12453
+		https://github.com/pharo-project/pharo/pull/12453
+
+- Fix #12287 adding group model to parent window #12446
+	https://github.com/pharo-project/pharo/pull/12446
+	
+- Improving the ChangesBrowser presenter #12438
+	https://github.com/pharo-project/pharo/pull/12438
+	
+- [improvement] better default hierarchy display #11053
+	https://github.com/pharo-project/pharo/pull/11053
+	
+- Complete symbols #11918
+	https://github.com/pharo-project/pharo/pull/11918
+	
+- convert numpad keys with NumLock turned off #12258
+	https://github.com/pharo-project/pharo/pull/12258
+	
+Speed
+=====
+
+- 12128-Poor-performance-with-large-WriteStreams #12205
+	https://github.com/pharo-project/pharo/pull/12205
+
+Fixes
+=====
+
+- Honor theme changed events #12473
+	https://github.com/pharo-project/pharo/pull/12473
+	
+- fix: DeprecateClassCommand DNU #12494
+	https://github.com/pharo-project/pharo/pull/12494
+	
+- Fix conflict between formatter and rules: spaces before new lines #12448
+	https://github.com/pharo-project/pharo/pull/12448
+
+- 11968-Clean-Blocks-Jobowner-assumes-valid-outerContext #12055
+	https://github.com/pharo-project/pharo/pull/12055
+	
+- Re-introduce list morph shortcuts using keydown #12386
+		https://github.com/pharo-project/pharo/pull/12386
+	
+CI related
+==========
+
+- 12508-CI-failing-test-RBReplaceSubtreeTransformationTesttestTransformOneOfManyStatements #12509
+	https://github.com/pharo-project/pharo/pull/12509
+	
+- 12440-CI-failing-test-testClassSideInitializeMethodNeedsToBeInClassInitializationProtocol #12442
+	https://github.com/pharo-project/pharo/pull/12442
+	
+- Fix dependencies tests #12449
+	https://github.com/pharo-project/pharo/pull/12449
+
+
+Cleanups
+========
+
+- Fix #3172: parseTreeFor: asymbol should be renamed parseTreeOfMethodNamed: aSymbol #3172 #12452
+	https://github.com/pharo-project/pharo/pull/12452
+
+- Removed duplicated line form RubSmalltalkEditor>>tallySelection #12437
+	https://github.com/pharo-project/pharo/pull/12437
+
+- Extracting the logic of screenshot and selection #11254
+	https://github.com/pharo-project/pharo/pull/11254
+	
+- Review if #scanToken: in RBScanner is still needed #11554
+	https://github.com/pharo-project/pharo/pull/11554
+	
+- Clean some duplication logic by extracting Smalltalk tools into a sep… #12085
+	https://github.com/pharo-project/pharo/pull/12085
+	
+- move emit from Announcement to Object #12266
+	https://github.com/pharo-project/pharo/pull/12266
+
+Trivial Cleanups
+================
+
+- 9 x cleanups of the kind
+	Cleanup: Condense NECompletion packages #12485
+	https://github.com/pharo-project/pharo/pull/12485
+
+- 2x cleanups of the kind
+	extract return from ifTrue: ifFalse: and remove white spaces #12476
+	https://github.com/pharo-project/pharo/pull/12476
+
+	
