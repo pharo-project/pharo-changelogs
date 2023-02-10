@@ -1,4 +1,6 @@
-We merged 60 PRs, closed 76 issues
+This week (5/2023) on the Pharo Issue Tracker: We merged 60 PRs and closed 76 issues
+
+
 
 Features
 ========
