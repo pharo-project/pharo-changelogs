@@ -1,0 +1,54 @@
+This week (7/2023) on the Pharo Issue Tracker: We merged 42 PRs and closed 66 issues
+
+
+Fixes
+=====
+- Unnecessary characters rule should be an information and not a warning #12764
+	https://github.com/pharo-project/pharo/pull/12764
+	
+- FIx #wantsSteps deprecated calls #12782
+	https://github.com/pharo-project/pharo/pull/12782
+
+- Removing the TStDebuggerExtension trait from the dummy debugger presenter #463
+	https://github.com/pharo-spec/NewTools/pull/463
+
+
+Tests
+=====
+
+- add some Duration tests #12777
+	https://github.com/pharo-project/pharo/pull/12777
+
+- 11368-Failing-on-CI-random-CoNarrowHistoryFetcherTesttestNarrowingReturnsSameElementsThatCallingDirectly #12768
+	https://github.com/pharo-project/pharo/pull/12768
+	
+- categorization tests should print culprints if any #12780
+	https://github.com/pharo-project/pharo/pull/12780
+
+
+
+Documentation
+=============
+
+- Missing class comment: BaselineOfBeacon #12640
+	https://github.com/pharo-project/pharo/pull/12640
+	
+- Missing class comment BaselineOfClap and lint issue #12642
+	https://github.com/pharo-project/pharo/pull/12642
+	
+	
+Cleanup
+=======
+
+- Adjust #initialize categorization cases #12638
+	https://github.com/pharo-project/pharo/pull/12638
+
+- Remove BlueInk packages #12612
+	https://github.com/pharo-project/pharo/pull/12612
+
+- use String>>streamContens: and assert:equals: #12786
+	https://github.com/pharo-project/pharo/pull/12786
+	
+- 29 of the kind
+  Cleanup: Condense SUnit packages #12630
+  	https://github.com/pharo-project/pharo/pull/12630
