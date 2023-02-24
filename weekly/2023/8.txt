@@ -1,0 +1,92 @@
+This week (8/2023) on the Pharo Issue Tracker
+
+We merged 24 PRs this week:
+
+Compiler
+========
+
+- Improve faulty parsing #12778
+	https://github.com/pharo-project/pharo/pull/12778
+	
+- Improve faulty parsing of cascades #12816
+	https://github.com/pharo-project/pharo/pull/12816
+
+- Improve faulty parsing of assigments #12815
+	https://github.com/pharo-project/pharo/pull/12815
+
+
+Features
+========
+- Introducing a Color Palette to cache the allocation of Color objects by tht UITheme #12771
+	https://github.com/pharo-project/pharo/pull/12771
+	
+- Add #closeTo: on sequenceable collection #12800
+	https://github.com/pharo-project/pharo/pull/12800
+	
+- Filter on substrings in DrTest #12823
+	https://github.com/pharo-project/pharo/pull/12823
+	
+- load equals packages #12616 
+	https://github.com/pharo-project/pharo/pull/12616
+	
+- Debugger configuration toolbar improvements #467
+	https://github.com/pharo-spec/NewTools/pull/467
+
+Fixes
+=====
+
+- Update Roassal version v0.9.9m #12792
+	https://github.com/pharo-project/pharo/pull/12792
+
+- Sync Zinc 17 February 2023 #12794
+	https://github.com/pharo-project/pharo/pull/12794
+	
+- 1279 merge menu should indicate the sense of the action #1680
+	https://github.com/pharo-vcs/iceberg/pull/1680
+	
+- Fixes: Committing with empty description can lead to problems #1681 #1682
+	https://github.com/pharo-vcs/iceberg/pull/1682
+
+- Fixes testInstanceSideInitializeMethodNeedsToBeInInitializationProtocol #12797
+	https://github.com/pharo-project/pharo/pull/12797
+	
+
+Cleanups
+========
+
+- Remove #wantsSteps from object and uses #respondsTo: in the system wi… #12793
+	https://github.com/pharo-project/pharo/pull/12793
+	
+- Remove old unicode initializer #12803
+	https://github.com/pharo-project/pharo/pull/12803
+	
+- Rename bootstrap 3rd step to be the 2nd now #12812
+	https://github.com/pharo-project/pharo/pull/12812
+	
+Trivial Cleanups
+================
+
+- AthensPathBuilder should be abstract #12827
+	https://github.com/pharo-project/pharo/pull/12827
+	
+- Fix typo #12801
+	https://github.com/pharo-project/pharo/pull/12801
+	
+- extract return. fix: #12809 #12810
+	https://github.com/pharo-project/pharo/pull/12810
+
+- Remove depreceted class reference #12808
+	https://github.com/pharo-project/pharo/pull/12808
+	
+- Condensation of source 2 #12799
+	https://github.com/pharo-project/pharo/pull/12799
+
+- Condensation of sources 3 #12802
+	https://github.com/pharo-project/pharo/pull/12802
+	
+- replace == nil with ifNil:ifNotNil: #12814
+	https://github.com/pharo-project/pharo/pull/12814
+	
+- Cleanup: Condense Zodiac packages #12762
+	https://github.com/pharo-project/pharo/pull/12762
+	
