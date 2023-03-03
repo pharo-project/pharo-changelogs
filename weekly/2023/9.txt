@@ -1,0 +1,189 @@
+This week (9/2023) on the Pharo Issue Tracker
+
+We merged 58 PRs this week:
+
+
+Compiler
+========
+
+- Improve faulty parsing of byte array literal (alternative version) #12818
+	https://github.com/pharo-project/pharo/pull/12818
+	
+- NumberParser: kill requestor #12835
+	https://github.com/pharo-project/pharo/pull/12835
+	
+- Add RBToken>>isSpecial: to simplify parsing code #12836
+	https://github.com/pharo-project/pharo/pull/12836
+	
+- Clean some parsing code #12861
+	https://github.com/pharo-project/pharo/pull/12861
+	
+- Improve scanning: escape comments #12857
+	https://github.com/pharo-project/pharo/pull/12857
+
+- Hook for custom syntaxhighlight #12594
+	https://github.com/pharo-project/pharo/pull/12594
+	
+- Improve faulty parsing: generalize code snippets #12847
+	https://github.com/pharo-project/pharo/pull/12847
+	
+- Improve faulty parsing: rename content as contents (a s was missing) #12854
+	https://github.com/pharo-project/pharo/pull/12854
+	
+- 12858-CopiedLocalVariable-answers-false-to-isTemporaryVariable-even-when-it-is #12869
+	https://github.com/pharo-project/pharo/pull/12869
+	
+- HotFix. Restore RBScanner>>#parseErrorNode: #12875
+	https://github.com/pharo-project/pharo/pull/12875
+	
+- Do not stack RBUnfinishedStatementErrorNode #12873
+	https://github.com/pharo-project/pharo/pull/12873
+	
+- EFFormatter use parenthesis on error nodes if some were present #12872
+	https://github.com/pharo-project/pharo/pull/12872
+	
+- RBCodeSnippet nice overview of error messages #12871
+	https://github.com/pharo-project/pharo/pull/12871
+	
+- Rewrite some error messages to follow the style Foo expected #12874
+	https://github.com/pharo-project/pharo/pull/12874
+	
+- Improve faulty parsing on variables #12868
+	https://github.com/pharo-project/pharo/pull/12868
+	
+- Improve faulty parsing of methods #12879
+	https://github.com/pharo-project/pharo/pull/12879
+	
+- Improve faulty parsing by testing unreachable code #12893
+	https://github.com/pharo-project/pharo/pull/12893
+	
+- Improve faulty parsing on chars (and primitive arrays) #12891
+	https://github.com/pharo-project/pharo/pull/12891
+
+Fixes
+=====
+
+- Update matchesTypes to fix DNU in matchesTypes #12611
+	https://github.com/pharo-project/pharo/pull/12611
+
+- Fix float comparision with precision and start to test Math-Operation… #12615
+	https://github.com/pharo-project/pharo/pull/12615
+	
+- Refactoring TDebugger class>>#handlesContext: to TDebugger>>#handlesDebugSession: #12833
+	https://github.com/pharo-project/pharo/pull/12833
+	
+- New try at not hardcoding Metacello Attributes #12511
+	https://github.com/pharo-project/pharo/pull/12511
+	
+- Fix TPrintTests rotten green tests #12846
+	https://github.com/pharo-project/pharo/pull/12846
+
+- Use MethodClassifier protocol for new methods instead of the selected protocol #12882
+	https://github.com/pharo-project/pharo/pull/12882
+	
+- Do not ask the user a method protocol first but instead try to auto classify the method and only ask the user if auto classification failed #470
+	https://github.com/pharo-spec/NewTools/pull/470
+	
+- Fix #10929 Graphic UI selection glitch with selected text on large screens #12863
+	https://github.com/pharo-project/pharo/pull/12863
+	
+- Fix #12459 : text selection drag and drop problem. #12460
+	https://github.com/pharo-project/pharo/pull/12460
+	
+- Fixing debugger inspector that wasn't updating when the debugger entered a new optimized scope #472
+	https://github.com/pharo-spec/NewTools/pull/472
+
+- Prevent recursive retries on createIcebergRepositoryWithFallbackFor:url: #1673
+	https://github.com/pharo-vcs/iceberg/pull/1673
+	
+- Fixes: Committing with empty description can lead to problems #1681 #1682
+	https://github.com/pharo-vcs/iceberg/pull/1682
+
+External Package
+===============
+
+- Update the version of graph algos to use the latest one #12851
+	https://github.com/pharo-project/pharo/pull/12851
+	
+- Updating Tonel version #12865
+	https://github.com/pharo-project/pharo/pull/12865
+	
+- Sync ston #12829
+	https://github.com/pharo-project/pharo/pull/12829
+	
+- Microdown-RichTextComposer is now managed outside #12890
+	https://github.com/pharo-project/pharo/pull/12890
+	
+
+CI 
+===
+
+- Make all PRs to run in the latest VM #12605
+	https://github.com/pharo-project/pharo/pull/12605
+	
+- Remove zinc file system from bootstrap #12839
+	https://github.com/pharo-project/pharo/pull/12839
+	
+- Skipping test in windows as it is hanging #12887
+	https://github.com/pharo-project/pharo/pull/12887
+	
+
+Features
+========
+
+- new general rule ReNotEqualityOperatorsRule to inform users of != or !== #12864
+	https://github.com/pharo-project/pharo/pull/12864
+	
+- Adding new rewrite tools #464
+	https://github.com/pharo-spec/NewTools/pull/464
+
+- Loading Chest in BaselineOfNewTools: Integration of Chest as a debugger extension #451
+	https://github.com/pharo-spec/NewTools/pull/451
+	
+Cleanups
+========
+
+- Remove SerialPort that relies on a vm plugin that is not in the vm anymore #12773
+	https://github.com/pharo-project/pharo/pull/12773
+
+- Refactoring UI cleanup #12528
+	https://github.com/pharo-project/pharo/pull/12528
+	
+- Remove old slang pragmas #12849
+	https://github.com/pharo-project/pharo/pull/12849
+	
+- Remove not loaded Pillar packages #12848
+	https://github.com/pharo-project/pharo/pull/12848
+
+- Deprecate all nativeboost methods #12838
+	https://github.com/pharo-project/pharo/pull/12838
+
+- Remove dependency of ChangeSet on Author #12584
+	https://github.com/pharo-project/pharo/pull/12584
+
+- Remove old RewriteTools #12607
+	https://github.com/pharo-project/pharo/pull/12607
+	
+- Remove help packages that are not loaded in the image #12613
+	https://github.com/pharo-project/pharo/pull/12613
+	
+- Cleanup: Condense Rubric packages #12626
+	https://github.com/pharo-project/pharo/pull/12626
+	
+- Cleanup: Condense System-Caching packages #12660
+	https://github.com/pharo-project/pharo/pull/12660
+	
+- Cleanup: Condense System-Changes packages #12662
+	https://github.com/pharo-project/pharo/pull/12662
+	
+- Clean up spaces in Polymorph-Widgets package #12855
+	https://github.com/pharo-project/pharo/pull/12855
+	
+- Cleanup: Condense System-BasicCommandLineHandler packages #12658
+	https://github.com/pharo-project/pharo/pull/12658
+	
+- use ifEmpty ifNotEmpty #12877
+	https://github.com/pharo-project/pharo/pull/12877
+	
+- Remove reference to deprecated class #1679
+	https://github.com/pharo-vcs/iceberg/pull/1679
