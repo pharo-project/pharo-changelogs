@@ -1,0 +1,129 @@
+This week (10/2023) on the Pharo Issue Tracker
+
+We merged 32 PRs this week:
+
+
+Bugs
+====
+
+- InitializedSlot-check-default #12895
+	https://github.com/pharo-project/pharo/pull/12895
+
+- correcting computation of sets of protocols to remove and add #12962
+	https://github.com/pharo-project/pharo/pull/12962
+	
+- 12955-TFStringType-is-leaking-when-allocates-the-string-for-calling-a-function #12956
+	https://github.com/pharo-project/pharo/pull/12956
+
+- Fixing bugged undo-redo commands after using completion #12570
+	https://github.com/pharo-project/pharo/pull/12570
+	
+Improvements
+===========
+
+- Speed up ClassVar>>#isReferenced #12930
+	https://github.com/pharo-project/pharo/pull/12930
+	
+	
+- Add new attributes to SDL_MouseWheelEvent #12897
+	https://github.com/pharo-project/pharo/pull/12897
+	
+- Synch zinc zodiac #12932
+	https://github.com/pharo-project/pharo/pull/12932
+	
+- Add BaselineOf:>>#pharoVersionsFrom: #12908
+	https://github.com/pharo-project/pharo/pull/12908
+	
+- Ensure #setUp is classified in running #12907
+	https://github.com/pharo-project/pharo/pull/12907
+
+Compiler
+========
+
+- RBCodeSnippets test decompilation #12901
+	https://github.com/pharo-project/pharo/pull/12901
+	
+- no more RBScanner errorBlock #12900
+	https://github.com/pharo-project/pharo/pull/12900
+	
+- Improve faulty AST fromatting by RBSimpleFormatter #12902
+	https://github.com/pharo-project/pharo/pull/12902
+	
+- better fix for #12858: check isTempVariable #12971
+	https://github.com/pharo-project/pharo/pull/12971
+	
+- add RBCodeSnippetTest>>testCompileWithRequestor #12958
+	https://github.com/pharo-project/pharo/pull/12958
+	
+- Improve faulty compiling - small snippets cleanup #12947
+	https://github.com/pharo-project/pharo/pull/12947
+	
+- Improve faulty compiling: test shadowed reserved variables #12960
+	https://github.com/pharo-project/pharo/pull/12960
+
+- Improve faulty reporting: IconStyler #12934
+	https://github.com/pharo-project/pharo/pull/12934
+
+- Improve faulty compilation - semantic error #12919
+	https://github.com/pharo-project/pharo/pull/12919
+	
+- Improve faulty parsing. Add semantic snippets #12909
+	https://github.com/pharo-project/pharo/pull/12909
+
+
+Syntax Highlighter
+==================
+
+- Simplify styler #12952
+	https://github.com/pharo-project/pharo/pull/12952
+	
+- Improve styler #12915
+	https://github.com/pharo-project/pharo/pull/12915
+
+- Add regression test to Shout #12974
+	https://github.com/pharo-project/pharo/pull/12974
+	
+- Loop imbricated styles + remove dead code #12964
+	https://github.com/pharo-project/pharo/pull/12964
+	
+- Remove dead code in SHTextStyler #12949
+	https://github.com/pharo-project/pharo/pull/12949
+	
+- Shout: Manage syntax highlight of dynamic array #12953
+	https://github.com/pharo-project/pharo/pull/12953
+	
+- Shout: Rename some styles #12945
+	https://github.com/pharo-project/pharo/pull/12945
+	
+
+Tools
+=====
+
+- new class SycInspectNodeCommand to simply inspect an AST node #12904
+	https://github.com/pharo-project/pharo/pull/12904
+	
+- 12807-Executable-comment-syntax-error-leads-to-CI-crash #12894
+	https://github.com/pharo-project/pharo/pull/12894
+	
+- Fix Calypso browsing unloaded package artifacts from Iceberg #12425
+	https://github.com/pharo-project/pharo/pull/12425
+	
+
+Cleanups
+========
+
+remove method Object asOrderedCollection #12852
+	https://github.com/pharo-project/pharo/pull/12852
+
+
+Trivial
+=======
+
+- Fix categories in PaSimpleMatrixExampleTest #12937
+	https://github.com/pharo-project/pharo/pull/12937
+	
+	
+Pharo10
+=======
+- backport-issue-12955: TFStringType is leaking when allocates the string for calling a function #12966
+	https://github.com/pharo-project/pharo/pull/12966
