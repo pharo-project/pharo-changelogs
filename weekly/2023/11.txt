@@ -1,0 +1,168 @@
+This week (11/2023) on the Pharo Issue Tracker
+
+
+This week Pharo11 was frozen. We will focus now on fixing the last remaining show stopping bugs.
+
+All non-fixes are now going to the new Pharo12 branch.
+
+We merged nearly 40 Pull requests:
+
+
+Pharo 11
+========
+
+Last Improvements
+===========
+
+- New finalization #12042
+	https://github.com/pharo-project/pharo/pull/12042
+	
+- Add document browser #12787
+	https://github.com/pharo-project/pharo/pull/12787
+
+
+Compiler
+========
+- better fix for #12858: check isTempVariable #12971
+	https://github.com/pharo-project/pharo/pull/12971
+	
+- Fix infinite loop in faulty literal array parsing #12992
+	https://github.com/pharo-project/pharo/pull/12992
+
+Syntax Highlight
+===============
+
+- Add regression test to Shout #12974
+	https://github.com/pharo-project/pharo/pull/12974
+
+- Fix formating of non methods #12987
+	https://github.com/pharo-project/pharo/pull/12987
+	
+- re-Enable Format Incomplete Variables #12998
+	https://github.com/pharo-project/pharo/pull/12998
+
+Fixes
+=====
+
+- 179-When-FluidClass-on-Epicea-Tests-break #12977
+	https://github.com/pharo-project/pharo/pull/12977
+
+- Polymath needs the largest exponant argument. Pharo implements the constant but didn't provide an accessor #12975
+	https://github.com/pharo-project/pharo/pull/12975
+
+- Fix bug when updating the package of an extension method #12970
+	https://github.com/pharo-project/pharo/pull/12970
+	
+- fix the default loadLibrary: for linux #12938
+	https://github.com/pharo-project/pharo/pull/12938
+	
+- Escape '|' and '.' characters to prevent regex interpretation #13008
+	https://github.com/pharo-project/pharo/pull/13008
+	
+- 11407-CI-System-variable-environment-on-windows-does-not-use-adequate-encodings #12973
+	https://github.com/pharo-project/pharo/pull/12973
+	
+- "Close" instead of "Cancel" in the button label of the Find & Replace… #13013
+	https://github.com/pharo-project/pharo/pull/13013
+	
+- Make sure SharedRandom globalGenerator is reset (i.e. a new one is cr… #13022
+	https://github.com/pharo-project/pharo/pull/13022
+	
+- Improve #12992: Copying strings in editor #13026
+	https://github.com/pharo-project/pharo/pull/13026
+
+
+Debugger/Inspector
+===============
+
+- Fixing debugger adding an instance variable not appears in the debugger vars inspector + fixing args duplication when restarting execution #479
+	https://github.com/pharo-spec/NewTools/pull/479
+	
+- Inspect text and string with code font #468
+	https://github.com/pharo-spec/NewTools/pull/468
+	
+- Fixing fuel out command + making it more user-friendly #447
+	https://github.com/pharo-spec/NewTools/pull/447
+	
+- fixing StHaltOnCall execution condition #488
+	https://github.com/pharo-spec/NewTools/pull/488
+	
+Cleanup
+=======
+- Removing makefile files that are obsolete (cheched with Guille) #13009
+	https://github.com/pharo-project/pharo/pull/13009
+	
+- Update vm parameter 45 description #12587
+	https://github.com/pharo-project/pharo/pull/12587
+
+Pharo 12
+=========
+
+Compiler
+========
+
+- Improve faulty compilation - unify handling of undeclared variables #13007
+	https://github.com/pharo-project/pharo/pull/13007
+	
+- Kill syntax error debugger #12910
+	https://github.com/pharo-project/pharo/pull/12910
+	
+- Improve OCUndeclaredVariableWarning>>declareTempAndPaste #12978
+	https://github.com/pharo-project/pharo/pull/12978
+	
+- Improve ClyClassDefinitionEditorToolMorph>>applyChanges #12981
+	https://github.com/pharo-project/pharo/pull/12981
+	
+- [for Pharo12] Improve faulty parsing: small things #12995
+	https://github.com/pharo-project/pharo/pull/12995
+
+- Improve OCUndeclaredVariableWarning>>openMenuIn #12980
+	https://github.com/pharo-project/pharo/pull/12980
+	
+- Improve ClySystemEnvironment>>defineNewClassFrom #12982
+	https://github.com/pharo-project/pharo/pull/12982
+	
+- add RBCodeSnippetTest>>#testCodeImporter #12933
+	https://github.com/pharo-project/pharo/pull/12933
+	
+- Faulty compiler: new CodeError class #13029
+	https://github.com/pharo-project/pharo/pull/13029
+
+Improvements
+=============
+
+- Speedup OrderedDictionary class>>#newFromKeys:andValues: #13011
+		https://github.com/pharo-project/pharo/pull/13011
+		
+		
+Cleanups
+========
+- Simplify Categorizer #13002
+	https://github.com/pharo-project/pharo/pull/13002
+	
+- Merge categorizer with SystemOrganizer #13017
+	https://github.com/pharo-project/pharo/pull/13017
+
+Syntax Highlight
+================
+
+- Fix style of pragmas #13012
+	https://github.com/pharo-project/pharo/pull/13012
+
+	
+Build / CI Prepare
+============
+
+- Fix Pharo 12 loading #13004
+	https://github.com/pharo-project/pharo/pull/13004
+
+- Use internal FuelPlatform #13010
+	https://github.com/pharo-project/pharo/pull/13010
+	
+	
+	
+Pharo 10
+========
+
+Backport fix to bugged undo-redo commands after using completion #12905
+	https://github.com/pharo-project/pharo/pull/12905
