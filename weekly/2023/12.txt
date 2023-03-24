@@ -1,4 +1,4 @@
-This week (11/2023) on the Pharo Issue Tracker. We merged >60 PRs
+This week (12/2023) on the Pharo Issue Tracker. We merged >60 PRs
 
 Of those just 16 for Pharo11, the rest are major cleanups/fixes/speedups in Pharo12.
 
