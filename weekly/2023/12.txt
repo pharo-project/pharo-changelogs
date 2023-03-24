@@ -1,0 +1,219 @@
+This week (11/2023) on the Pharo Issue Tracker. We merged >60 PRs
+
+Of those just 16 for Pharo11, the rest are major cleanups/fixes/speedups in Pharo12.
+
+
+Pharo11
+=======
+
+- Disable ReCompactSourceCodeRule for p11 #13075
+	https://github.com/pharo-project/pharo/pull/13075
+
+- Setting image version in the header of the image file #12954
+	https://github.com/pharo-project/pharo/pull/12954
+	
+- Sync zinc #12824
+	https://github.com/pharo-project/pharo/pull/12824
+
+Bugs
+====
+
+- 12948-Broken-ast-method-on-compiled-block #13094
+	https://github.com/pharo-project/pharo/pull/13094
+
+- Improving debug session to be able customize debug contexts model #13112
+	https://github.com/pharo-project/pharo/pull/13112
+	
+- add includes: to FinalizationRegistry. #13110
+	https://github.com/pharo-project/pharo/pull/13110
+
+- fixes case sensitive string literal search (use Ctrl+Shift+U shortcut) #1310
+	https://github.com/pharo-project/pharo/pull/13103
+	
+- add shortcuts to string literal search, fix case insensitive search #1362
+	https://github.com/pharo-spec/Spec/pull/1362
+	
+- fix duplicated repos in Iceberg #13074
+		https://github.com/pharo-project/pharo/pull/13074
+		
+- Patch PNGReadWriter to allow and ignore excess chunks after IEND #13049
+	https://github.com/pharo-project/pharo/pull/13049
+	
+- 13051 improve the memory allocation of sequenceable collection runningof #13052
+	https://github.com/pharo-project/pharo/pull/13052
+	
+- Ensuring that Calypso catches any NotFound errors that could appear when a breakpoint on a test under debug doesn' exist anymore #13021
+	https://github.com/pharo-project/pharo/pull/13021
+	
+- Refactoring debugger extension system to update extensions in all debuggers dynamically, when an extension is (un)activated #481
+	https://github.com/pharo-spec/NewTools/pull/481
+	
+- Fix two deprecated #asOrderedCollection sends #490
+	https://github.com/pharo-spec/NewTools/pull/490
+	
+- skip testDoEvaluateDeclareGlobal for now #492
+	https://github.com/pharo-spec/NewTools/pull/492
+	
+- skip another testDoEvaluateDeclareGlobal for now #493
+	https://github.com/pharo-spec/NewTools/pull/493
+	
+Pharo 12
+========
+
+
+Speed
+=====
+
+- Use primitive 158 for string comparison #12878
+	https://github.com/pharo-project/pharo/pull/12878
+
+- Speed up FreeTypeFont>>widthOf: #13116
+	https://github.com/pharo-project/pharo/pull/13116
+	
+- Speed up in rpackage #13086
+	https://github.com/pharo-project/pharo/pull/13086
+	
+- Use dictionary in SystemOrganizer #13023
+	https://github.com/pharo-project/pharo/pull/13023
+	
+- Some various speedup #13067
+	https://github.com/pharo-project/pharo/pull/13067
+	
+- Do not fire systemClassRecategorizedActionFrom: everytime #13066
+	https://github.com/pharo-project/pharo/pull/13066
+	
+- Speedup RBBrowserEnvironment>>#classesInPackages:do: #13056
+	https://github.com/pharo-project/pharo/pull/13056
+
+
+Category/Protocols Cleanup
+=================
+
+- ClassOrganization>>#classify:under:suppressIfDefault: is always called with the same parameter #13082
+	https://github.com/pharo-project/pharo/pull/13082
+	
+- Rename ClassOrganization #*category* into #*protocolName* #13019
+	https://github.com/pharo-project/pharo/pull/13019
+	
+- Some cleanings of ClassDescription #13046
+	https://github.com/pharo-project/pharo/pull/13046
+
+- Unify package unregistration #13040
+	https://github.com/pharo-project/pharo/pull/13040
+
+
+Compiler
+========
+
+
+- Faulty compiler: new CodeError class #13029
+	https://github.com/pharo-project/pharo/pull/13029
+	
+- Code Snippets: extends tests to check notices #13115
+	https://github.com/pharo-project/pharo/pull/13115
+	
+- RBCodeSnippet format, tidify and better default mechanism #13109
+	https://github.com/pharo-project/pharo/pull/13109
+
+- Faulty code: position fixes on some ast nodes (and various cleanup) #13098
+	https://github.com/pharo-project/pharo/pull/13098
+
+- Compiler gets permitFaulty #13084
+	https://github.com/pharo-project/pharo/pull/13084
+	
+- Fauty code: RBParser parse only faulty code #13080
+	 https://github.com/pharo-project/pharo/pull/13080
+	 
+- Faulty code: keep AST and source information in faulty CompiledMethod #13087
+	https://github.com/pharo-project/pharo/pull/13087
+	
+- RFC: RBNotice to reify error and warning messages on AST nodes #13057
+	https://github.com/pharo-project/pharo/pull/13057
+	
+- Faulty code: strip OCUndeclaredVariableWarning of its reparation duties #13055
+	https://github.com/pharo-project/pharo/pull/13055
+	
+- Make unreachable statements a warning instead of an error #13050
+	https://github.com/pharo-project/pharo/pull/13050
+
+- Compiler: stop playing notification pingpong #13047
+	https://github.com/pharo-project/pharo/pull/13047
+	
+- Faulty parser - better error position and messages #13044
+	https://github.com/pharo-project/pharo/pull/13044
+	
+- Faulty code - test Monticello #13036
+	https://github.com/pharo-project/pharo/pull/13036
+	
+- Compiler: remove getSourceFromRequestorSelection #13045
+	https://github.com/pharo-project/pharo/pull/13045
+	
+- Faulty parsing: change logic of errorBlock #13042
+	https://github.com/pharo-project/pharo/pull/13042
+	
+- Tests that CI handle properly Syntax Errors during tests #12785
+	https://github.com/pharo-project/pharo/pull/12785
+	
+- Faulty code: CodeError are resumable #13037
+	https://github.com/pharo-project/pharo/pull/13037
+
+- Improve faulty compilation - unify handling of undeclared variables #13007
+	https://github.com/pharo-project/pharo/pull/13007
+
+Compiler/Tools
+=============
+
+- Rubric/Calypso improve menu entries (especially browse) #13095
+	https://github.com/pharo-project/pharo/pull/13095
+
+- Fix #13107 cannot remove used slot #13118
+		https://github.com/pharo-project/pharo/pull/13118
+		
+- RubSmalltalkEditor-remove-reference-RBParser #13091
+	https://github.com/pharo-project/pharo/pull/13091
+	
+- Calypso editor: stop inserting -> #13073
+	https://github.com/pharo-project/pharo/pull/13073
+
+
+Improvements
+===========
+
+- LongMessageDialogWindow wraps the text #13117
+	https://github.com/pharo-project/pharo/pull/13117
+	
+- Refactoring push up method: introduce driver #12867
+	https://github.com/pharo-project/pharo/pull/12867
+
+- Fix refacotring bug #13069
+	https://github.com/pharo-project/pharo/pull/13069
+
+
+Bootstrap/CI/Housekeeping
+=========
+- Add some timestamps and logs to the bootstrap #13106
+	https://github.com/pharo-project/pharo/pull/13106
+	
+- Remove travis file #13105
+	https://github.com/pharo-project/pharo/pull/13105
+
+- Make documentation more readable on github #13093
+	https://github.com/pharo-project/pharo/pull/13093
+	
+- Synch with p11 (To get ombu fix crashing the CI) #13081
+	https://github.com/pharo-project/pharo/pull/13081
+	
+- Synch with p11 #13077
+	https://github.com/pharo-project/pharo/pull/13077
+	
+- Log the package been tested on CI. #13038
+	https://github.com/pharo-project/pharo/pull/13038
+
+Cleanups
+========
+
+- Move machineEpsilon to Float. #13078
+	https://github.com/pharo-project/pharo/pull/13078
+	
+- 12996-Remove-ReLiteralArrayContainsSuspiciousTrueFalseOrNilRule #13092
+	https://github.com/pharo-project/pharo/pull/13092
