@@ -26,7 +26,8 @@ Current Pharo development status.
     - missing subclass
     - not optimised if 
 - Cleanups for CleanBlock/FullBlock/BlockClosure hierarchy
-- better inspections on: Array2D
+  @@TODO@@ Marcus, this is incomplete, isn't?
+- better inspections on: Array2D, Git support, 
 - Clean Blocks: 
     - Debugger fixes
     - Cleanups for CleanBlock hierarchy
@@ -38,17 +39,28 @@ Current Pharo development status.
 - Inspector
     - Columns now can be resized
     - Lots of small UI fixes and tweaks
-- MetaLinks 
+- Version control (Iceberg)
+	- fixes for some remote connection problems
+- Profiling
+	- Added a new GUI for Time profiler and Andreas profiler
+- Roassal (the visualisation engine) is updated to v0.9.9m
+- Calypso Browser
+	- added package dependencies tool (as a tab)
+- MetaLinks
     - can be put on Pragmas
 - TestRunner
     - We added a new experimental model
-- DoIts (Relevan in playground, etc.)
+- DrTests has been updated to latest Spec2
+- DoIts (Relevant in playground, etc.)
     - we now can compile DoIts without a method header and without the need of code reformatting (without having to add a return).
+- introduction of scalable icons.
 - Compiler
     - It can now create methods from a Bytecode IR
 - Metamodel
     - Storage of class comments enhanced
-    - 
+- Refactoring engine 
+	- enhancements on method extraction
+	- enhancements on accessor generation
 
 ### Speed
 
@@ -56,8 +68,9 @@ Current Pharo development status.
 - Major speedup of the SelectorTable
 - Reduce Symbol creation during compilation and interactive use
 - support for arithmetic SIMD bytecodes 
+- Startup on OSX exnhanced
 
-### Fixes
+### Important fixes
 
 - printStringLimitedTo:Using: will fail to actually respect limit 
 - MiniDrTests raise error 
@@ -70,10 +83,11 @@ Current Pharo development status.
 - Deprecated10 package removed
 - Simplify SymbolTable code
 - remove methods that are the same in the superclass
+- remove old class comment editors (we are using BeautifulComments now)
+- Old help browser (obsolete and incomplete) was removed
 - Image size Reduced
     - Clear SelectorTable
     - Improve Implementation of AllProtocol
-
 
 ## Contributors
 
