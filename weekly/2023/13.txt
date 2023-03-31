@@ -1,0 +1,199 @@
+This week (13/2023) on the Pharo Issue Tracker. 
+
+
+We again merged ~60 PRs. 
+
+Pharo11 got some bugfixes and last improvements.
+
+In Pharo12, we continue the compiler refactoring and the cleanup of ClassOrganizer. 
+
+
+Pharo11
+=======
+
+
+Last Improvements
+=================
+
+- Add a way to know the real processor architecture #13124
+	https://github.com/pharo-project/pharo/pull/13124
+	
+- remove end line characters in returned value of processorArchitecture #13155
+	https://github.com/pharo-project/pharo/pull/13155
+	
+- Removing unused instance variable topContext in DebugContext #13179
+	https://github.com/pharo-project/pharo/pull/13179
+	
+- Add inspector extensions for Chronology #499
+	https://github.com/pharo-spec/NewTools/pull/499
+	
+- More inspector extensions #497
+	https://github.com/pharo-spec/NewTools/pull/497
+	
+
+Fixes
+=====
+
+- 13181-DeprecationPerformedNotification-Automatic-deprecation-code-rewrite #13182
+	https://github.com/pharo-project/pharo/pull/13182
+	
+- implement #selectedClassOrMetaClass in MCTool to return nil #13167
+	https://github.com/pharo-project/pharo/pull/13167
+	
+- 13141-timesRepeat-does-not-work-on-nested-loops #13154
+	https://github.com/pharo-project/pharo/pull/13154
+	
+- 13122 rbparser cutting tokens in stepBar [Pharo11] #13129
+	https://github.com/pharo-project/pharo/pull/13129	
+	
+- fixing the code update bug after compiling a missing method with the unfiltered stack #491	
+	https://github.com/pharo-spec/NewTools/pull/491
+	
+- Categorizing uncategorized classes in new tools debugger tests #500
+	https://github.com/pharo-spec/NewTools/pull/500
+	
+- SpCodeInteractionModel>>#notify: Avoid crashing #1363
+	https://github.com/pharo-spec/Spec/pull/1363
+	
+- SpDropListExampleTest does not opens Playgorunds anymore #1359
+	https://github.com/pharo-spec/Spec/pull/1359
+
+	
+Pharo12
+=======
+
+Speed
+=====
+
+- speedup-testNoShadowedVariablesInMethods #13170
+	https://github.com/pharo-project/pharo/pull/13170
+	
+- Speed up #assertCollection:hasSameElements: in case they are equals. #13144
+	https://github.com/pharo-project/pharo/pull/13144
+
+
+ClassOrganizer Cleanup
+======================
+
+- Inline extensions of protocol organizer #13194
+	https://github.com/pharo-project/pharo/pull/13194
+	
+- ChangeRecord: rename category into protocol #13188
+	https://github.com/pharo-project/pharo/pull/13188
+	
+- Inline some protocol organizer behavior #13191
+	https://github.com/pharo-project/pharo/pull/13191
+	
+- remove commentSourcePointer from ClassOrganization #13176
+	https://github.com/pharo-project/pharo/pull/13176
+	
+- Set-CommentSourcepointer-ClassDescription #13171
+	https://github.com/pharo-project/pharo/pull/13171
+	
+- Update behaviour of #protocolNamed: #13173
+	https://github.com/pharo-project/pharo/pull/13173
+	
+- Simplify and deprecate ClassDescription>>allProtocolsUpTo: #13160
+		https://github.com/pharo-project/pharo/pull/13160
+		
+- ProtocolOrganizer cleanings #13169
+	https://github.com/pharo-project/pharo/pull/13169
+	
+- ClassComments-Via-Class #13168
+	https://github.com/pharo-project/pharo/pull/13168
+	
+- Rename #nullCategory into #nullProtocolName #13157
+	https://github.com/pharo-project/pharo/pull/13157
+	
+
+Compiler Cleanup
+================
+
+- Remove RBInstanceVariableNode crufts #13199
+	https://github.com/pharo-project/pharo/pull/13199
+	
+- Faulty code: Make OCUndeclaredVariableWarning a little less special #13186
+	https://github.com/pharo-project/pharo/pull/13186
+	
+- Compiler source code is String #13184
+	https://github.com/pharo-project/pharo/pull/13184
+
+- Factorize recompile:from: #13180
+	https://github.com/pharo-project/pharo/pull/13180
+	
+- OpalCompiler gain install #13152
+	https://github.com/pharo-project/pharo/pull/13152
+	
+- Faulty code: improve code error descriptions #13174
+	https://github.com/pharo-project/pharo/pull/13174
+	
+- Faulty code: make OCASTSemanticAnalyzer (almost) faulty only #13165
+	https://github.com/pharo-project/pharo/pull/13165
+
+- CodeImport - stop requestor madness #13162
+	https://github.com/pharo-project/pharo/pull/13162
+
+- Faulty code - signal mainly CodeError #13164
+	https://github.com/pharo-project/pharo/pull/13164
+	
+- Faulty code improve scanner on error tokens #13135
+	https://github.com/pharo-project/pharo/pull/13135
+	
+- Faulty code: introduce invalid variables #13148
+	https://github.com/pharo-project/pharo/pull/13148
+	
+- CodeSnippet: can update itself thaks to metaprogramming and code transformation #13127
+	https://github.com/pharo-project/pharo/pull/13127
+
+- Faulty code: cleanup CodeError #13163
+	https://github.com/pharo-project/pharo/pull/13163
+	
+- Faulty code: improve shadowing policy and implementation #13132
+	https://github.com/pharo-project/pharo/pull/13132
+
+- Faulty code: improve error on unexpected block parameter #13133
+	https://github.com/pharo-project/pharo/pull/13133
+	
+- 13122 rbparser cutting tokens in stepBar [Pharo12] #13130
+	https://github.com/pharo-project/pharo/pull/13130
+	
+	
+
+Refactoring Engine
+==================
+
+- Refactorings clean up #13131
+	https://github.com/pharo-project/pharo/pull/13131
+	
+- Refactoring push down method command to use driver #13099
+	https://github.com/pharo-project/pharo/pull/13099
+	
+- Remove duplicated mocking #13151
+	https://github.com/pharo-project/pharo/pull/13151
+
+Improvements
+=============
+
+- Improve announcements printing #13178
+	https://github.com/pharo-project/pharo/pull/13178
+	
+- Clean copying methods of ClassDescription #13159
+	https://github.com/pharo-project/pharo/pull/13159
+	
+- More explicit error message for slot usage in bootstrap #13145
+	https://github.com/pharo-project/pharo/pull/13145
+	
+- move bootstrap/src into main src #13016
+	https://github.com/pharo-project/pharo/pull/13016
+	
+Cleanups
+========
+
+- OSPlatformTest should be in System-Platforms-Tests #13192
+	https://github.com/pharo-project/pharo/pull/13192
+
+- Factorize announcement subscribers #13185
+	https://github.com/pharo-project/pharo/pull/13185
+	
+- Synch with p11 #13147
+	https://github.com/pharo-project/pharo/pull/13147
