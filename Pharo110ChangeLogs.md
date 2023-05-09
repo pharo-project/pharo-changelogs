@@ -1,4 +1,4 @@
-# Pharo 11
+# Pharo 11 changes overview
 
 A large international community of developers worked hard to prepare a new release of the Pharo platform.
 
@@ -13,10 +13,9 @@ A large international community of developers worked hard to prepare a new relea
 - There is a new tool: The Document Browser, which allow the visualisation of microdown (markadown compatible) documents placed in the web or locally. 
 - Calypso (the System Browser) has incorporated some interesting mini tools: package dependency and baseline visualisation.
 - New and improved Inspectors (to be used by the inspector), notably for AST/Blocks/IR but also a lot others.
-- All versions of NewTools, Spec, Roassal annd Microdown have been updated with a lot of bugfixes. 
+- All versions of NewTools, Spec, Roassal and Microdown have been updated with a lot of bugfixes. 
 
 ### System 
-
 - Slots now have a Setting for unrestricted definitions 
 - Slots now allow more complex Slot defininions (cascade)
 - Compiler support for full block without outer context
@@ -29,36 +28,36 @@ A large international community of developers worked hard to prepare a new relea
 - Support for ephemerons
    
 ### Virtual machine
-- 
+- Ephemerons Production Ready (large amount of ephemerons supported, leaks fixed, support for old finalization, tests).
+- Improving the Memory Map of the VM (Using constant positions)
+- Initial support for Single-Instruction Multiple-Data (SIMD)
+    - Initialization of new objects using SIMD (ARM64)
+    - Adding Bytecode Extensions to support SIMD instructions
+    - Adding Vector Registers
+    - Vector Register bytecodes
+- Third-Party Dependency Update (Newer versions, Graphic Libraries using Hardware Acceleration)
+- Fixing errors and simplification of primitives.
+- Clean Ups: Remove lots of old code, notably old experiments, dead code and unused code like newspeak or plugins. 
 
 ## Status
 Current Pharo development status.
-- 309 forks on GitHub
-- 972 issues closed since Pharo 10
-- 1412 Pull requests processed since Pharo 10, not counting separately managed projects:
-	- [http://github.com/pharo-spec/NewTools](http://github.com/pharo-spec/NewTools)
-	- [http://github.com/pharo-spec/NewTools-DocumentBrowser](http://github.com/pharo-spec/NewTools-DocumentBrowser)
-	- [http://github.com/pharo-spec/Spec](http://github.com/pharo-spec/Spec)
-	- [http://github.com/pharo-vcs/Iceberg](http://github.com/pharo-vcs/Iceberg)
-	- [http://github.com/ObjectProfile/Roassal3](http://github.com/ObjectProfile/Roassal3)
-	- [http://github.com/pillar-markup/Microdown](http://github.com/pillar-markup/Microdown)
-	- [http://github.com/pillar-markup/BeautifulComments](http://github.com/pillar-markup/BeautifulComments)
-	- [http://github.com/pharo-project/opensmalltalk-vm](http://github.com/pharo-project/opensmalltalk-vm)
+1. 309 forks on GitHub
+2. 972 issues closed since Pharo 10
+3. 1412 Pull requests processed since Pharo 10, not counting separately managed projects:
+- [http://github.com/pharo-spec/NewTools](http://github.com/pharo-spec/NewTools)
+- [http://github.com/pharo-spec/NewTools-DocumentBrowser](http://github.com/pharo-spec/NewTools-DocumentBrowser)
+- [http://github.com/pharo-spec/Spec](http://github.com/pharo-spec/Spec)
+- [http://github.com/pharo-vcs/Iceberg](http://github.com/pharo-vcs/Iceberg)
+- [http://github.com/ObjectProfile/Roassal3](http://github.com/ObjectProfile/Roassal3)
+- [http://github.com/pillar-markup/Microdown](http://github.com/pillar-markup/Microdown)
+- [http://github.com/pillar-markup/BeautifulComments](http://github.com/pillar-markup/BeautifulComments)
+- [http://github.com/pharo-project/opensmalltalk-vm](http://github.com/pharo-project/opensmalltalk-vm)
 
 ## Contributors
-
 We always say Pharo is yours. It is yours because we made it for you, but most importantly because it is made by the invaluable contributions of our great community (yourself).  
-More than eighty people directly contributed to Pharo 10.0:  
+A large community of people from all aroind the world contributed to Pharo 11.0 by making pull requests, reporting bugs, participating in discussion threads, providing feedback etc., etc., etc.  
+Thank you all for your contributions.  
 
-Thank you all for your contributions.
+## Changelog
 
-### Contributors for Pharo 11
-
-@@TODO@@
-
-And many many more who contributed indirectly by reporting bugs, participating in discussion threads, providing feedback etc., etc., etc.
-
-
-Latest taken into account: === 29/2022
-
-
+The complete list of changes can be see (in *per week* basis) [here](https://github.com/pharo-project/pharo-changelogs/tree/master/weekly). 
