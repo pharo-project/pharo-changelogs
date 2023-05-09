@@ -10,15 +10,15 @@ A large international community of developers worked hard to prepare a new relea
 - TimeProfiler (the profiling tool) has a new UI, and incorporates also the alternative Andreas Profiler.
 - DrTests (the Test Runner alternative) has been updated to latest Spec and make usable again.
 - The is a new new implementation of rewrite tools 
-- There is a new tool: The Document Browser, which allow the visualisation of microdown (markadown compatible) documents placed in the web or locally. 
+- There is a new tool: The Document Browser, which allow the visualisation of microdown (markdown compatible) documents placed on the web or locally. 
 - Calypso (the System Browser) has incorporated some interesting mini tools: package dependency and baseline visualisation.
-- New and improved Inspectors (to be used by the inspector), notably for AST/Blocks/IR but also a lot others.
+- New and improved Inspectors, notably for AST/Blocks/IR but also a lot others.
 - All versions of NewTools, Spec, Roassal and Microdown have been updated with a lot of bugfixes. 
 
 ### System 
 - Slots now have a Setting for unrestricted definitions 
 - Slots now allow more complex Slot defininions (cascade)
-- Compiler support for full block without outer context
+- Compiler support for full blocks without outer context
 - enable optionInlineTimesRepeat and optionInlineRepeat by default
 - Adding an API in OCBytecodeToASTCache, RBMethodNode and RBBlockNode to map AST nodes to a pc range
 - add a "parse plugin" mechanism to OpalCompiler
