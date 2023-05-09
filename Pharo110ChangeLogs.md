@@ -4,90 +4,46 @@ A large international community of developers worked hard to prepare a new relea
 
 ## Highlights
 
-## All issues
+### Tools
+- Iceberg (the git client/vcs control tool) has received a lot of tweaks and fixes to work better with github and other remote control files.
+- The debugger now incorporates a lot tweaks and notably the capability of adding bindings in the context interation model.
+- TimeProfiler (the profiling tool) has a new UI, and incorporates also the alternative Andreas Profiler.
+- DrTests (the Test Runner alternative) has been updated to latest Spec and make usable again.
+- The is a new new implementation of rewrite tools 
+- There is a new tool: The Document Browser, which allow the visualisation of microdown (markadown compatible) documents placed in the web or locally. 
+- Calypso (the System Browser) has incorporated some interesting mini tools: package dependency and baseline visualisation.
+- New and improved Inspectors (to be used by the inspector), notably for AST/Blocks/IR but also a lot others.
+- All versions of NewTools, Spec, Roassal annd Microdown have been updated with a lot of bugfixes. 
+
+### System 
+
+- Slots now have a Setting for unrestricted definitions 
+- Slots now allow more complex Slot defininions (cascade)
+- Compiler support for full block without outer context
+- enable optionInlineTimesRepeat and optionInlineRepeat by default
+- Adding an API in OCBytecodeToASTCache, RBMethodNode and RBBlockNode to map AST nodes to a pc range
+- add a "parse plugin" mechanism to OpalCompiler
+- Improve faulty parsing
+- lots of bugfixes and cleanups
+- Constant Block Closures are created at compile time (speeds up both creating and evaluation of [#blockslikethis])
+- Support for ephemerons
+   
+### Virtual machine
+- 
+
+## Status
 Current Pharo development status.
-- @@TODO@@ forks on GitHub
-- @@TODO@@ issues
-- @@TODO@@ Pull requests, not counting separately managed projects such as:
-	- [http://github.com/pharo-spec/Spec](http://github.com/pharo-spec/Spec)
+- 309 forks on GitHub
+- 972 issues closed since Pharo 10
+- 1412 Pull requests processed since Pharo 10, not counting separately managed projects:
 	- [http://github.com/pharo-spec/NewTools](http://github.com/pharo-spec/NewTools)
+	- [http://github.com/pharo-spec/NewTools-DocumentBrowser](http://github.com/pharo-spec/NewTools-DocumentBrowser)
+	- [http://github.com/pharo-spec/Spec](http://github.com/pharo-spec/Spec)
 	- [http://github.com/pharo-vcs/Iceberg](http://github.com/pharo-vcs/Iceberg)
+	- [http://github.com/ObjectProfile/Roassal3](http://github.com/ObjectProfile/Roassal3)
+	- [http://github.com/pillar-markup/Microdown](http://github.com/pillar-markup/Microdown)
+	- [http://github.com/pillar-markup/BeautifulComments](http://github.com/pillar-markup/BeautifulComments)
 	- [http://github.com/pharo-project/opensmalltalk-vm](http://github.com/pharo-project/opensmalltalk-vm)
-
-## ChangeLog
-  
-### Features
-
-- Updated Fuel (and users of Fuel) to 5.0.4
-- Dictionary class<<#newFrom: now accepts duplicated keys
-- beginsWith: and endsWith:  return true on empty string
-- KeyboardKey with key accessing methods
-- Enhance quality rules 
-    - missing subclass
-    - not optimised if 
-- Cleanups for CleanBlock/FullBlock/BlockClosure hierarchy
-  @@TODO@@ Marcus, this is incomplete, isn't?
-- better inspections on: Array2D, Git support, 
-- Clean Blocks: 
-    - Debugger fixes
-    - Cleanups for CleanBlock hierarchy
-- Debugger 
-    - Adding possibility to add bindings in debugger context interaction model
-    - Lots of small improvements
-    - Lots of small UI fixes and tweaks
-    - Cleanups
-- Inspector
-    - Columns now can be resized
-    - Lots of small UI fixes and tweaks
-- Version control (Iceberg)
-	- fixes for some remote connection problems
-- Profiling
-	- Added a new GUI for Time profiler and Andreas profiler
-- Roassal (the visualisation engine) is updated to v0.9.9m
-- Calypso Browser
-	- added package dependencies tool (as a tab)
-- MetaLinks
-    - can be put on Pragmas
-- TestRunner
-    - We added a new experimental model
-- DrTests has been updated to latest Spec2
-- DoIts (Relevant in playground, etc.)
-    - we now can compile DoIts without a method header and without the need of code reformatting (without having to add a return).
-- introduction of scalable icons.
-- Compiler
-    - It can now create methods from a Bytecode IR
-- Metamodel
-    - Storage of class comments enhanced
-- Refactoring engine 
-	- enhancements on method extraction
-	- enhancements on accessor generation
-
-### Speed
-
-- Improve #indexOfMonth: to not create symbols and compare without using #match 
-- Major speedup of the SelectorTable
-- Reduce Symbol creation during compilation and interactive use
-- support for arithmetic SIMD bytecodes 
-- Startup on OSX exnhanced
-
-### Important fixes
-
-- printStringLimitedTo:Using: will fail to actually respect limit 
-- MiniDrTests raise error 
-- Support UTF8 in Git Commit messages
-- Fix context menu commands of the StDebugger stack.
-- Enabled IM support in SDL2
-
-### CleanUps
-
-- Deprecated10 package removed
-- Simplify SymbolTable code
-- remove methods that are the same in the superclass
-- remove old class comment editors (we are using BeautifulComments now)
-- Old help browser (obsolete and incomplete) was removed
-- Image size Reduced
-    - Clear SelectorTable
-    - Improve Implementation of AllProtocol
 
 ## Contributors
 
@@ -96,7 +52,7 @@ More than eighty people directly contributed to Pharo 10.0:
 
 Thank you all for your contributions.
 
-### Contributors for Pharo 10
+### Contributors for Pharo 11
 
 @@TODO@@
 
