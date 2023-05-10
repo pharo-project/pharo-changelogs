@@ -12,7 +12,7 @@ A large international community of developers worked hard to prepare a new relea
 - There is a new implementation of Rewrite tools. 
 - There is a new tool: The Document Browser, which allows the visualization of Microdown (Markdown compatible) documents placed on the web or locally. 
 - Calypso (the System Browser) has incorporated some interesting mini tools: package dependency and baseline visualization.
-- We have introduced new and improved Inspectors, notably for AST/Blocks/IR, among others."
+- We have introduced new and improved Inspectors, notably for AST/Blocks/IR, among others.
 - All versions of NewTools, Spec, Roassal and Microdown have been updated with a lot of bug fixes. 
 
 ### System 
@@ -20,7 +20,7 @@ A large international community of developers worked hard to prepare a new relea
 - Slots now allow more complex Slot definitions (cascade).
 - Compiler support for full blocks without outer context.
 - We have enabled optionInlineTimesRepeat and optionInlineRepeat by default.
-- Adding an API in OCBytecodeToASTCache, RBMethodNode and RBBlockNode to map AST nodes to a pc range.
+- Adding an API in OCBytecodeToASTCache, RBMethodNode and RBBlockNode to map AST nodes to a PC range.
 - Add a "parse plugin" mechanism to OpalCompiler.
 - Improve faulty parsing.
 - A Lots of bug fixes and cleanups.
@@ -29,13 +29,13 @@ A large international community of developers worked hard to prepare a new relea
    
 ### Virtual machine
 - Ephemerons are production ready (a large number of Ephemerons supported, leaks fixed, support for old finalization, tests).
-- Improving the Memory Map of the VM (Using constant positions).
+- Improving the Memory Map of the VM (using constant positions).
 - Initial support for Single-Instruction Multiple-Data (SIMD)
     - Initialization of new objects using SIMD (ARM64)
     - Adding Bytecode Extensions to support SIMD instructions
     - Adding Vector Registers
     - Vector Register bytecodes
-- Third-Party Dependency Update (Newer versions, Graphic Libraries using Hardware Acceleration).
+- Third-Party Dependency Update (newer versions, graphic libraries using hardware acceleration).
 - Fixing errors and simplification of primitives.
 - Clean Ups: We have removed a significant amount of old code, notably old experiments, dead code, and unused code such as Newspeak and unused plugins.
 
