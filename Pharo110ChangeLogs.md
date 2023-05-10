@@ -5,39 +5,39 @@ A large international community of developers worked hard to prepare a new relea
 ## Highlights
 
 ### Tools
-- Iceberg (the git client/vcs control tool) has received a lot of tweaks and fixes to work better with github and other remote control files.
-- The debugger now incorporates a lot tweaks and notably the capability of adding bindings in the context interation model.
-- TimeProfiler (the profiling tool) has a new UI, and incorporates also the alternative Andreas Profiler.
-- DrTests (the Test Runner alternative) has been updated to latest Spec and make usable again.
-- The is a new new implementation of rewrite tools 
-- There is a new tool: The Document Browser, which allow the visualisation of microdown (markdown compatible) documents placed on the web or locally. 
-- Calypso (the System Browser) has incorporated some interesting mini tools: package dependency and baseline visualisation.
-- New and improved Inspectors, notably for AST/Blocks/IR but also a lot others.
-- All versions of NewTools, Spec, Roassal and Microdown have been updated with a lot of bugfixes. 
+- Iceberg (the Git client/VCS control tool) has received a lot of tweaks and fixes to work better with GitHub and other remote control files.
+- The debugger now incorporates a lot of tweaks and, notably, the capability of adding bindings in the context interaction model.
+- TimeProfiler (the profiling tool) has a new UI and also incorporates the alternative Andreas Profiler.
+- DrTests (the Test Runner alternative) has been improved and updated to the latest Spec.
+- The is a new implementation of Rewrite tools. 
+- There is a new tool: The Document Browser, which allows the visualization of Microdown (Markdown compatible) documents placed on the web or locally. 
+- Calypso (the System Browser) has incorporated some interesting mini tools: package dependency and baseline visualization.
+- New and improved Inspectors, notably for AST/Blocks/IR but also a lot of others.
+- All versions of NewTools, Spec, Roassal and Microdown have been updated with a lot of bug fixes. 
 
 ### System 
-- Slots now have a Setting for unrestricted definitions 
-- Slots now allow more complex Slot defininions (cascade)
-- Compiler support for full blocks without outer context
-- enable optionInlineTimesRepeat and optionInlineRepeat by default
-- Adding an API in OCBytecodeToASTCache, RBMethodNode and RBBlockNode to map AST nodes to a pc range
-- add a "parse plugin" mechanism to OpalCompiler
-- Improve faulty parsing
-- lots of bugfixes and cleanups
+- Slots now have a Setting for unrestricted definitions.
+- Slots now allow more complex Slot definitions (cascade).
+- Compiler support for full blocks without outer context.
+- enable optionInlineTimesRepeat and optionInlineRepeat by default.
+- Adding an API in OCBytecodeToASTCache, RBMethodNode and RBBlockNode to map AST nodes to a pc range.
+- add a "parse plugin" mechanism to OpalCompiler.
+- Improve faulty parsing.
+- lots of bug fixes and cleanups.
 - Constant Block Closures are created at compile time (speeds up both creating and evaluation of [#blockslikethis])
-- Support for ephemerons
+- Support for ephemerons.
    
 ### Virtual machine
-- Ephemerons Production Ready (large amount of ephemerons supported, leaks fixed, support for old finalization, tests).
-- Improving the Memory Map of the VM (Using constant positions)
+- Ephemerons Production Ready (a large number of ephemerons supported, leaks fixed, support for old finalization, tests).
+- Improving the Memory Map of the VM (Using constant positions).
 - Initial support for Single-Instruction Multiple-Data (SIMD)
     - Initialization of new objects using SIMD (ARM64)
     - Adding Bytecode Extensions to support SIMD instructions
     - Adding Vector Registers
     - Vector Register bytecodes
-- Third-Party Dependency Update (Newer versions, Graphic Libraries using Hardware Acceleration)
+- Third-Party Dependency Update (Newer versions, Graphic Libraries using Hardware Acceleration).
 - Fixing errors and simplification of primitives.
-- Clean Ups: Remove lots of old code, notably old experiments, dead code and unused code like newspeak or plugins. 
+- Clean Ups: Remove lots of old code, notably old experiments, dead code and unused code like Newspeak or plugins. 
 
 ## Status
 Current Pharo development status.
@@ -54,10 +54,10 @@ Current Pharo development status.
 - [http://github.com/pharo-project/opensmalltalk-vm](http://github.com/pharo-project/opensmalltalk-vm)
 
 ## Contributors
-We always say Pharo is yours. It is yours because we made it for you, but most importantly because it is made by the invaluable contributions of our great community (yourself).  
-A large community of people from all aroind the world contributed to Pharo 11.0 by making pull requests, reporting bugs, participating in discussion threads, providing feedback etc., etc., etc.  
-Thank you all for your contributions.  
+We always say Pharo is yours. It is yours because we made it for you, but most importantly, because it is made by the invaluable contributions of our great community (yourself).  
+A large community of people from all around the world contributed to Pharo 11.0 by making pull requests, reporting bugs, participating in discussion threads, providing feedback etc., etc., etc.  
+Thank you all for your contributions!  
 
 ## Changelog
 
-The complete list of changes can be see (in *per week* basis) [here](https://github.com/pharo-project/pharo-changelogs/tree/master/weekly). 
+The complete list of changes can be seen (on *per week* basis) [here](https://github.com/pharo-project/pharo-changelogs/tree/master/weekly). 
